@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cabbi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .burger-menu {
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .burger-icon {
+            font-size: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .booking-widget {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 350px;
+            margin: 0 auto;
+            right: 10%;
+            /* Adjust the percentage or use a fixed value as needed */
+            top: 50%;
+
+            z-index: 1000;
+            /* Adjust the value as needed */
+            /* Use for overlay effect */
+            /* position: absolute; */
+            /* transform: translateY(-50%); */
+
+        }
+
+        /* Media query for responsive adjustments */
+        @media (max-width: 768px) {
+            .booking-widget {
+                width: 90%;
+                /* Adjust the width for smaller screens */
+                right: 5%;
+                /* Adjust the percentage or use a fixed value as needed */
+            }
+        }
+
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-text {
+            flex: 1;
+            text-align: left;
+            display: grid;
+        }
+
+        .footer-text a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        } */
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            text-align: left;
+        }
+
+        /* a {
+            color: #fff;
+            text-decoration: none;
+        } */
+
+        .social-icons {
+            margin-top: 40px;
+            padding: 40px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 47px;
+        }
+
+        .burger-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-options {
+            display: none;
+            flex-direction: column;
+            position: static;
+            top: 60px;
+            right: 10px;
+            background-color: #333;
+            border-radius: 0px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-options a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .burger-menu {
+                display: flex;
+                align-items: center;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .burger-menu {
+                position: static;
+            }
+        }
+
+        /* Adjust height for responsive mode */
+        @media (max-width: 768px) {
+            .slider-item img {
+                /* width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: top;
+                display: block; */
+                min-width: 230%;
+            }
+
+
+
+
+        }
+
+
+        #home {
+            padding: 0px;
+            height: 50px;
+            text-align: center;
+        }
+
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Add this to your existing style block or modify accordingly */
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #availableCabsTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        #availableCabsTable th,
+        #availableCabsTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #availableCabsTable th {
+            background-color: #f2f2f2;
+        }
+
+        #availableCabsTable tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #555;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .modal-content {
+            position: relative;
+        }
+
+        #errorModal {
+
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .errorPopupButtons {
+            background-color: #f70505;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .modal-content {
+                width: auto;
+                /* Adjust the width for smaller screens */
+                overflow-y: auto;
+                /* Enable vertical scrolling */
+            }
+        }
+
+
+
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #26688E;
+        }
+
+
+        .ticker-container {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: tickerAnimation 20s linear infinite;
+            /* Adjust the duration based on your preference */
+            color: #fff;
+        }
+
+        @keyframes tickerAnimation {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Additional styling to improve visibility */
+        .ticker p {
+            margin: 0;
+            padding: 10px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .grid-container .grid-item ul li a {
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                /* Adjust column width for smaller screens */
+                gap: 10px;
+                /* Adjust the gap between grid items */
+            }
+
+
+
+        }
+
+        .whatsapp-icon {
+            display: inline-block;
+            margin: -20px 80px;
+            color: #fff;
+            font-size: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555555;
+        }
+
+        .whatsapp-icon {
+            display: inline-block;
+            margin: -20px 80px;
+            color: #fff;
+            font-size: 40px;
+        }
+
+        /* Media query for screens smaller than 768 pixels */
+        @media screen and (max-width: 768px) {
+            .whatsapp-icon {
+                font-size: 30px;
+                /* Adjust the font size for smaller screens */
+                margin: 6px 5%;
+                /* Adjust the margin for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Indian Cabbi</h1>
+        <a href="#" class="whatsapp-link whatsapp-icon" data-phone="+919922333305">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <div class="burger-menu" id="burgerMenu">
+            <i class="fas fa-bars burger-icon"></i>
+        </div>
+    </header>
+
+    <div class="ticker-container">
+        <div class="ticker">
+            <!-- <p> Need travel help? We've got you covered..! 📞 Call us at <a href="tel:+919922333305"></a>+91 9922 3333
+                05.
+            </p> -->
+            <p>Need travel help? We've got you covered..! 📞 Call us at <a classs="mob-link" href="tel:+919922333305"
+                    style="color: #fff;">+91 9922 3333
+                    05</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="menu-options" id="menuOptions">
+        <a href="#booking">Book a Cab</a>
+        <a href="#summer">Summer Trips</a>
+        <a href="#winter">Winter Trips</a>
+        <a href="#rainy">Rainy Trips</a>
+        <a href="#guide">Guide to India</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About Us</a>
+    </div>
+
+
+    <section id="home">
+        <h2>Explore India with Ease</h2>
+    </section>
+
+
+    <div style="display: flex;">
+
+        <!-- Left Half (Content) -->
+        <div style="flex: 1; padding: 20px;">
+            <h1>Welcome to Our Website</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.
+            </p>
+            <!-- Add more content as needed -->
+
+            <p>
+                For more information, contact us at <a href="mailto:info@example.com">info@example.com</a>.
+            </p>
+        </div>
+
+        <!-- Right Half (Booking Widget) -->
+        <div style="flex: 1; padding: 20px;">
+            <!-- Add your booking widget here -->
+            <!-- Example placeholder -->
+            <div>
+                <!-- Overlay booking widget -->
+                <section id="booking" class="booking-widget">
+                    <h2>Book Your Car</h2>
+                    <label for="source">Source City:</label>
+                    <select id="source" required class="city-dropdown">
+                        <option value="" selected disabled>Select Source City</option>
+                        <option value="Mumbai">Mumbai, Maharashtra</option>
+                        <option value="Pune">Pune, Maharashtra</option>
+                        <option value="Nagpur">Nagpur, Maharashtra</option>
+                        <option value="Thane">Thane, Maharashtra</option>
+                        <option value="Nashik">Nashik, Maharashtra</option>
+                        <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                        <option value="Solapur">Solapur, Maharashtra</option>
+                        <option value="Amravati">Amravati, Maharashtra</option>
+                        <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                        <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                        <option value="Akola">Akola, Maharashtra</option>
+                        <option value="Nanded">Nanded, Maharashtra</option>
+                        <!-- Add more cities as needed -->
+                    </select>
+                    <label for="destination">Destination City:</label>
+                    <select id="destination" required class="city-dropdown">
+                        <option value="" selected disabled>Select Destination City</option>
+                        <option value="Mumbai">Mumbai, Maharashtra</option>
+                        <option value="Pune">Pune, Maharashtra</option>
+                        <option value="Nagpur">Nagpur, Maharashtra</option>
+                        <option value="Thane">Thane, Maharashtra</option>
+                        <option value="Nashik">Nashik, Maharashtra</option>
+                        <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                        <option value="Solapur">Solapur, Maharashtra</option>
+                        <option value="Amravati">Amravati, Maharashtra</option>
+                        <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                        <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                        <option value="Akola">Akola, Maharashtra</option>
+                        <option value="Nanded">Nanded, Maharashtra</option>
+                        <!-- Add more cities as needed -->
+                    </select>
+                    <label for="travelDate">Date:</label>
+                    <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                    <!-- Set default value to current date + 1 -->
+                    <label for="pickupTime">Pickup Time:</label>
+                    <input type="time" id="pickupTime" value="07:00" required>
+                    <!-- Set default value to 7 am -->
+                    <button onclick="submitBooking()">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <section>
+
+    </section>
+
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Available Cabs</h2>
+            <table id="availableCabsTable">
+                <thead>
+                    <tr>
+                        <th>Cab Type</th>
+                        <th>Details</th>
+                        <th>Distance</th> <!-- Add this line -->
+                        <th>Price</th> <!-- Add this line -->
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="availableCabsBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeErrorModal()">&times;</span>
+            <p>Start and end, please! Our cabs aren't mind readers. 🚕📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="grid-container">
+            <!-- Section 1: Basic -->
+            <div class="grid-item">
+                <h4>Basic </h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+
+
+            <!-- Section 3: North India -->
+            <div class="grid-item">
+                <h4>Explore North India</h4>
+                <ul class="footer-links">
+                    <li><a href="Delhi.html">Delhi</a></li>
+                    <li><a href="Jaipur.html">Jaipur</a></li>
+                    <li><a href="Agra.html">Agra</a></li>
+                    <li><a href="Varanasi.html">Varanasi</a></li>
+                    <li><a href="Amritsar.html">Amritsar</a></li>
+                    <li><a href="Haridwar.html">Haridwar</a></li>
+                    <li><a href="Shimla.html">Shimla</a></li>
+                    <li><a href="Lucknow.html">Lucknow</a></li>
+                    <li><a href="Rishikesh.html">Rishikesh</a></li>
+                    <li><a href="Chandigarh.html">Chandigarh</a></li>
+                    <li><a href="Jodhpur.html">Jodhpur</a></li>
+                    <li><a href="Pushkar.html">Pushkar</a></li>
+                    <li><a href="Udaipur.html">Udaipur</a></li>
+                    <li><a href="Khajuraho.html">Khajuraho</a></li>
+                    <li><a href="Dehradun.html">Dehradun</a></li>
+                    <li><a href="Bikaner.html">Bikaner</a></li>
+                    <li><a href="Dharamshala.html">Dharamshala</a></li>
+                    <li><a href="Nainital.html">Nainital</a></li>
+                    <li><a href="Ajmer.html">Ajmer</a></li>
+                    <li><a href="Mathura.html">Mathura</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 2: South India -->
+            <div class="grid-item">
+                <h4>Explore South India</h4>
+                <ul>
+                    <li><a href="Chennai.html">Chennai</a></li>
+                    <li><a href="Bangalore.html">Bangalore</a></li>
+                    <li><a href="Hyderabad.html">Hyderabad</a></li>
+                    <li><a href="Kochi.html">Kochi</a></li>
+                    <li><a href="Mysuru.html">Mysuru</a></li>
+                    <li><a href="Thiruvananthapuram.html">Thiruvananthapuram</a></li>
+                    <li><a href="Coimbatore.html">Coimbatore</a></li>
+                    <li><a href="Vijayawada.html">Vijayawada</a></li>
+                    <li><a href="Visakhapatnam.html">Visakhapatnam</a></li>
+                    <li><a href="Mangalore.html">Mangalore</a></li>
+                    <li><a href="Puducherry.html">Puducherry</a></li>
+                    <li><a href="Madurai.html">Madurai</a></li>
+                    <li><a href="Trichy.html">Trichy</a></li>
+                    <li><a href="Kozhikode.html">Kozhikode</a></li>
+                    <li><a href="Tirupati.html">Tirupati</a></li>
+                    <li><a href="Salem.html">Salem</a></li>
+                    <li><a href="Warangal.html">Warangal</a></li>
+                    <li><a href="Tirunelveli.html">Tirunelveli</a></li>
+                    <li><a href="Hubli.html">Hubli</a></li>
+                    <li><a href="Belgaum.html">Belgaum</a></li>
+
+                </ul>
+            </div>
+
+
+            <!-- Section 4: West India -->
+            <div class="grid-item">
+                <h4>Explore West India</h4>
+                <ul>
+                    <li><a href="Mumbai.html">Mumbai</a></li>
+                    <li><a href="Goa.html">Goa</a></li>
+                    <li><a href="Jaipur.html">Jaipur</a></li>
+                    <li><a href="Ahmedabad.html">Ahmedabad</a></li>
+                    <li><a href="Pune.html">Pune</a></li>
+                    <li><a href="Udaipur.html">Udaipur</a></li>
+                    <li><a href="Ahmedabad.html">Ahmedabad</a></li>
+                    <li><a href="Vadodara.html">Vadodara</a></li>
+                    <li><a href="Surat.html">Surat</a></li>
+                    <li><a href="Nashik.html">Nashik</a></li>
+                    <li><a href="Panaji.html">Panaji</a></li>
+                    <li><a href="Aurangabad.html">Aurangabad</a></li>
+                    <li><a href="Thane.html">Thane</a></li>
+                    <li><a href="Nagpur.html">Nagpur</a></li>
+                    <li><a href="Kolhapur.html">Kolhapur</a></li>
+                    <li><a href="Aurangabad.html">Aurangabad</a></li>
+                    <li><a href="Ratnagiri.html">Ratnagiri</a></li>
+                    <li><a href="NaviMumbai.html">Navi Mumbai</a></li>
+                    <li><a href="Bhopal.html">Bhopal</a></li>
+                    <li><a href="Indore.html">Indore</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Section 5: East India -->
+            <div class="grid-item">
+                <h4>Explore East India</h4>
+                <ul>
+                    <li><a href="Kolkata.html">Kolkata</a></li>
+                    <li><a href="Darjeeling.html">Darjeeling</a></li>
+                    <li><a href="Bhubaneswar.html">Bhubaneswar</a></li>
+                    <li><a href="Puri.html">Puri</a></li>
+                    <li><a href="Guwahati.html">Guwahati</a></li>
+                    <li><a href="Shillong.html">Shillong</a></li>
+                    <li><a href="Patna.html">Patna</a></li>
+                    <li><a href="Ranchi.html">Ranchi</a></li>
+                    <li><a href="Jamshedpur.html">Jamshedpur</a></li>
+                    <li><a href="Siliguri.html">Siliguri</a></li>
+                    <li><a href="Durgapur.html">Durgapur</a></li>
+                    <li><a href="Howrah.html">Howrah</a></li>
+                    <li><a href="Agartala.html">Agartala</a></li>
+                    <li><a href="Imphal.html">Imphal</a></li>
+                    <li><a href="Aizawl.html">Aizawl</a></li>
+                    <li><a href="Itanagar.html">Itanagar</a></li>
+                    <li><a href="Kohima.html">Kohima</a></li>
+                    <li><a href="Gangtok.html">Gangtok</a></li>
+                    <li><a href="Dimapur.html">Dimapur</a></li>
+                    <li><a href="Bokaro.html">Bokaro</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="whatsapp-link" data-phone="+919922333305" class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </footer>
+
+    <script>
+
+        function basicCheck() {
+
+            var source = document.getElementById('source').value;
+            var destination = document.getElementById('destination').value;
+
+            if (!source || !destination) {
+                // Display error modal
+                var errorModal = document.getElementById('errorModal');
+                errorModal.style.display = 'flex';
+                return; // Stop execution if validation fails
+            }
+        }
+
+
+        function submitBooking() {
+            basicCheck();
+            var roundOffDistance = calculateDistance()[1];
+
+            var availableCabs = [
+                { type: 'Hatchback', details: '2 seats, AC, Economical', distance: roundOffDistance + ' Km', fare: calculatePrice()[2] + ' ₹' },
+                { type: 'Sedan', details: '4 seats, AC, Comfortable', distance: roundOffDistance + ' Km', fare: calculatePrice()[0] + ' ₹' },
+                { type: 'SUV', details: '6 seats, AC, Spacious', distance: roundOffDistance + ' Km', fare: calculatePrice()[1] + ' ₹' },
+
+                // Add more cabs as needed
+            ];
+
+            // Display the modal
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'flex';
+
+            // Display the list of available cabs in the modal table
+            var availableCabsBody = document.getElementById('availableCabsBody');
+            availableCabsBody.innerHTML = '';
+
+            availableCabs.forEach(cab => {
+                var row = document.createElement('tr');
+
+                var randomId = Math.random().toString(36).substring(7); // Generate a random ID
+                var nameInputId = `${cab.type.toLowerCase()}_Type_${randomId}`;
+                var mobileNumberInputId = `${cab.type.toLowerCase()}MobileNumber_${randomId}`;
+
+                row.innerHTML = `
+            <td>${cab.type}</td>
+            <td>${cab.details}</td>
+            <td>${cab.distance}</td>
+            <td>${cab.fare}</td>
+            <td>
+                <input type="text" id="${nameInputId}" placeholder="Full Name" maxlength="25" pattern="[A-Za-z ]+" title="Please enter only alphabets and limit to 25 characters" required />
+                
+                <input type="tel" id="${mobileNumberInputId}" placeholder="10 digit Mobile Number" maxlength="10" pattern="[0-9]{1,10}" title="Please enter a valid 1 to 12-digit mobile number" inputmode="numeric" pattern="[0-9]*" required />
+                <button onclick="confirmBooking('${cab.type}', '${cab.fare}', '${nameInputId}', '${mobileNumberInputId}')">Confirm Booking</button>
+            </td>
+        `;
+                availableCabsBody.appendChild(row);
+            });
+        }
+
+
+        function calculatePrice() {
+
+            // Example: Assume a base price per km
+            const hatchBack = 10;
+            const sedan = 14;
+            const suv = 16;
+
+            var distance = calculateDistance();
+            var roundOffDistance = distance[0];
+            var totalDistance = distance[1];
+
+
+
+            // Calculate total price
+            const sedanPrice = roundOffDistance * sedan;
+            const suvPrice = roundOffDistance * suv;
+            const hatchPrice = roundOffDistance * hatchBack;
+
+            calculatedPrice = [sedanPrice, suvPrice, hatchPrice];
+
+            return calculatedPrice;
+        }
+
+        function calculateDistance() {
+            const sourceCity = document.getElementById('source').value;
+            const destinationCity = document.getElementById('destination').value;
+
+            // Basic input validation
+            if (!sourceCity || !destinationCity) {
+                displayError('Please fill in all the fields.');
+                return;
+            }
+            const predefinedDistances = {
+                'Mumbai': {
+                    'Mumbai': 0,
+                    'Pune': 150,
+                    'Nagpur': 850,
+                    'Thane': 30,
+                    'Nashik': 200,
+                    'Aurangabad': 350,
+                    'Solapur': 500
+                },
+                'Pune': {
+                    'Pune': 0,
+                    'Mumbai': 150,
+                    'Nagpur': 700,
+                    'Thane': 150,
+                    'Nashik': 200,
+                    'Aurangabad': 250,
+                    'Solapur': 250,
+                    'Amravati': 800,
+                    'Navi Mumbai': 160,
+                    'Kolhapur': 400,
+                    'Akola': 600,
+                    'Jalgaon': 450,
+                    'Latur': 300,
+                    'Ahmednagar': 120
+                }
+            };
+
+            // Get the predefined distance based on the selected source and destination cities
+            let roundOffDistance = predefinedDistances[sourceCity][destinationCity];
+            let totalDistance = predefinedDistances[sourceCity][destinationCity];
+
+            // Apply rounding logic based on thresholds
+            if (totalDistance < 300) {
+                roundOffDistance = 300;
+            } else if (totalDistance >= 300 && totalDistance < 600) {
+                roundOffDistance = 600;
+            } else if (totalDistance >= 600 && totalDistance < 900) {
+                roundOffDistance = 900;
+            } // Add more thresholds as needed
+
+            sorceDestinationNames = [sourceCity, destinationCity]
+            var bothDistanceArray = [roundOffDistance, totalDistance, sorceDestinationNames];
+
+            console.log("Booking from " + sourceCity + " to " + destinationCity + " is under process");
+
+            return bothDistanceArray;
+        }
+
+
+        function confirmBooking(cabType, fare, nameInputId, mobileNumberInputId) {
+
+            var fullNameInput = document.getElementById(nameInputId);
+            var mobileNumberInput = document.getElementById(mobileNumberInputId);
+
+            var fullName = fullNameInput.value;
+            var mobileNumber = mobileNumberInput.value;
+            var confirmationMessage = `Booking Details:\nCab Type: ${cabType}\nFare: ${fare}\nPassanger Name : ${fullName}\nMobile Number: ${mobileNumber}`;
+
+
+            console.log('Booking Confirmed:', cabType, fare, fullName, mobileNumber);
+
+            alert(confirmationMessage);
+            sendSMS(fullName, mobileNumber);
+            closeModal();
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            function toggleMenu() {
+                var menuOptions = document.getElementById('menuOptions');
+                menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+            }
+
+            function closeMenuOnClickOutside(event) {
+                var menuOptions = document.getElementById('menuOptions');
+                var burgerMenu = document.getElementById('burgerMenu');
+
+                if (!menuOptions.contains(event.target) && !burgerMenu.contains(event.target)) {
+                    menuOptions.style.display = 'none';
+                }
+            }
+
+            document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
+
+            document.querySelectorAll('.menu-options a').forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var sectionId = this.getAttribute('href').substring(1);
+                    scrollToSection(sectionId);
+                });
+            });
+
+            function scrollToSection(sectionId) {
+                var targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+
+                    toggleMenu();
+                }
+            }
+
+            document.addEventListener('click', closeMenuOnClickOutside);
+            var currentSlide = 0;
+            var sliderContainer = document.getElementById('sliderContainer');
+            var dotsContainer = document.getElementById('sliderDots');
+
+            for (var i = 0; i < 4; i++) {
+                var dot = document.createElement('span');
+                dot.className = 'dot';
+                dot.setAttribute('data-index', i);
+                dotsContainer.appendChild(dot);
+            }
+
+            var dots = document.querySelectorAll('.dot');
+
+            function initSlider() {
+                showSlide(currentSlide);
+                setInterval(nextSlide, 7000);
+            }
+
+            function showSlide(index) {
+                currentSlide = index;
+                sliderContainer.style.transform = 'translateX(' + (-index * 100) + '%)';
+                updateDots();
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % 4;
+                showSlide(currentSlide);
+            }
+
+            function updateDots() {
+                dots.forEach(function (dot, index) {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            dots.forEach(function (dot) {
+                dot.addEventListener('click', function () {
+                    var index = parseInt(dot.getAttribute('data-index'));
+                    showSlide(index);
+                });
+            });
+
+            initSlider();
+
+        });
+
+        function closeErrorModal() {
+            var modal = document.getElementById('errorModal');
+            modal.style.display = 'none';
+        }
+
+        // Function to format date in YYYY-MM-DD
+        function formatDate(date) {
+            var year = date.getFullYear();
+            var month = (date.getMonth() + 1).toString().padStart(2, '0');
+            var day = (date.getDate()).toString().padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
+        // Set default value for the travelDate input
+        var currentDate = new Date();
+        currentDate.setDate(currentDate.getDate() + 1);
+        document.getElementById('travelDate').value = formatDate(currentDate);
+
+
+        function sendSMS(fullName, bookingMobileNumber) {
+            const accountSid = 'AC58b91b8fa290981736d03c4bf11afda2';
+            const authToken = 'f78c89ee5721ba68d6b84f1a7f0306ec';
+            const twilioNumber = '+15344446492';
+            const ownerNumber = '+919922333305';
+            const customerNumber = "+91" + bookingMobileNumber;
+
+            const message = 'Thank You ' + fullName + ' for booking ride with Indian Cabbi. Our Team will further cordinate with you for more details and preference. Please check the booking Details : Passanger Name : ' + fullName + ' Contact information is ' + customerNumber + '';
+
+            console.log("Booker mibile number " + customerNumber)
+            const apiUrl = `https://api.twilio.com/2010-04-01/Accounts/AC58b91b8fa290981736d03c4bf11afda2/Messages.json`;
+
+            // Construct the request
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Authorization': 'Basic ' + btoa(`AC58b91b8fa290981736d03c4bf11afda2:f78c89ee5721ba68d6b84f1a7f0306ec`)
+                },
+                body: new URLSearchParams({
+                    From: twilioNumber,
+                    To: ownerNumber,
+                    Body: message,
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('SMS sent successfully:', data);
+                    // Handle success, update UI, etc.
+                })
+                .catch(error => {
+                    console.error('Error sending SMS:', error);
+                    // Handle error, display error message, etc.
+                });
+        }
+        // Function to open WhatsApp with a predefined message
+        function openWhatsApp() {
+            // Get all elements with the class 'whatsapp-link'
+            var whatsappLinks = document.querySelectorAll('.whatsapp-link');
+
+            // Loop through each link
+            whatsappLinks.forEach(function (link) {
+                // Get the phone number from the data attribute
+                var phoneNumber = link.getAttribute('data-phone');
+
+                // Get the message you want to send (replace with your own)
+                var message = "Hi Indian Cabbi, Need some help to book a cab.";
+
+                // Encode the message for the URL
+                var encodedMessage = encodeURIComponent(message);
+
+                // Create the WhatsApp link with the phone number and message
+                var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+
+                // Set the href attribute of the WhatsApp link
+                link.href = whatsappLink;
+            });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener("DOMContentLoaded", openWhatsApp);
+
+
+    </script>
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize Select2 for the city dropdowns
+            $('.city-dropdown').select2({
+                placeholder: 'Search for a city',
+                allowClear: true // Enable clear option
+            });
+        });
+    </script>
+</body>
+
+</html>

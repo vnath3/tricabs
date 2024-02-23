@@ -1,0 +1,25 @@
+project-root/
+|-- assets/
+|   |-- css/
+|   |-- images/
+|   |-- js/
+|
+|-- pages/
+|   |-- index.html            // Main landing page
+|   |-- about.html            // About Us page
+|   |-- contact.html          // Contact Us page
+|   |-- destinations/
+|       |-- index.html        // List of destinations
+|       |-- destination1.html // Details for Destination 1
+|       |-- destination2.html // Details for Destination 2
+|       |-- ...               // Additional destination pages
+|
+|-- partials/
+|   |-- header.html           // Header shared across pages
+|   |-- footer.html           // Footer shared across pages
+|
+|-- scripts/
+|   |-- main.js               // Main JavaScript file
+|
+|-- styles/
+    |-- main.css              // Main CSS file
