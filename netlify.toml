@@ -1,3 +1,2 @@
 [build]
-  base = "pages"
-  publish = "pages/index.html"
+  publish = "pages\index.html"
