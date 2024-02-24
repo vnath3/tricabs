@@ -1,9 +1,21 @@
 [build]
   base = "/"
   publish = "pages"
-  command = "npm run build"
+  command = "npm --prefix pages run build"
 
 [[redirects]]
   from = "/*"
   to = "/pages/:splat"
   status = 200
+
+[[headers]]
+  for = "/*.css"
+    [headers.values]
+      Cache-Control = "public, max-age=31536000, immutable"  # Cache CSS files for a year
+  for = "/*.js"
+    [headers.values]
+      Cache-Control = "public, max-age=31536000, immutable"  # Cache JS files for a year
+  for = "/*.jpg"
+    [headers.values]
+      Cache-Control = "public, max-age=31536000, immutable"  # Cache JPG images for a year
+
