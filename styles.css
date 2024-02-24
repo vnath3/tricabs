@@ -220,7 +220,10 @@ html {
     justify-content: center;
     align-items: center;
     overflow: auto;
-    /* Enable scrolling */
+
+    /* 
+    width: 80vw;
+    max-width: 100%; */
 }
 
 
@@ -589,4 +592,33 @@ button:hover {
 }
 
 
-/* Pending to place  */
+/* Pending for other  */
+
+@media (max-width: 768px) {
+    .modal {
+        width: 100vw;
+        /* Set width to screen width */
+    }
+
+    .modal-content {
+        font-size: 55%;
+        /* Make font size smaller */
+        /* Add other styles as needed */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Reduce padding and margin for table cells and headers */
+    #availableCabsTable th,
+    #availableCabsTable td {
+        padding: 5px;
+        margin: 0;
+        text-align: left;
+    }
+
+    /* Reduce font size for table cells */
+    .modal-content td {
+        font-size: 12px;
+    }
+}
