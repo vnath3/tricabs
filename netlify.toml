@@ -1,6 +1,6 @@
 [build]
-  base = "com.cabbi.indian.prod"
-  publish = "com.cabbi.indian.prod/page"
+  base = "pages"
+  publish = "pages"
   command = "npm run build"  # Or any other build command you use
 
 [[redirects]]
