@@ -235,6 +235,7 @@ html {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    font-weight: bold;
 }
 
 #availableCabsTable th {
@@ -647,6 +648,7 @@ button:hover {
             padding: 5px;
             margin: 0;
             text-align: left;
+            font-weight: bold;
         }
 
         /* Reduce font size for table cells */
@@ -654,3 +656,50 @@ button:hover {
             font-size: 12px;
         }
     }
+}
+
+
+
+
+/* For responsieve modla   */
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: auto;
+        max-height: 400px;
+        /* Adjust the width for smaller screens */
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .modal {
+        width: 100vw;
+        /* Set width to screen width */
+    }
+
+    .modal-content {
+        font-size: 55%;
+        /* Make font size smaller */
+        /* Add other styles as needed */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Reduce padding and margin for table cells and headers */
+    #availableCabsTable th,
+    #availableCabsTable td {
+        padding: 5px;
+        margin: 0;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Reduce font size for table cells */
+    .modal-content td {
+        font-size: 12px;
+    }
+}

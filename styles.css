@@ -247,6 +247,7 @@ html {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    font-weight: bold;
 }
 
 #availableCabsTable th {
@@ -617,6 +618,7 @@ button:hover {
         padding: 5px;
         margin: 0;
         text-align: left;
+        font-weight: bold;
     }
 
     /* Reduce font size for table cells */
