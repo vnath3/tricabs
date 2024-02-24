@@ -526,15 +526,6 @@ button:hover {
 }
 
 
-@media screen and (max-width: 600px) {
-    .modal-content {
-        width: auto;
-        /* Adjust the width for smaller screens */
-        overflow-y: auto;
-        /* Enable vertical scrolling */
-    }
-}
-
 
 /* Adjust height for responsive mode */
 @media (max-width: 768px) {
@@ -593,6 +584,17 @@ button:hover {
 
 
 /* Pending for other  */
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: auto;
+        max-height: 400px;
+        /* Adjust the width for smaller screens */
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+    }
+}
+
 
 @media (max-width: 768px) {
     .modal {
