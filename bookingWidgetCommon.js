@@ -3,7 +3,7 @@
 const link = document.createElement('link');
 link.rel = 'stylesheet';
 link.type = 'text/css';
-link.href = '../styles/bookingWidgetCommon.css'; // Replace 'styles.css' with the path to your CSS file
+link.href = 'bookingWidgetCommon.css'; // Replace 'styles.css' with the path to your CSS file
 document.head.appendChild(link);
 
 // HTML content for the modal
