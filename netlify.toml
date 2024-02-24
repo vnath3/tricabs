@@ -1,9 +1,10 @@
 [build]
-  base = "pages"
-  publish = "pages"
-  command = "npm run build"  # Or any other build command you use
+  base = "project-root"
+  publish = "project-root/pages"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"
   to = "/pages/:splat"
   status = 200
+
