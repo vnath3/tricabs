@@ -1,2 +1,9 @@
 [build]
-  publish = "pages"
+  base = "com.cabbi.indian.prod"
+  publish = "com.cabbi.indian.prod/page"
+  command = "npm run build"  # Or any other build command you use
+
+[[redirects]]
+  from = "/*"
+  to = "/pages/:splat"
+  status = 200
