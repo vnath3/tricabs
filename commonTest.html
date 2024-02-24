@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cabbi - Home</title>
+</head>
+
+<body>
+    <!-- <script>
+        fetch('common-structure.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching common structure:', error);
+            });
+    </script> -->
+
+    <script>
+        // Fetch the common structure file
+        fetch('common-widget.html')
+            .then(response => response.text())
+            .then(data => {
+                // Replace the placeholder with your content
+                const content = '<h2>Your Content Here called from common file </h2>';
+                data = data.replace('<div id="content-placeholder"></div>', content);
+
+                // Set the modified content to the body
+                document.body.innerHTML = data;
+            });
+
+    </script>
+
+    <!-- Your specific content for this page goes here -->
+</body>
+
+</html>
