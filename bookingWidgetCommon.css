@@ -258,7 +258,7 @@ html {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    letter-spacing: -1px;
+    letter-spacing: 0px;
 }
 
 .who-are-we p {
@@ -431,10 +431,6 @@ button:hover {
         align-items: flex-start;
     }
 
-    .location-info {
-        flex: 100%;
-        margin-bottom: 20px;
-    }
 
     .booking-widget {
         flex: 100%;
@@ -449,10 +445,19 @@ button:hover {
 
 }
 
+.location-info {
+    margin-bottom: 20px;
+    height: 500px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 100%;
+}
 
 /* Add new css here */
-.location-info {
-
+.location-info delet {
+    flex: 100%;
+    margin-bottom: 20px;
     height: 500px;
     /* Set height */
     overflow: auto;
@@ -461,6 +466,13 @@ button:hover {
     border: 1px solid #ccc;
     /* Optional: Add border for visualization */
     margin-left: 1.5%;
+
+    width: 100%;
+    /* Ensure the section takes up the full width of its container */
+    max-width: 100%;
+    /* Ensure the section doesn't exceed the full width of the screen */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
 
 .container {
@@ -603,4 +615,120 @@ button:hover {
 
 .video-description p {
     margin: 0;
+}
+
+.car-types-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.car-types-table th,
+.car-types-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.car-types-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.car-types-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.car-types-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.cab-rates-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cab-rates-table th,
+.cab-rates-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.cab-rates-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.cab-rates-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cab-rates-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+
+    .cab-rates-table,
+    .car-types-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .cab-rates-table,
+    .car-types-table thead {
+        /* display: none; */
+    }
+
+    .cab-rates-table,
+    .car-types-table {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .cab-rates-table,
+    .car-types-table {
+        display: block;
+        text-align: center;
+        border: none;
+        padding: 8px;
+    }
+
+    /* .cab-rates-table,
+    .car-types-table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-align: left;
+        width: 50%;
+    }
+
+    .cab-rates-table,
+    .car-types-table td:nth-child(2n+1),
+    .cab-rates-table,
+    .car-types-table th {
+        clear: both;
+        text-align: left;
+    } */
+    .cab-rates-table td:before,
+    .car-types-table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-align: left;
+        width: 50%;
+    }
+
+    /* Clear floats and set text alignment */
+    .cab-rates-table th,
+    .car-types-table th,
+    .cab-rates-table td:nth-child(odd),
+    .car-types-table td:nth-child(odd) {
+        clear: both;
+        text-align: left;
+    }
 }
