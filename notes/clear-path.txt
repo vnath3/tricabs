@@ -1,0 +1,10 @@
+destination.html: Implies a focus on the city as a travel destination.
+city-info.html: Indicates that the page provides general information about the city.
+explore-city.html: Suggests a focus on exploring the attractions and features of the city.
+city-guide.html: Implies that the page serves as a guide to the city, including tips and recommendations.
+discover-city.html: Suggests a focus on discovering unique aspects of the city.
+city-highlights.html: Indicates that the page highlights the key features and attractions of the city.
+city-tour.html: Implies that the page offers a virtual tour or overview of the city.
+city-overview.html: Indicates that the page provides a general overview of the city.
+city-explore.html: Suggests a focus on exploring different aspects of the city, such as culture, history, and attractions.
+city-experience.html: Implies that the page provides an experiential view of the city, focusing on what it's like to visit or live there.
