@@ -488,6 +488,14 @@ button:hover {
 
 
     @media (max-width: 768px) {
+
+        .grid-container {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            /* Adjust column width for smaller screens */
+            gap: 10px;
+            /* Adjust the gap between grid items */
+        }
+
         .modal {
             width: 100vw;
             /* Set width to screen width */
