@@ -83,7 +83,6 @@ html {
     display: inline-block;
     white-space: nowrap;
     animation: tickerAnimation 20s linear infinite;
-    /* Adjust the duration based on your preference */
     color: #fff;
 }
 
@@ -95,17 +94,6 @@ html {
     padding: 20px;
     width: 350px;
     margin: 0 auto;
-    /* position: absolute; */
-    /* right: 10%; */
-    /* Adjust the percentage or use a fixed value as needed */
-    /* top: 50%; */
-
-    /* z-index: 1000; */
-    /* Adjust the value as needed */
-    /* Use for overlay effect */
-    /* position: absolute; */
-    /* transform: translateY(-50%); */
-
 }
 
 .booking-widget button {
@@ -139,61 +127,6 @@ html {
 
 
 
-/* Image Slider */
-.slider-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    position: relative;
-    /* Add this line */
-    top: -250px;
-    /* Adjust this value as needed */
-}
-
-.slider-item {
-    min-width: 100%;
-}
-
-.slider-item img {
-    width: 100%;
-    height: 71%;
-    object-fit: cover;
-    display: block;
-}
-
-.slider-dots {
-    text-align: center;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 8px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-}
-
-.dot.active {
-    background-color: #333;
-}
-
-/* Image Slider Default height for desktop */
-.image-slider {
-    overflow: hidden;
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 500px;
-    /* Default height for desktop */
-}
 
 
 
@@ -308,58 +241,6 @@ html {
 
 }
 
-.card img {
-    /* width: 100%;*/
-    border-radius: 50px;
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: perspective(500px) rotateY(20deg);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 5px solid #4CAF50;
-    /* border: 2px solid #3498db; */
-}
-
-
-.card:hover img {
-    transform: scale(1.2);
-}
-
-.card-content {
-    padding: 20px;
-    transition: background-color 0.3s;
-    border-radius: 50px;
-}
-
-.card:hover .card-content {
-    background-color: #f0f0f0;
-}
-
-.card-title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    transition: color 0.3s;
-}
-
-.card:hover .card-title {
-    /* color: #3498db; */
-    color: #4CAF50;
-
-}
-
-.card-description {
-    color: #555;
-    transition: color 0.3s;
-}
-
-.card:hover .card-description {
-    color: #777;
-}
-
 
 
 
@@ -377,6 +258,7 @@ html {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    letter-spacing: -1px;
 }
 
 .who-are-we p {
@@ -527,31 +409,8 @@ button:hover {
 
 /* Adjust height for responsive mode */
 @media (max-width: 768px) {
-    .slider-item img {
-        /* width: 100%;
-                height: auto;
-                object-fit: cover;
-                object-position: top;
-                display: block; */
-        min-width: 230%;
-    }
-
-    .image-slider {
-        height: 600px;
-        /* Adjust the height as needed */
-    }
 
 
-    .slider-dots {
-        display: none;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        /* Adjust column width for smaller screens */
-        gap: 10px;
-        /* Adjust the gap between grid items */
-    }
 
     .whatsapp-icon {
         font-size: 30px;
@@ -601,6 +460,7 @@ button:hover {
     overflow-y: auto;
     border: 1px solid #ccc;
     /* Optional: Add border for visualization */
+    margin-left: 1.5%;
 }
 
 .container {
@@ -706,3 +566,33 @@ button:hover {
 
 /* new changes */
 /* Container for the video section  css to be added */
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    /* Set your desired height */
+}
+
+.video-description {
+    padding: 10px;
+}
+
+.video-description h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    border-radius: 30px;
+}
+
+.video-description p {
+    margin: 0;
+}

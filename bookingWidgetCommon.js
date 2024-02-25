@@ -51,7 +51,7 @@ function submitBooking() {
         { type: 'Sedan', details: '3 seats, AC, Comfortable', distance: roundOffDistance + ' Km', fare: calculatePrice()[0] + ' ₹' },
         { type: 'SUV', details: '6 seats, AC, Spacious', distance: roundOffDistance + ' Km', fare: calculatePrice()[1] + ' ₹' },
         { type: 'Force Traveller', details: '12 seats, AC, Mini-Bus', distance: roundOffDistance + ' Km', fare: calculatePrice()[3] + ' ₹' },
-        { type: 'Self-Drive', details: 'Hatch or Sedan depending upon availability and location. For more details please call our support center.', distance: roundOffDistance + ' Km', fare: ' NA ₹' },
+        { type: 'Self-Drive', details: 'For more details please call our support center.', distance: roundOffDistance + ' Km', fare: ' NA ₹' },
         // Add more cabs as needed
     ];
 
