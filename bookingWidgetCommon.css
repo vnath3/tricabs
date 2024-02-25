@@ -450,8 +450,7 @@ button:hover {
     height: 500px;
     overflow: auto;
     border: 1px solid #ccc;
-    width: 100%;
-    max-width: 100%;
+    max-width: 91%;
 }
 
 /* Add new css here */
