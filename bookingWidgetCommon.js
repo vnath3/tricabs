@@ -178,7 +178,8 @@ function calculateDistance() {
             'Deolali': 165,
             'Gangapur': 290,
             'Junnar': 160,
-            'Kamthi': 870
+            'Kamthi': 870,
+            'Panjim': 590
         },
         'Pune': {
             'Pune': 0,
@@ -194,7 +195,6 @@ function calculateDistance() {
             'Akola': 600,
             'Jalgaon': 450,
             'Latur': 300,
-            'Ahmednagar': 120,
             'Ratnagiri': 400,
             'Dhule': 370,
             'Nanded': 470,
@@ -224,7 +224,8 @@ function calculateDistance() {
             'Deolali': 210,
             'Gangapur': 200,
             'Junnar': 100,
-            'Kamthi': 790
+            'Kamthi': 790,
+            'Panjim': 440,
         },
         'Nagpur': {
             'Nagpur': 0,
@@ -240,7 +241,6 @@ function calculateDistance() {
             'Akola': 250,
             'Jalgaon': 460,
             'Latur': 570,
-            'Ahmednagar': 780,
             'Ratnagiri': 1100,
             'Dhule': 770,
             'Nanded': 270,
@@ -270,7 +270,8 @@ function calculateDistance() {
             'Deolali': 890,
             'Gangapur': 930,
             'Junnar': 930,
-            'Kamthi': 20
+            'Kamthi': 20,
+            'Panjim': 1050,
         },
         'Nashik': {
             'Nashik': 0,
@@ -286,7 +287,6 @@ function calculateDistance() {
             'Akola': 750,
             'Jalgaon': 200,
             'Latur': 500,
-            'Ahmednagar': 250,
             'Ratnagiri': 880,
             'Dhule': 200,
             'Nanded': 770,
@@ -316,7 +316,8 @@ function calculateDistance() {
             'Deolali': 50,
             'Gangapur': 350,
             'Junnar': 250,
-            'Kamthi': 840
+            'Kamthi': 840,
+            'Panjim': 660,
         },
         'Thane': {
             'Thane': 0,
@@ -332,7 +333,6 @@ function calculateDistance() {
             'Akola': 800,
             'Jalgaon': 250,
             'Latur': 750,
-            'Ahmednagar': 150,
             'Ratnagiri': 920,
             'Dhule': 300,
             'Nanded': 890,
@@ -362,7 +362,8 @@ function calculateDistance() {
             'Deolali': 60,
             'Gangapur': 310,
             'Junnar': 250,
-            'Kamthi': 890
+            'Kamthi': 890,
+            'Panjim': 580,
         },
         'Aurangabad': {
             'Aurangabad': 0,
@@ -407,7 +408,8 @@ function calculateDistance() {
             'Deolali': 620,
             'Gangapur': 480,
             'Junnar': 520,
-            'Kamthi': 590
+            'Kamthi': 590,
+            'Panjim': 560,
         },
         'Solapur': {
             'Solapur': 0,
@@ -452,7 +454,8 @@ function calculateDistance() {
             'Deolali': 740,
             'Gangapur': 510,
             'Junnar': 340,
-            'Kamthi': 100
+            'Kamthi': 100,
+            'Panjim': 485,
         },
         'Kolhapur': {
             'Kolhapur': 0,
@@ -497,7 +500,8 @@ function calculateDistance() {
             'Deolali': 870,
             'Gangapur': 640,
             'Junnar': 470,
-            'Kamthi': 930
+            'Kamthi': 930,
+            'Panjim': 200,
         },
         'Amravati': {
             'Amravati': 0,
@@ -542,7 +546,8 @@ function calculateDistance() {
             'Deolali': 910,
             'Gangapur': 950,
             'Junnar': 870,
-            'Kamthi': 130
+            'Kamthi': 130,
+            'Panjim': 1245,
         },
         'Navi Mumbai': {
             'Navi Mumbai': 0,
@@ -587,7 +592,8 @@ function calculateDistance() {
             'Deolali': 30,
             'Gangapur': 760,
             'Junnar': 160,
-            'Kamthi': 890
+            'Kamthi': 890,
+            'Panjim': 590,
         },
         'Akola': {
             'Akola': 0,
@@ -632,7 +638,8 @@ function calculateDistance() {
             'Deolali': 890,
             'Gangapur': 930,
             'Junnar': 860,
-            'Kamthi': 250
+            'Kamthi': 250,
+            'Panjim': 1140,
         },
         'Jalgaon': {
             'Jalgaon': 0,
@@ -677,7 +684,8 @@ function calculateDistance() {
             'Deolali': 440,
             'Gangapur': 200,
             'Junnar': 420,
-            'Kamthi': 450
+            'Kamthi': 450,
+            'Panjim': 985,
         },
         'Latur': {
             'Latur': 0,
@@ -722,7 +730,8 @@ function calculateDistance() {
             'Deolali': 810,
             'Gangapur': 510,
             'Junnar': 340,
-            'Kamthi': 720
+            'Kamthi': 720,
+            'Panjim': 640,
         },
         'Dhule': {
             'Dhule': 0,
@@ -767,7 +776,8 @@ function calculateDistance() {
             'Deolali': 410,
             'Gangapur': 150,
             'Junnar': 330,
-            'Kamthi': 780
+            'Kamthi': 780,
+            'Panjim': 1050,
         },
         'Nanded': {
             'Nanded': 0,
@@ -812,7 +822,8 @@ function calculateDistance() {
             'Deolali': 590,
             'Gangapur': 400,
             'Junnar': 230,
-            'Kamthi': 290
+            'Kamthi': 290,
+            'Panjim': 774,
         },
         'Sangli': {
             'Sangli': 0,
@@ -857,7 +868,8 @@ function calculateDistance() {
             'Deolali': 820,
             'Gangapur': 610,
             'Junnar': 450,
-            'Kamthi': 980
+            'Kamthi': 980,
+            'Panjim': 230,
         },
         'Malegaon': {
             'Malegaon': 0,
@@ -902,7 +914,8 @@ function calculateDistance() {
             'Deolali': 520,
             'Gangapur': 150,
             'Junnar': 550,
-            'Kamthi': 800
+            'Kamthi': 800,
+            'Panjim': 1135,
         },
         'Jalna': {
             'Jalna': 0,
@@ -947,7 +960,8 @@ function calculateDistance() {
             'Deolali': 650,
             'Gangapur': 410,
             'Junnar': 240,
-            'Kamthi': 520
+            'Kamthi': 520,
+            'Panjim': 725,
         },
         'Chandrapur': {
             'Chandrapur': 0,
@@ -992,7 +1006,8 @@ function calculateDistance() {
             'Deolali': 630,
             'Gangapur': 420,
             'Junnar': 530,
-            'Kamthi': 160
+            'Kamthi': 160,
+            'Panjim': 1435,
         },
         'Bhiwandi': {
             'Bhiwandi': 0,
@@ -1037,7 +1052,8 @@ function calculateDistance() {
             'Deolali': 45,
             'Gangapur': 770,
             'Junnar': 145,
-            'Kamthi': 970
+            'Kamthi': 970,
+            'Panjim': 640,
         },
         'Parbhani': {
             'Parbhani': 0,
@@ -1082,7 +1098,8 @@ function calculateDistance() {
             'Deolali': 590,
             'Gangapur': 420,
             'Junnar': 250,
-            'Kamthi': 320
+            'Kamthi': 320,
+            'Panjim': 725,
         },
         'Ichalkaranji': {
             'Ichalkaranji': 0,
@@ -1127,7 +1144,8 @@ function calculateDistance() {
             'Deolali': 850,
             'Gangapur': 600,
             'Junnar': 740,
-            'Kamthi': 810
+            'Kamthi': 810,
+            'Panjim': 255,
         },
         'Panvel': {
             'Panvel': 0,
@@ -1172,7 +1190,8 @@ function calculateDistance() {
             'Deolali': 70,
             'Gangapur': 760,
             'Junnar': 160,
-            'Kamthi': 890
+            'Kamthi': 890,
+            'Panjim': 585,
         },
         'Satara': {
             'Satara': 0,
@@ -1217,7 +1236,8 @@ function calculateDistance() {
             'Deolali': 600,
             'Gangapur': 330,
             'Junnar': 160,
-            'Kamthi': 890
+            'Kamthi': 890,
+            'Panjim': 265,
         },
         'Beed': {
             'Beed': 0,
@@ -1262,7 +1282,8 @@ function calculateDistance() {
             'Deolali': 810,
             'Gangapur': 410,
             'Junnar': 340,
-            'Kamthi': 570
+            'Kamthi': 570,
+            'Panjim': 640,
         },
         'Yavatmal': {
             'Yavatmal': 0,
@@ -1307,7 +1328,8 @@ function calculateDistance() {
             'Deolali': 710,
             'Gangapur': 520,
             'Junnar': 290,
-            'Kamthi': 270
+            'Kamthi': 270,
+            'Panjim': 1345,
         },
         'Osmanabad': {
             'Osmanabad': 0,
@@ -1352,7 +1374,8 @@ function calculateDistance() {
             'Deolali': 610,
             'Gangapur': 370,
             'Junnar': 200,
-            'Kamthi': 560
+            'Kamthi': 560,
+            'Panjim': 525,
         },
         'Ratnagiri': {
             'Ratnagiri': 0,
@@ -1397,7 +1420,8 @@ function calculateDistance() {
             'Deolali': 320,
             'Gangapur': 920,
             'Junnar': 300,
-            'Kamthi': 1010
+            'Kamthi': 1010,
+            'Panjim': 235,
         },
         'Wardha': {
             'Wardha': 0,
@@ -1442,7 +1466,8 @@ function calculateDistance() {
             'Deolali': 570,
             'Gangapur': 360,
             'Junnar': 580,
-            'Kamthi': 240
+            'Kamthi': 240,
+            'Panjim': 1260,
         },
         'Buldhana': {
             'Buldhana': 0,
@@ -1487,7 +1512,8 @@ function calculateDistance() {
             'Deolali': 470,
             'Gangapur': 230,
             'Junnar': 450,
-            'Kamthi': 770
+            'Kamthi': 770,
+            'Panjim': 1160,
         },
         'Gondia': {
             'Gondia': 0,
@@ -1532,7 +1558,8 @@ function calculateDistance() {
             'Deolali': 800,
             'Gangapur': 660,
             'Junnar': 950,
-            'Kamthi': 250
+            'Kamthi': 250,
+            'Panjim': 1425,
         },
         'Hingoli': {
             'Hingoli': 0,
@@ -1577,7 +1604,8 @@ function calculateDistance() {
             'Deolali': 500,
             'Gangapur': 320,
             'Junnar': 320,
-            'Kamthi': 400
+            'Kamthi': 400,
+            'Panjim': 900,
         },
         'Khopoli': {
             'Khopoli': 0,
@@ -1622,7 +1650,8 @@ function calculateDistance() {
             'Deolali': 70,
             'Gangapur': 780,
             'Junnar': 170,
-            'Kamthi': 1030
+            'Kamthi': 1030,
+            'Panjim': 565,
         },
         'Nandurbar': {
             'Nandurbar': 0,
@@ -1667,7 +1696,8 @@ function calculateDistance() {
             'Deolali': 540,
             'Gangapur': 320,
             'Junnar': 540,
-            'Kamthi': 1080
+            'Kamthi': 1080,
+            'Panjim': 1145,
         },
         'Palghar': {
             'Palghar': 0,
@@ -1712,7 +1742,8 @@ function calculateDistance() {
             'Deolali': 70,
             'Gangapur': 750,
             'Junnar': 190,
-            'Kamthi': 940
+            'Kamthi': 940,
+            'Panjim': 670,
         },
         'Washim': {
             'Washim': 0,
@@ -1757,7 +1788,8 @@ function calculateDistance() {
             'Deolali': 780,
             'Gangapur': 330,
             'Junnar': 560,
-            'Kamthi': 610
+            'Kamthi': 610,
+            'Panjim': 1175,
         },
         'Karad': {
             'Karad': 0,
@@ -1802,7 +1834,8 @@ function calculateDistance() {
             'Deolali': 310,
             'Gangapur': 120,
             'Junnar': 240,
-            'Kamthi': 1000
+            'Kamthi': 1000,
+            'Panjim': 240,
         },
         'Baramati': {
             'Baramati': 0,
@@ -1847,7 +1880,8 @@ function calculateDistance() {
             'Deolali': 240,
             'Gangapur': 130,
             'Junnar': 230,
-            'Kamthi': 950
+            'Kamthi': 950,
+            'Panjim': 410,
         },
         'Chimur': {
             'Chimur': 0,
@@ -1892,7 +1926,8 @@ function calculateDistance() {
             'Deolali': 960,
             'Gangapur': 820,
             'Junnar': 980,
-            'Kamthi': 190
+            'Kamthi': 190,
+            'Panjim': 1245,
         },
         'Deolali': {
             'Deolali': 0,
@@ -1937,7 +1972,8 @@ function calculateDistance() {
             'Chimur': 980,
             'Gangapur': 760,
             'Junnar': 800,
-            'Kamthi': 310
+            'Kamthi': 310,
+            'Panjim': 665,
         },
         'Gangapur': {
             'Gangapur': 0,
@@ -1982,7 +2018,8 @@ function calculateDistance() {
             'Chimur': 820,
             'Deolali': 760,
             'Junnar': 510,
-            'Kamthi': 660
+            'Kamthi': 660,
+            'Panjim': 590,
         },
         'Junnar': {
             'Junnar': 0,
@@ -2027,7 +2064,8 @@ function calculateDistance() {
             'Chimur': 980,
             'Deolali': 230,
             'Gangapur': 550,
-            'Kamthi': 1010
+            'Kamthi': 1010,
+            'Panjim': 425,
         },
         'Kamthi': {
             'Kamthi': 0,
@@ -2072,7 +2110,54 @@ function calculateDistance() {
             'Chimur': 190,
             'Deolali': 410,
             'Gangapur': 600,
-            'Junnar': 1000
+            'Junnar': 1000,
+            'Panjim': 1415,
+        },
+        'Panjim': {
+            'Mumbai': 590,
+            'Pune': 440,
+            'Nagpur': 1050,
+            'Thane': 580,
+            'Nashik': 660,
+            'Aurangabad': 560,
+            'Solapur': 485,
+            'Kolhapur': 200,
+            'Amravati': 1245,
+            'Navi Mumbai': 590,
+            'Akola': 1140,
+            'Jalgaon': 985,
+            'Latur': 640,
+            'Dhule': 1050,
+            'Nanded': 774,
+            'Sangli': 230,
+            'Malegaon': 1135,
+            'Jalna': 725,
+            'Chandrapur': 1435,
+            'Bhiwandi': 640,
+            'Parbhani': 725,
+            'Ichalkaranji': 255,
+            'Panvel': 585,
+            'Satara': 265,
+            'Beed': 640,
+            'Yavatmal': 1345,
+            'Osmanabad': 525,
+            'Ratnagiri': 235,
+            'Wardha': 1260,
+            'Buldhana': 1160,
+            'Gondia': 1425,
+            'Hingoli': 900,
+            'Khopoli': 565,
+            'Nandurbar': 1145,
+            'Palghar': 670,
+            'Washim': 1175,
+            'Karad': 240,
+            'Baramati': 410,
+            'Chimur': 1245,
+            'Deolali': 665,
+            'Gangapur': 590,
+            'Junnar': 425,
+            'Kamthi': 1415,
+            'Panjim': 0
         }
     };
 
