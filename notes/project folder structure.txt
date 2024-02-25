@@ -23,3 +23,14 @@ project-root/
 |
 |-- styles/
     |-- main.css              // Main CSS file
+
+
+|-- explore/
+|   |-- india/
+        |-- images/
+            | -- delhi
+                | -- car-rental.html
+                | -- city-details.html
+| -- script.js
+| -- styles.css
+| -- index.html
