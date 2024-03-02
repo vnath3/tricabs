@@ -236,6 +236,8 @@ html {
     border-radius: 5px;
     margin-top: 20%;
     max-width: 75%;
+    position: relative;
+    text-align: center;
 }
 
 #availableCabsTable {
@@ -273,10 +275,6 @@ html {
     color: #000;
 }
 
-.modal-content {
-    position: relative;
-    text-align: center;
-}
 
 #errorModal {
 
@@ -564,7 +562,7 @@ button:hover {
         max-width: 100%;
         background-color: #00d3fb;
         padding: 20px;
-
+        align-self: center;
         /* background-image: url(images/sliderImages/Travel_Tips.png); */
         /* Adjust the height as needed */
     }
