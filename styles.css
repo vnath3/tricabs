@@ -546,7 +546,9 @@ button:hover {
 
 
 /* Adjust height for responsive mode */
-@media (max-width: 768px) {
+@media screen and (max-width: 375px),
+(max-width: 414px),
+(max-width: 768px) {
     .slider-item img {
         /* width: 100%;
                 height: auto;
@@ -562,13 +564,13 @@ button:hover {
         max-width: 100%;
         background-color: #00d3fb;
         padding: 20px;
-        align-self: center;
+        align-self: flex-end;
         /* background-image: url(images/sliderImages/Travel_Tips.png); */
         /* Adjust the height as needed */
     }
 
     .booking-widget {
-        left: 0px;
+        left: 1vh;
         position: relative;
         top: -50%;
     }
@@ -609,7 +611,9 @@ button:hover {
 
 /* Pending for other  */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px),
+(max-width: 414px),
+(max-width: 768px) {
     .modal-content {
         width: auto;
         max-height: 400px;
@@ -620,7 +624,7 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .modal {
         width: 100vw;
         /* Set width to screen width */
@@ -633,7 +637,9 @@ button:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 375px),
+(max-width: 414px),
+(max-width: 768px) {
 
     /* Reduce padding and margin for table cells and headers */
     #availableCabsTable th,
@@ -659,7 +665,9 @@ button:hover {
 }
 
 /* Responsive header logo */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px),
+(max-width: 414px),
+(max-width: 768px) {
     .header-logo img {
         max-width: 24%;
     }
