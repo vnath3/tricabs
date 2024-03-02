@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 0px;
     text-align: center;
@@ -24,6 +24,7 @@ header {
 /* Affects all secction */
 section {
     padding: 40px;
+    background-color: #00d3fb;
 }
 
 /* Smooth scrolling */
@@ -76,7 +77,7 @@ html {
 /* Ticker section */
 .ticker-container {
     overflow: hidden;
-    background-color: #333;
+    background-color: #000000;
 }
 
 .ticker {
@@ -199,6 +200,7 @@ html {
     overflow: hidden;
     position: relative;
     max-width: 100%;
+    max-height: 100%;
     margin: 0 auto;
     height: 500px;
     /* Default height for desktop */
@@ -302,6 +304,7 @@ html {
     justify-content: space-around;
     /* Adjust based on your design */
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .card {
@@ -330,9 +333,9 @@ html {
 }
 
 .card:hover {
-    transform: perspective(500px) rotateY(20deg);
+    transform: perspective(500px) rotateY(5deg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 5px solid #4CAF50;
+    border: 5px solid #000000;
     /* border: 2px solid #3498db; */
 }
 
@@ -345,6 +348,8 @@ html {
     padding: 20px;
     transition: background-color 0.3s;
     border-radius: 50px;
+    max-height: 150px;
+    font-size: smaller;
 }
 
 .card:hover .card-content {
@@ -372,7 +377,18 @@ html {
     color: #777;
 }
 
+.card-section {
+    padding: 0px;
+    background-color: #00d3fb;
+    /* background-color: #3498db; */
+    /* background: linear-gradient(45deg,
+            transparent 5%,
+            #FF671F 25%,
+            transparent 5%,
+            transparent 5%,
+            #046A38 75%); */
 
+}
 
 
 
@@ -384,7 +400,7 @@ html {
 .who-are-we {
     padding: 50px 20px;
     text-align: left;
-    max-width: 75%;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
@@ -437,7 +453,7 @@ html {
 /* Fotter Section */
 
 .footer-section {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -510,8 +526,11 @@ button:hover {
 .whatsapp-icon {
     display: inline-block;
     margin: -20px 80px;
+    /* margin-top: -11px;
+    margin-right: 4%; */
     color: #fff;
     font-size: 40px;
+
 }
 
 /* Responsive Section */
@@ -537,10 +556,16 @@ button:hover {
                 object-position: top;
                 display: block; */
         min-width: 230%;
+        display: none;
     }
 
     .image-slider {
-        height: 600px;
+        max-height: 86%;
+        max-width: 100%;
+        background-color: #00d3fb;
+        padding: 20px;
+
+        /* background-image: url(images/sliderImages/Travel_Tips.png); */
         /* Adjust the height as needed */
     }
 
@@ -624,5 +649,20 @@ button:hover {
     /* Reduce font size for table cells */
     .modal-content td {
         font-size: 12px;
+    }
+}
+
+/* Logo styling */
+.header-logo img {
+    max-width: 5%;
+    height: auto;
+    display: block;
+    /* margin: 0 auto; */
+}
+
+/* Responsive header logo */
+@media screen and (max-width: 768px) {
+    .header-logo img {
+        max-width: 24%;
     }
 }
