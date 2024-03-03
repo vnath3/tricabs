@@ -35,10 +35,10 @@ function submitBooking() {
     var roundOffDistance = calculateDistance()[1];
 
     var availableCabs = [
-        { type: 'Hatchback', details: '3 seats, Non-AC, Economical', distance: roundOffDistance + ' Km', fare: calculatePrice()[2] + ' ₹' },
-        { type: 'Sedan', details: '3 seats, AC, Comfortable', distance: roundOffDistance + ' Km', fare: calculatePrice()[0] + ' ₹' },
-        { type: 'SUV', details: '6 seats, AC, Spacious', distance: roundOffDistance + ' Km', fare: calculatePrice()[1] + ' ₹' },
-        { type: 'Force Traveller', details: '12 seats, AC, Mini-Bus', distance: roundOffDistance + ' Km', fare: calculatePrice()[3] + ' ₹' },
+        { type: 'Hatchback', details: '3 seats, Non-AC, Economical', distance: roundOffDistance + ' Km', fare: calculatePrice()[2].toLocaleString() + ' ₹' },
+        { type: 'Sedan', details: '3 seats, AC, Comfortable', distance: roundOffDistance + ' Km', fare: calculatePrice()[0].toLocaleString() + ' ₹' },
+        { type: 'SUV', details: '6 seats, AC, Spacious', distance: roundOffDistance + ' Km', fare: calculatePrice()[1].toLocaleString() + ' ₹' },
+        { type: 'Force Traveller', details: '12 seats, AC, Mini-Bus', distance: roundOffDistance + ' Km', fare: calculatePrice()[3].toLocaleString() + ' ₹' },
         { type: 'Self-Drive', details: 'For more details please call our support center.', distance: roundOffDistance + ' Km', fare: ' NA ₹' },
         // Add more cabs as needed
     ];

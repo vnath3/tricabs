@@ -39,6 +39,11 @@ html {
     text-align: center;
 }
 
+#home h2 {
+    /* font-family: 'Arial', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 /* Burger Menu */
 .burger-menu {
@@ -176,7 +181,7 @@ html {
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 1;
 }
 
 .dot {
@@ -222,7 +227,8 @@ html {
     justify-content: center;
     align-items: center;
     overflow: auto;
-
+    z-index: 1000;
+    /* Set a higher z-index */
     /* 
     width: 80vw;
     max-width: 100%; */
@@ -238,6 +244,9 @@ html {
     max-width: 75%;
     position: relative;
     text-align: center;
+    padding-bottom: 10%;
+
+    /* Add more padding as needed */
 }
 
 #availableCabsTable {
@@ -610,6 +619,35 @@ button:hover {
 
 
 /* Pending for other  */
+.whatsapp-icon-fixed {
+    width: 4%;
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 340%;
+    cursor: pointer;
+    text-decoration: none;
+    position: fixed;
+    left: 93%;
+    bottom: 15%;
+    z-index: 1000;
+    /* Update z-index value */
+}
+
+@media screen and (max-width: 768px) {
+    .whatsapp-icon-fixed {
+        left: 75%;
+        bottom: 15%;
+        font-size: 340%;
+        width: 17%;
+    }
+}
+
+
+/* Resopinsive  */
 
 @media screen and (max-width: 375px),
 (max-width: 414px),
@@ -639,7 +677,7 @@ button:hover {
 
     .close {
         top: 1%;
-        right: -22%;
+        right: -8%;
     }
 }
 
