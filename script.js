@@ -2356,7 +2356,7 @@ function openWhatsApp() {
         var phoneNumber = link.getAttribute('data-phone');
 
         // Get the message you want to send (replace with your own)
-        var message = "Hi Indian Cabbi, Need some help to book a cab.";
+        var message = "Hi Axis cabs, Need some help to book a cab.";
 
         // Encode the message for the URL
         var encodedMessage = encodeURIComponent(message);

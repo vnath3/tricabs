@@ -683,6 +683,10 @@ button:hover {
         top: 1%;
         right: -8%;
     }
+
+    #home {
+        height: fit-content;
+    }
 }
 
 @media screen and (max-width: 375px),
