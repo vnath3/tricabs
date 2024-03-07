@@ -745,6 +745,31 @@ button:hover {
         clear: both;
         text-align: left;
     }
+
+    .who-are-we p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .who-are-we h2 {
+        font-size: 2em;
+        color: #3498db;
+        margin-bottom: 20px;
+    }
+
+    .who-are-we ul {
+        /* list-style-type: none; */
+        padding: 0px;
+        margin: 3%;
+        line-height: 1.4em;
+    }
+
+    .who-are-we li {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+
+    }
 }
 
 /* Pending for other  */
