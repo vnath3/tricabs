@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Travel Made Easy</title>
+    <meta name="description"
+        content="Axis cabs offers reliable and affordable car rental services across India. Book your next ride with us and experience hassle-free travel. Axis cabs is India's best car rental service. For car rental please contact us at +91 9922333305.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="car rental, cab service, car hire, car booking, Axis cabs, India, travel, transportation, travel agency, travel guide">
+
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Travel Made Easy">
+    <meta property="og:description"
+        content="Axis cabs offers reliable and affordable car rental services across India. Book your next ride with us and experience hassle-free travel. Contact us at +91 9922333305.">
+    <meta property="og:image" content="http://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="http://axiscabs.com/about-us">
+    <meta property="og:site_name" content="Axis cabs">
+    <meta property="og:type" content="website">
+
+    <!-- Specify Image Dimensions -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Local Business Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Axis cabs",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "New Osmanpura",
+        "addressLocality": "Jyoti Nagar",
+        "addressRegion": "Maharashtra",
+        "postalCode": "431005",
+        "addressCountry": "India"
+      },
+      "telephone": "+91 9922333305",
+      "image": "https://example.com/images/indian_cabbi_logo.jpg",
+      "url": "https://example.com/indiancabbi"
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="test2.css">
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+
+
+<body>
+    <header class="header-logo">
+        <img src="images/logo/axis-cabs-logo-1.png" alt="axis-cabs-logo">
+
+
+        <!-- <a href="#" class="whatsapp-link whatsapp-icon" data-phone="+919922333305">
+            <img alt=""><i class="fab fa-whatsapp"></i>
+        </a> -->
+
+
+        <div class="burger-menu" id="burgerMenu">
+            <i class="fas fa-bars burger-icon"></i>
+        </div>
+
+    </header>
+
+    <!-- <div class="ticker-container">
+            <div class="ticker">
+                <p>📞 Call us at <a classs="mob-link" href="tel:+919922333305" style="color: #fff;">+91
+                        9922 3333
+                        05</a>
+                </p>
+            </div>
+        </div> -->
+
+    <div class="menu-options" id="menuOptions">
+        <a href="#booking">Book a Cab</a>
+        <a href="#summer">Summer Trips</a>
+        <a href="#winter">Winter Trips</a>
+        <a href="#rainy">Rainy Trips</a>
+        <a href="#guide">Guide to India</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About Us</a>
+    </div>
+
+
+    <section id="home">
+        <h2>Travel Made Easy with Axis Cabs</h2>
+        <a href="#" class="whatsapp-icon-fixed whatsapp-link" data-phone="+919922333305">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </section>
+
+
+
+
+    </div>
+
+
+    <div class="container">
+        <div class="left-content">
+            <!-- Content related to a specific city -->
+            <h2>City Name</h2>
+            <p>City details and content here..Built-in React Hooks
+                Hooks let you use different React features from your components. You can either use the built-in Hooks
+                or combine them to build your own. This page lists all built-in Hooks in React.
+
+                State Hooks
+                State lets a component “remember” information like user input. For example, a form component can use
+                state to store the input value, while an image gallery component can use state to store the selected
+                image index.
+
+                To add state to a component, use one of these Hooks:
+
+                useState declares a state variable that you can update directly.
+                useReducer declares a state variable with the update logic inside a reducer function.
+                function ImageGallery() {
+                const [index, setIndex] = useState(0);
+                // ...
+                Context Hooks
+                Context lets a component receive information from distant parents without passing it as props. For
+                example, your app’s top-level component can pass the current UI theme to all components below, no matter
+                how deep.
+
+                useContext reads and subscribes to a context.
+                function Button() {
+                const theme = useContext(ThemeContext);
+                // ...
+                Ref Hooks
+                Refs let a component hold some information that isn’t used for rendering, like a DOM node or a timeout
+                ID. Unlike with state, updating a ref does not re-render your component. Refs are an “escape hatch” from
+                the React paradigm. They are useful when you need to work with non-React systems, such as the built-in
+                browser APIs.
+
+                useRef declares a ref. You can hold any value in it, but most often it’s used to hold a DOM node.
+                useImperativeHandle lets you customize the ref exposed by your component. This is rarely used.
+                function Form() {
+                const inputRef = useRef(null);
+                // ...
+                Effect Hooks
+                Effects let a component connect to and synchronize with external systems. This includes dealing with
+                network, browser DOM, animations, widgets written using a different UI library, and other non-React
+                code.
+
+                useEffect connects a component to an external system.
+                function ChatRoom({ roomId }) {
+                useEffect(() => {
+                const connection = createConnection(roomId);
+                connection.connect();
+                return () => connection.disconnect();
+                }, [roomId]);
+                // ...
+                Effects are an “escape hatch” from the React paradigm. Don’t use Effects to orchestrate the data flow of
+                your application. If you’re not interacting with an external system, you might not need an Effect.
+
+                There are two rarely used variations of useEffect with differences in timing:
+
+                useLayoutEffect fires before the browser repaints the screen. You can measure layout here.
+                useInsertionEffect fires before React makes changes to the DOM. Libraries can insert dynamic CSS here.
+                Performance Hooks
+                A common way to optimize re-rendering performance is to skip unnecessary work. For example, you can tell
+                React to reuse a cached calculation or to skip a re-render if the data has not changed since the
+                previous render.
+
+                To skip calculations and unnecessary re-rendering, use one of these Hooks:
+
+                useMemo lets you cache the result of an expensive calculation.
+                useCallback lets you cache a function definition before passing it down to an optimized component.
+                function TodoList({ todos, tab, theme }) {
+                const visibleTodos = useMemo(() => filterTodos(todos, tab), [todos, tab]);
+                // ...
+                }
+                Sometimes, you can’t skip re-rendering because the screen actually needs to update. In that case, you
+                can improve performance by separating blocking updates that must be synchronous (like typing into an
+                input) from non-blocking updates which don’t need to block the user interface (like updating a chart).
+
+                To prioritize rendering, use one of these Hooks:
+
+                useTransition lets you mark a state transition as non-blocking and allow other updates to interrupt it.
+                useDeferredValue lets you defer updating a non-critical part of the UI and let other parts update first.
+                Resource Hooks
+                Resources can be accessed by a component without having them as part of their state. For example, a
+                component can read a message from a Promise or read styling information from a context.
+
+                To read a value from a resource, use this Hook:
+
+                use lets you read the value of a resource like a Promise or context.
+                function MessageComponent({ messagePromise }) {
+                const message = use(messagePromise);
+                const theme = use(ThemeContext);
+                // ...
+                }
+                Other Hooks
+                These Hooks are mostly useful to library authors and aren’t commonly used in the application code.
+
+                useDebugValue lets you customize the label React DevTools displays for your custom Hook.
+                useId lets a component associate a unique ID with itself. Typically used with accessibility APIs.
+                useSyncExternalStore lets a component subscribe to an external store.
+                Your own Hooks
+                You can also define your own custom Hooks as JavaScript functions.
+
+                PREVIOUS
+                Overview
+                NEXT
+                use
+                How do you like these docs?
+
+                Take our survey!
+            </p>
+        </div>
+        <div class="booking-section booking-widget" id="booking">
+            <h2>Book Your Car</h2>
+            <label for="source">Source City:</label>
+            <select id="source" required class="city-dropdown">
+                <option value="" selected disabled></option>
+                <option value="Mumbai">Mumbai, Maharashtra</option>
+                <option value="Pune">Pune, Maharashtra</option>
+                <option value="Nagpur">Nagpur, Maharashtra</option>
+                <option value="Thane">Thane, Maharashtra</option>
+                <option value="Nashik">Nashik, Maharashtra</option>
+                <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                <option value="Solapur">Solapur, Maharashtra</option>
+                <option value="Amravati">Amravati, Maharashtra</option>
+                <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                <option value="Akola">Akola, Maharashtra</option>
+                <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                <option value="Latur">Latur, Maharashtra</option>
+                <option value="Dhule">Dhule, Maharashtra</option>
+                <option value="Nanded">Nanded, Maharashtra</option>
+                <option value="Sangli">Sangli, Maharashtra</option>
+                <option value="Malegaon">Malegaon, Maharashtra</option>
+                <option value="Jalna">Jalna, Maharashtra</option>
+                <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                <option value="Parbhani">Parbhani, Maharashtra</option>
+                <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                <option value="Panvel">Panvel, Maharashtra</option>
+                <option value="Satara">Satara, Maharashtra</option>
+                <option value="Beed">Beed, Maharashtra</option>
+                <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                <option value="Wardha">Wardha, Maharashtra</option>
+                <option value="Gondia">Gondia, Maharashtra</option>
+                <option value="Hingoli">Hingoli, Maharashtra</option>
+                <option value="Khopoli">Khopoli, Maharashtra</option>
+                <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                <option value="Palghar">Palghar, Maharashtra</option>
+                <option value="Washim">Washim, Maharashtra</option>
+                <option value="Karad">Karad, Maharashtra</option>
+                <option value="Baramati">Baramati, Maharashtra</option>
+                <option value="Chimur">Chimur, Maharashtra</option>
+                <option value="Deolali">Deolali, Maharashtra</option>
+                <option value="Gangapur">Gangapur, Maharashtra</option>
+                <option value="Junnar">Junnar, Maharashtra</option>
+                <option value="Kamthi">Kamthi, Maharashtra</option>
+                <option value="Panjim">Panjim, Goa</option>
+
+            </select>
+            <label for="destination">Destination City:</label>
+            <select id="destination" required class="city-dropdown">
+                <option value="" selected disabled></option>
+                <option value="Mumbai">Mumbai, Maharashtra</option>
+                <option value="Pune">Pune, Maharashtra</option>
+                <option value="Nagpur">Nagpur, Maharashtra</option>
+                <option value="Thane">Thane, Maharashtra</option>
+                <option value="Nashik">Nashik, Maharashtra</option>
+                <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                <option value="Solapur">Solapur, Maharashtra</option>
+                <option value="Amravati">Amravati, Maharashtra</option>
+                <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                <option value="Akola">Akola, Maharashtra</option>
+                <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                <option value="Latur">Latur, Maharashtra</option>
+                <option value="Dhule">Dhule, Maharashtra</option>
+                <option value="Nanded">Nanded, Maharashtra</option>
+                <option value="Sangli">Sangli, Maharashtra</option>
+                <option value="Malegaon">Malegaon, Maharashtra</option>
+                <option value="Jalna">Jalna, Maharashtra</option>
+                <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                <option value="Parbhani">Parbhani, Maharashtra</option>
+                <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                <option value="Panvel">Panvel, Maharashtra</option>
+                <option value="Satara">Satara, Maharashtra</option>
+                <option value="Beed">Beed, Maharashtra</option>
+                <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                <option value="Wardha">Wardha, Maharashtra</option>
+                <option value="Gondia">Gondia, Maharashtra</option>
+                <option value="Hingoli">Hingoli, Maharashtra</option>
+                <option value="Khopoli">Khopoli, Maharashtra</option>
+                <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                <option value="Palghar">Palghar, Maharashtra</option>
+                <option value="Washim">Washim, Maharashtra</option>
+                <option value="Karad">Karad, Maharashtra</option>
+                <option value="Baramati">Baramati, Maharashtra</option>
+                <option value="Chimur">Chimur, Maharashtra</option>
+                <option value="Deolali">Deolali, Maharashtra</option>
+                <option value="Gangapur">Gangapur, Maharashtra</option>
+                <option value="Junnar">Junnar, Maharashtra</option>
+                <option value="Kamthi">Kamthi, Maharashtra</option>
+                <option value="Panjim">Panjim, Goa</option>
+
+            </select>
+            <label for="travelDate">Date:</label>
+            <input type="date" id="travelDate" value="" min="2024-01-27" required>
+            <!-- Set default value to current date + 1 -->
+            <label for="pickupTime">Pickup Time:</label>
+            <input type="time" id="pickupTime" value="07:00" required>
+            <!-- Set default value to 7 am -->
+            <button onclick="submitBooking()">Book Now</button>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Available Cabs</h2>
+            <table id="availableCabsTable">
+                <thead>
+                    <tr>
+                        <th>Cab Type</th>
+                        <th>Details</th>
+                        <th>Distance</th> <!-- Add this line -->
+                        <th>Price</th> <!-- Add this line -->
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="availableCabsBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeErrorModal()">&times;</span>
+            <p>Start and end, please! Our cabs aren't mind readers. 🚕📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="grid-container">
+            <!-- Section 1: Basic -->
+            <div class="grid-item">
+                <h4>Basic </h4>
+                <ul>
+                    <li><a href="tri-cabs/about-us.html">About Us</a></li>
+                    <li><a href="tri-cabs/terms-and-conditions.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+
+
+            <!-- Section 3: North India -->
+            <div class="grid-item">
+                <h4>Explore North India</h4>
+                <ul class="footer-links">
+                    <li><a href="explore/india/delhi/city-details.html">Delhi</a></li>
+                    <li><a href="cities/Jaipur.html">Jaipur</a></li>
+                    <li><a href="cities/Agra.html">Agra</a></li>
+                    <li><a href="cities/Varanasi.html">Varanasi</a></li>
+                    <li><a href="cities/Amritsar.html">Amritsar</a></li>
+                    <li><a href="cities/Haridwar.html">Haridwar</a></li>
+                    <li><a href="cities/Shimla.html">Shimla</a></li>
+                    <li><a href="cities/Lucknow.html">Lucknow</a></li>
+                    <li><a href="cities/Rishikesh.html">Rishikesh</a></li>
+                    <li><a href="cities/Chandigarh.html">Chandigarh</a></li>
+                    <li><a href="cities/Jodhpur.html">Jodhpur</a></li>
+                    <li><a href="cities/Pushkar.html">Pushkar</a></li>
+                    <li><a href="cities/Udaipur.html">Udaipur</a></li>
+                    <li><a href="cities/Khajuraho.html">Khajuraho</a></li>
+                    <li><a href="cities/Dehradun.html">Dehradun</a></li>
+                    <li><a href="cities/Bikaner.html">Bikaner</a></li>
+                    <li><a href="cities/Dharamshala.html">Dharamshala</a></li>
+                    <li><a href="cities/Nainital.html">Nainital</a></li>
+                    <li><a href="cities/Ajmer.html">Ajmer</a></li>
+                    <li><a href="cities/Mathura.html">Mathura</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 2: South India -->
+            <div class="grid-item">
+                <h4>Explore South India</h4>
+                <ul>
+                    <li><a href="cities/Chennai.html">Chennai</a></li>
+                    <li><a href="cities/Bangalore.html">Bangalore</a></li>
+                    <li><a href="cities/Hyderabad.html">Hyderabad</a></li>
+                    <li><a href="cities/Kochi.html">Kochi</a></li>
+                    <li><a href="cities/Mysuru.html">Mysuru</a></li>
+                    <li><a href="cities/Thiruvananthapuram.html">Thiruvananthapuram</a></li>
+                    <li><a href="cities/Coimbatore.html">Coimbatore</a></li>
+                    <li><a href="cities/Vijayawada.html">Vijayawada</a></li>
+                    <li><a href="cities/Visakhapatnam.html">Visakhapatnam</a></li>
+                    <li><a href="cities/Mangalore.html">Mangalore</a></li>
+                    <li><a href="cities/Puducherry.html">Puducherry</a></li>
+                    <li><a href="cities/Madurai.html">Madurai</a></li>
+                    <li><a href="cities/Trichy.html">Trichy</a></li>
+                    <li><a href="cities/Kozhikode.html">Kozhikode</a></li>
+                    <li><a href="cities/Tirupati.html">Tirupati</a></li>
+                    <li><a href="cities/Salem.html">Salem</a></li>
+                    <li><a href="cities/Warangal.html">Warangal</a></li>
+                    <li><a href="cities/Tirunelveli.html">Tirunelveli</a></li>
+                    <li><a href="cities/Hubli.html">Hubli</a></li>
+                    <li><a href="cities/Belgaum.html">Belgaum</a></li>
+
+                </ul>
+            </div>
+
+
+            <!-- Section 4: West India -->
+            <div class="grid-item">
+                <h4>Explore West India</h4>
+                <ul>
+                    <li><a href="Mumbai.html">Mumbai</a></li>
+                    <li><a href="Goa.html">Goa</a></li>
+                    <li><a href="Jaipur.html">Jaipur</a></li>
+                    <li><a href="Ahmedabad.html">Ahmedabad</a></li>
+                    <li><a href="Pune.html">Pune</a></li>
+                    <li><a href="Udaipur.html">Udaipur</a></li>
+                    <li><a href="Vadodara.html">Vadodara</a></li>
+                    <li><a href="Surat.html">Surat</a></li>
+                    <li><a href="Nashik.html">Nashik</a></li>
+                    <li><a href="Panaji.html">Panaji</a></li>
+                    <li><a href="Aurangabad.html">Aurangabad</a></li>
+                    <li><a href="Thane.html">Thane</a></li>
+                    <li><a href="Nagpur.html">Nagpur</a></li>
+                    <li><a href="Kolhapur.html">Kolhapur</a></li>
+                    <li><a href="Ratnagiri.html">Ratnagiri</a></li>
+                    <li><a href="NaviMumbai.html">Navi Mumbai</a></li>
+                    <li><a href="Bhopal.html">Bhopal</a></li>
+                    <li><a href="Indore.html">Indore</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Section 5: East India -->
+            <div class="grid-item">
+                <h4>Explore East India</h4>
+                <ul>
+                    <li><a href="Kolkata.html">Kolkata</a></li>
+                    <li><a href="Darjeeling.html">Darjeeling</a></li>
+                    <li><a href="Bhubaneswar.html">Bhubaneswar</a></li>
+                    <li><a href="Puri.html">Puri</a></li>
+                    <li><a href="Guwahati.html">Guwahati</a></li>
+                    <li><a href="Shillong.html">Shillong</a></li>
+                    <li><a href="Patna.html">Patna</a></li>
+                    <li><a href="Ranchi.html">Ranchi</a></li>
+                    <li><a href="Jamshedpur.html">Jamshedpur</a></li>
+                    <li><a href="Siliguri.html">Siliguri</a></li>
+                    <li><a href="Durgapur.html">Durgapur</a></li>
+                    <li><a href="Howrah.html">Howrah</a></li>
+                    <li><a href="Agartala.html">Agartala</a></li>
+                    <li><a href="Imphal.html">Imphal</a></li>
+                    <li><a href="Aizawl.html">Aizawl</a></li>
+                    <li><a href="Itanagar.html">Itanagar</a></li>
+                    <li><a href="Kohima.html">Kohima</a></li>
+                    <li><a href="Gangtok.html">Gangtok</a></li>
+                    <li><a href="Dimapur.html">Dimapur</a></li>
+                    <li><a href="Bokaro.html">Bokaro</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+919922333305"><i class=" fas fa-phone-alt"></i>
+            </a>
+            <a href="#" class="whatsapp-link" data-phone="+919922333305" class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+
+
+        <div class="copyright">
+            <p>&copy; 2024 Axis cabs. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="test2.js"></script>
+</body>
+
+</html>
