@@ -1,0 +1,50 @@
+<!-- bookingConfirmation.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <h2>Booking Confirmation</h2>
+    <table id="confirmationBody">
+        <thead>
+            <tr>
+                <th>Cab Type</th>
+                <th>Details</th>
+                <th>Distance</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        // Retrieve the booking data from localStorage
+        var availableCabs = JSON.parse(localStorage.getItem('bookingData'));
+
+        // Display the booking data in the table
+        var confirmationBody = document.querySelector('#confirmationBody tbody');
+        availableCabs.forEach(cab => {
+            var row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${cab.type}</td>
+                <td>${cab.details}</td>
+                <td>${cab.distance}</td>
+                <td>${cab.fare}</td>
+            `;
+            confirmationBody.appendChild(row);
+        });
+
+        // Clear the booking data from localStorage
+        localStorage.removeItem('bookingData');
+
+    </script>
+</body>
+
+</html>

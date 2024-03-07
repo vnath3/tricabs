@@ -6,19 +6,6 @@ link.type = 'text/css';
 link.href = 'common.css'; // Replace 'styles.css' with the path to your CSS file
 document.head.appendChild(link);
 
-// HTML content for the modal
-const modalHTML = `
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <!-- Modal content goes here -->
-    </div>
-</div>
-`;
-
-// Add the modal HTML to the document body
-document.body.insertAdjacentHTML('beforeend', modalHTML);
-
-
 $(document).ready(function () {
     // Initialize Select2 for the city dropdowns
     $('.city-dropdown').select2({
@@ -55,48 +42,32 @@ function submitBooking() {
         // Add more cabs as needed
     ];
 
-    // Display the modal
-    var modal = document.getElementById('myModal');
-    modal.style.display = 'flex';
 
-    // Display the list of available cabs in the modal table
-    var availableCabsBody = document.getElementById('availableCabsBody');
-    availableCabsBody.innerHTML = '';
+    // Store the booking data in localStorage
+    localStorage.setItem('bookingData', JSON.stringify(availableCabs));
 
+    // Open a new window with the booking details
+    var bookingWindow = window.open('bookingConfirmation.html', '_self');
+
+    // Display the list of available cabs in the booking window
+    var availableCabsBody = bookingWindow.document.getElementById('availableCabsBody');
     availableCabs.forEach(cab => {
-        var row = document.createElement('tr');
-
-        var randomId = Math.random().toString(36).substring(7); // Generate a random ID
-        var nameInputId = `${cab.type.toLowerCase()}_Type_${randomId}`;
-        var mobileNumberInputId = `${cab.type.toLowerCase()}MobileNumber_${randomId}`;
-        var confirmButtonId = `confirmButton_${randomId}`;
+        var row = bookingWindow.document.createElement('tr');
 
         row.innerHTML = `
-    <td>${cab.type}</td>
-    <td>${cab.details}</td>
-    <td id>${cab.distance}</td>
-    <td>${cab.fare}</td>
-    <td>
-        <input type="text" id="${nameInputId}" placeholder="Full Name *" maxlength="25" pattern="[A-Za-z ]+" title="Please enter only alphabets and limit to 25 characters" required />
-        
-        <input type="tel" id="${mobileNumberInputId}" placeholder="10 digit Mobile Number *" maxlength="10" pattern="[0-9]{1,10}" title="Please enter a valid 1 to 12-digit mobile number" inputmode="numeric" pattern="[0-9]*" required />
-        <button id="${confirmButtonId}" onclick="confirmBooking('${cab.type}', '${cab.fare}', '${nameInputId}', '${mobileNumberInputId}','${cab.distance}')" disabled>Confirm Booking</button>
-    </td>
-`;
+            <td>${cab.type}</td>
+            <td>${cab.details}</td>
+            <td>${cab.distance}</td>
+            <td>${cab.fare}</td>
+            <td>
+                <button onclick="confirmBooking('${cab.type}', '${cab.fare}', '${cab.distance}')">Confirm Booking</button>
+            </td>
+        `;
         availableCabsBody.appendChild(row);
-
-        // Add input event listeners to enable/disable the button based on input validity
-        var nameInput = document.getElementById(nameInputId);
-        var mobileNumberInput = document.getElementById(mobileNumberInputId);
-        var confirmButton = document.getElementById(confirmButtonId);
-
-        nameInput.addEventListener('input', updateButtonState);
-        mobileNumberInput.addEventListener('input', updateButtonState);
-
-        function updateButtonState() {
-            confirmButton.disabled = !(nameInput.validity.valid && mobileNumberInput.validity.valid);
-        }
     });
+
+    // Clear the booking data from localStorage after opening bookingConfirmation.html
+    localStorage.removeItem('bookingData');
 }
 
 
@@ -2337,3 +2308,17 @@ function openWhatsApp() {
 
 // Call the function when the page loads
 document.addEventListener("DOMContentLoaded", openWhatsApp);
+
+// Clear city selection on browser back button press
+window.addEventListener('pageshow', function (event) {
+    var source = document.getElementById('source');
+    var destination = document.getElementById('destination');
+
+    // Check if the source and destination elements exist
+    if (source && destination) {
+        // Clear the city selection
+        source.value = '';
+        destination.value = '';
+    }
+});
+
