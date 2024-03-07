@@ -1,0 +1,790 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    ;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Affects all secction */
+section {
+    padding: 40px;
+    background-color: #00d3fb;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Home section */
+#home {
+    padding: 0px;
+    height: fit-content;
+    text-align: center;
+    background-color: #00d3fb;
+}
+
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.burger-icon {
+    font-size: 40px;
+}
+
+.menu-options {
+    display: none;
+    flex-direction: column;
+    position: static;
+    top: 60px;
+    right: 10px;
+    background-color: #000000;
+    border-radius: 0px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-options a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+/* Ticker section */
+.ticker-container {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: tickerAnimation 20s linear infinite;
+    color: #fff;
+}
+
+/* Booking Widget */
+.booking-widget {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.booking-widget button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-widget button:hover {
+    background-color: #45a049;
+}
+
+.booking-widget label {
+    display: block;
+    margin-top: 4%;
+    font-weight: bold;
+}
+
+.booking-widget input,
+.booking-widget select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+/* Modal Sections */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    /* Enable scrolling */
+}
+
+
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20%;
+    max-width: 75%;
+}
+
+#availableCabsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#availableCabsTable th,
+#availableCabsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#availableCabsTable th {
+    background-color: #f2f2f2;
+}
+
+#availableCabsTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.modal-content {
+    position: relative;
+    text-align: center;
+}
+
+#errorModal {
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.errorPopupButtons {
+    background-color: #f70505;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Flexbox Card structure */
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    /* Adjust based on your design */
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    /* Adjust based on your design */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    /* transition: transform 0.3s; */
+    background-color: #fff;
+    transition: transform 0.5s;
+
+}
+
+
+
+
+
+
+
+
+/* Styling for the Who Are We section */
+
+.who-are-we {
+    padding: 50px 20px;
+    text-align: left;
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0px;
+}
+
+.who-are-we p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.who-are-we h2 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.who-are-we ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.who-are-we li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #26688E;
+}
+
+
+
+
+
+/* Fotter Section */
+
+.footer-section {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: left;
+}
+
+.social-icons {
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 47px;
+}
+
+/* Additional styling to improve visibility */
+.ticker p {
+    margin: 0;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.grid-container .grid-item ul li a {
+    color: #ffffff;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+.whatsapp-icon {
+    display: inline-block;
+    margin: -20px 80px;
+    color: #fff;
+    font-size: 40px;
+}
+
+/* Responsive Section */
+
+@keyframes tickerAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: auto;
+        /* Adjust the width for smaller screens */
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+    }
+}
+
+
+/* Adjust height for responsive mode */
+@media (max-width: 768px) {
+
+
+
+    .whatsapp-icon {
+        font-size: 30px;
+        /* Adjust the font size for smaller screens */
+        margin: 6px 5%;
+        /* Adjust the margin for smaller screens */
+    }
+
+    .burger-menu {
+        display: flex;
+        align-items: center;
+        /* position: static; */
+        /* margin: -10px 40px; */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .booking-widget {
+        flex: 100%;
+    }
+
+    .booking-widget {
+        left: 0px;
+        position: relative;
+        /* margin-top: 220%; */
+        /* top: -50%; */
+    }
+
+}
+
+.location-info {
+    margin-bottom: 20px;
+    height: 500px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    max-width: 91%;
+}
+
+/* Add new css here */
+.location-info delet {
+    flex: 100%;
+    margin-bottom: 20px;
+    height: 500px;
+    /* Set height */
+    overflow: auto;
+    /* Enable scrolling */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    /* Optional: Add border for visualization */
+    margin-left: 1.5%;
+
+    width: 100%;
+    /* Ensure the section takes up the full width of its container */
+    max-width: 100%;
+    /* Ensure the section doesn't exceed the full width of the screen */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+.container {
+    display: flex;
+    background-color: #00d3fb;
+    /* style="display: flex;" */
+}
+
+/* Responsive layout for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Change to a vertical layout */
+    }
+
+    /* For modal responsive  */
+    @media screen and (max-width: 600px) {
+        .modal-content {
+            width: auto;
+            max-height: 400px;
+            /* Adjust the width for smaller screens */
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+        }
+    }
+
+
+    @media (max-width: 768px) {
+
+        .grid-container {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            /* Adjust column width for smaller screens */
+            gap: 10px;
+            /* Adjust the gap between grid items */
+        }
+
+        .modal {
+            width: 100vw;
+            /* Set width to screen width */
+        }
+
+        .modal-content {
+            font-size: 55%;
+            /* Make font size smaller */
+            /* Add other styles as needed */
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        /* Reduce padding and margin for table cells and headers */
+        #availableCabsTable th,
+        #availableCabsTable td {
+            padding: 5px;
+            margin: 0;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* Reduce font size for table cells */
+        .modal-content td {
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+
+/* For responsieve modla   */
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: auto;
+        max-height: 400px;
+        /* Adjust the width for smaller screens */
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .modal {
+        width: 100vw;
+        /* Set width to screen width */
+    }
+
+    .modal-content {
+        font-size: 55%;
+        /* Make font size smaller */
+        /* Add other styles as needed */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Reduce padding and margin for table cells and headers */
+    #availableCabsTable th,
+    #availableCabsTable td {
+        padding: 5px;
+        margin: 0;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Reduce font size for table cells */
+    .modal-content td {
+        font-size: 12px;
+    }
+}
+
+/* new changes */
+/* Container for the video section  css to be added */
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    /* Set your desired height */
+}
+
+.video-description {
+    background-color: ghostwhite;
+    padding: 10px;
+}
+
+.video-description h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    border-radius: 30px;
+}
+
+.video-description p {
+    margin: 0;
+}
+
+.car-types-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.car-types-table th,
+.car-types-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.car-types-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.car-types-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.car-types-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.cab-rates-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cab-rates-table th,
+.cab-rates-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.cab-rates-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.cab-rates-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cab-rates-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+
+    .cab-rates-table,
+    .car-types-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .cab-rates-table,
+    .car-types-table thead {
+        /* display: none; */
+    }
+
+    .cab-rates-table,
+    .car-types-table {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .cab-rates-table,
+    .car-types-table {
+        display: block;
+        text-align: center;
+        border: none;
+        padding: 8px;
+    }
+
+    /* .cab-rates-table,
+    .car-types-table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-align: left;
+        width: 50%;
+    }
+
+    .cab-rates-table,
+    .car-types-table td:nth-child(2n+1),
+    .cab-rates-table,
+    .car-types-table th {
+        clear: both;
+        text-align: left;
+    } */
+    .cab-rates-table td:before,
+    .car-types-table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-align: left;
+        width: 50%;
+    }
+
+    /* Clear floats and set text alignment */
+    .cab-rates-table th,
+    .car-types-table th,
+    .cab-rates-table td:nth-child(odd),
+    .car-types-table td:nth-child(odd) {
+        clear: both;
+        text-align: left;
+    }
+}
+
+/* Pending for other  */
+.whatsapp-icon-fixed {
+    width: 4%;
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 340%;
+    cursor: pointer;
+    text-decoration: none;
+    position: fixed;
+    left: 93%;
+    bottom: 15%;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    /* Use a sans-serif font */
+    /* Update z-index value */
+}
+
+@media screen and (max-width: 768px) {
+    .whatsapp-icon-fixed {
+        left: 75%;
+        bottom: 15%;
+        font-size: 340%;
+        width: 17%;
+        font-family: 'Arial', sans-serif;
+        /* Use a sans-serif font */
+    }
+}
+
+/* Logo styling */
+.header-logo img {
+    max-width: 5%;
+    height: auto;
+    display: block;
+    /* margin: 0 auto; */
+}
+
+/* Responsive header logo */
+@media screen and (max-width: 375px),
+(max-width: 414px),
+(max-width: 768px) {
+    .header-logo img {
+        max-width: 24%;
+    }
+}
