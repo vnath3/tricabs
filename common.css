@@ -44,6 +44,11 @@ html {
     background-color: #00d3fb;
 }
 
+#home h2 {
+    /* font-family: 'Arial', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 /* Burger Menu */
 .burger-menu {
