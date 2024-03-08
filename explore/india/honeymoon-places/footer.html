@@ -231,7 +231,8 @@
 
 
         <div class="copyright">
-            <p>&copy; 2024 Indian Cabbi. All rights reserved.</p>
+            <p>© <span id="currentYear"></span> Axis Cabs. All rights reserved.</p>
+            <!-- <p>&copy; 2024 Indian Cabbi. All rights reserved.</p> -->
         </div>
     </footer>
 
@@ -262,6 +263,12 @@
 
         // Call the function when the page loads
         document.addEventListener("DOMContentLoaded", openWhatsApp);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentYearElement = document.getElementById('currentYear');
+            var currentYear = new Date().getFullYear();
+            currentYearElement.innerText = currentYear;
+        });
     </script>
 </body>
 
