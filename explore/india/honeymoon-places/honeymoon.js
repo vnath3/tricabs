@@ -3,8 +3,9 @@
 const link = document.createElement('link');
 link.rel = 'stylesheet';
 link.type = 'text/css';
-link.href = 'common.css'; // Replace 'styles.css' with the path to your CSS file
+// link.href = 'common.css'; // Replace 'styles.css' with the path to your CSS file
 document.head.appendChild(link);
+document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
 $(document).ready(function () {
     // Initialize Select2 for the city dropdowns
@@ -32,13 +33,17 @@ function basicCheck() {
 function submitBooking() {
     basicCheck();
     var roundOffDistance = calculateDistance()[1];
+    var selectedDate = document.getElementById('travelDate').value;
+    const sourceCity = document.getElementById('source').value;
+    const destinationCity = document.getElementById('destination').value;
+
 
     var availableCabs = [
-        { type: 'Hatchback', details: '3 seats, Non-AC, Economical', distance: roundOffDistance + ' Km', fare: calculatePrice()[2] + ' ₹' },
-        { type: 'Sedan', details: '3 seats, AC, Comfortable', distance: roundOffDistance + ' Km', fare: calculatePrice()[0] + ' ₹' },
-        { type: 'SUV', details: '6 seats, AC, Spacious', distance: roundOffDistance + ' Km', fare: calculatePrice()[1] + ' ₹' },
-        { type: 'Force Traveller', details: '12 seats, AC, Mini-Bus', distance: roundOffDistance + ' Km', fare: calculatePrice()[3] + ' ₹' },
-        { type: 'Self-Drive', details: 'For more details please call our support center.', distance: roundOffDistance + ' Km', fare: ' NA ₹' },
+        { type: 'Hatchback', details: '3 seats, Non-AC, Economical', distance: roundOffDistance + ' Km', fare: calculatePrice()[2] + ' ₹', date: selectedDate, sourceCity, destinationCity },
+        { type: 'Sedan', details: '3 seats, AC, Comfortable', distance: roundOffDistance + ' Km', fare: calculatePrice()[0] + ' ₹', date: selectedDate },
+        { type: 'SUV', details: '6 seats, AC, Spacious', distance: roundOffDistance + ' Km', fare: calculatePrice()[1] + ' ₹', date: selectedDate },
+        { type: 'Force Traveller', details: '12 seats, AC, Mini-Bus', distance: roundOffDistance + ' Km', fare: calculatePrice()[3] + ' ₹', date: selectedDate },
+        { type: 'Self-Drive', details: 'For more details please call our support center.', distance: roundOffDistance + ' Km', fare: ' NA ₹', date: ' NA ' },
         // Add more cabs as needed
     ];
 
@@ -59,6 +64,7 @@ function submitBooking() {
             <td>${cab.details}</td>
             <td>${cab.distance}</td>
             <td>${cab.fare}</td>
+            <td>${cab.date}</td>
             <td>
                 <button onclick="confirmBooking('${cab.type}', '${cab.fare}', '${cab.distance}')">Confirm Booking</button>
             </td>

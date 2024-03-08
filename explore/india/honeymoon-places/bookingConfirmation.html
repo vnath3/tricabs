@@ -1,4 +1,3 @@
-<!-- bookingConfirmation.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,11 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Confirmation</title>
-    <link rel="stylesheet" href="common.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .radio-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .radio-container input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Booking Confirmation</h2>
+    <h2 id="fromToValue"></h2>
+    <div>
+        <input type="radio" id="oneWay" name="tripType" value="One Way Trip" checked>
+        <label for="oneWay">One Way Trip</label>
+        <input type="radio" id="roundTrip" name="tripType" value="Round Trip">
+        <label for="roundTrip">Round Trip</label>
+    </div>
     <table id="confirmationBody">
         <thead>
             <tr>
@@ -19,10 +75,14 @@
                 <th>Details</th>
                 <th>Distance</th>
                 <th>Price</th>
+                <th>Date</th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+            <p id="journey-days"></p>
+        </tbody>
     </table>
+
 
     <script>
         // Retrieve the booking data from localStorage
@@ -37,9 +97,70 @@
                 <td>${cab.details}</td>
                 <td>${cab.distance}</td>
                 <td>${cab.fare}</td>
+                <td>${cab.date}</td>
             `;
             confirmationBody.appendChild(row);
         });
+
+        // Update the <h2> tag with the source city
+        var fromCity = availableCabs[0].sourceCity;
+        var toCity = availableCabs[0].destinationCity;
+        var travelDate = availableCabs[0].date;
+
+        var fromToValue = document.querySelector('#fromToValue');
+        fromToValue.innerText = `Booking confirmation from ${fromCity} to ${toCity} on ${travelDate}`;
+
+        // Store the original prices and distances
+        var originalPrices = Array.from(document.querySelectorAll('#confirmationBody tbody tr td:nth-child(4)')).map(element => parseFloat(element.innerText.split(' ')[0]));
+        var originalDistances = Array.from(document.querySelectorAll('#confirmationBody tbody tr td:nth-child(3)')).map(element => parseFloat(element.innerText.split(' ')[0]));
+
+        // Calculate and display the initial number of journey days
+        var initialDistance = originalDistances[0]; // Assuming the first distance is the total distance
+        var initialJourneyDays = Math.ceil(initialDistance / 300); // Calculate initial journey days
+        document.getElementById('journey-days').innerText = `Journey is of ${initialDistance} KM which might take ${initialJourneyDays} days.`;
+
+        // Handle radio button change event
+        var oneWayRadio = document.getElementById('oneWay');
+        var roundTripRadio = document.getElementById('roundTrip');
+
+        oneWayRadio.addEventListener('change', function () {
+            if (oneWayRadio.checked) {
+                updatePrices(originalPrices, 1); // Reset to original prices
+                updateDistances(originalDistances, 1); // Reset to original distances
+                updateJourneyDays(originalDistances[0], 1); // Update journey days for one way trip
+            }
+        });
+
+        roundTripRadio.addEventListener('change', function () {
+            if (roundTripRadio.checked) {
+                updatePrices(originalPrices, 2); // Double the prices
+                updateDistances(originalDistances, 2); // Double the distances
+                updateJourneyDays(originalDistances[0] * 2, 1); // Update journey days for round trip
+            }
+        });
+
+        function updatePrices(originalPrices, factor) {
+            var priceElements = document.querySelectorAll('#confirmationBody tbody tr td:nth-child(4)');
+
+            priceElements.forEach((element, index) => {
+                var price = originalPrices[index]; // Get original price
+                element.innerText = `${price * factor} ₹`; // Update price with doubled value
+            });
+        }
+
+        function updateDistances(originalDistances, factor) {
+            var distanceElements = document.querySelectorAll('#confirmationBody tbody tr td:nth-child(3)');
+
+            distanceElements.forEach((element, index) => {
+                var distance = originalDistances[index]; // Get original distance
+                element.innerText = `${distance * factor} Km`; // Update distance with doubled value
+            });
+        }
+
+        function updateJourneyDays(distance, factor) {
+            var journeyDays = Math.ceil(distance / 300); // Calculate journey days
+            document.getElementById('journey-days').innerText = `Journey is of ${distance} KM which might take ${journeyDays} days.`;
+        }
 
         // Clear the booking data from localStorage
         localStorage.removeItem('bookingData');
