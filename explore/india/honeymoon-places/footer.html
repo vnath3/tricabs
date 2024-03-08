@@ -6,7 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
-    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Fotter Section */
+
+        .footer-section {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            text-align: left;
+        }
+
+        .social-icons {
+            margin-top: 40px;
+            padding: 40px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 47px;
+        }
+
+
+        /* Additional styling to improve visibility */
+
+        .grid-container .grid-item ul li a {
+            color: #ffffff;
+        }
+
+        .grid-item {
+            text-align: left;
+        }
+
+
+        .grid-container .grid-item ul li a {
+            color: #ffffff;
+        }
+
+        .social-icons {
+            margin-top: 40px;
+            padding: 40px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 47px;
+        }
+
+        /* Adjust height for responsive mode */
+        @media screen and (max-width: 375px),
+        (max-width: 414px),
+        (max-width: 768px) {
+
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                /* Adjust column width for smaller screens */
+                gap: 10px;
+                /* Adjust the gap between grid items */
+            }
+
+            .whatsapp-icon {
+                font-size: 30px;
+                /* Adjust the font size for smaller screens */
+                margin: 6px 5%;
+                /* Adjust the margin for smaller screens */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -153,6 +234,35 @@
             <p>&copy; 2024 Indian Cabbi. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Function to open WhatsApp with a predefined message
+        function openWhatsApp() {
+            // Get all elements with the class 'whatsapp-link'
+            var whatsappLinks = document.querySelectorAll('.whatsapp-link');
+
+            // Loop through each link
+            whatsappLinks.forEach(function (link) {
+                // Get the phone number from the data attribute
+                var phoneNumber = link.getAttribute('data-phone');
+
+                // Get the message you want to send (replace with your own)
+                var message = "Hi Axis cabs, Need some help to book a cab.";
+
+                // Encode the message for the URL
+                var encodedMessage = encodeURIComponent(message);
+
+                // Create the WhatsApp link with the phone number and message
+                var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+
+                // Set the href attribute of the WhatsApp link
+                link.href = whatsappLink;
+            });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener("DOMContentLoaded", openWhatsApp);
+    </script>
 </body>
 
 </html>
