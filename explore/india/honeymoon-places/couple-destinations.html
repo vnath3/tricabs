@@ -501,6 +501,15 @@
 
 
     <div id="footerContainer"></div>
+
+
+    <script defer>
+        // Define toggleMenu as a global function
+        window.toggleMenu = function () {
+            var menuOptions = document.querySelector('.menu-options');
+            menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
     <script>
 
         // Load the footer content from footer.html
