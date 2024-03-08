@@ -242,8 +242,7 @@
 
         <!-- Right Half (Booking Widget) -->
         <div style="flex: 1; padding: 20px;">
-            <!-- Add your booking widget here -->
-            <!-- Example placeholder -->
+
             <div>
                 <!-- Overlay booking widget -->
                 <section id="booking" class="booking-widget">
@@ -464,32 +463,11 @@
     </section>
 
 
-
-    <!-- 
-    <div id="myModal" class="modal">
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Available Cabs</h2>
-            <table id="availableCabsTable">
-                <thead>
-                    <tr>
-                        <th>Cab Type</th>
-                        <th>Details</th>
-                        <th>Distance</th> 
-                        <th>Price</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="availableCabsBody"></tbody>
-            </table>
-        </div>
-    </div> -->
-
-    <!-- Error Modal -->
-    <div id="errorModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeErrorModal()">&times;</span>
-            <p>Start and end, please! Our cabs aren't mind readers. 🚕📍</p>
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
             <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
         </div>
     </div>

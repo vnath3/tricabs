@@ -482,13 +482,15 @@
     </div>
 
     <!-- Error Modal -->
-    <div id="errorModal" class="modal">
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
         <div class="modal-content">
-            <span class="close" onclick="closeErrorModal()">&times;</span>
-            <p>Start and end, please! Our cabs aren't mind readers. 🚕📍</p>
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
             <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
         </div>
     </div>
+
 
 
 

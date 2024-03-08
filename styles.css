@@ -789,5 +789,6 @@ button:hover {
 (max-width: 768px) {
     .header-logo img {
         max-width: 24%;
+        margin-right: auto;
     }
 }
