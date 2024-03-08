@@ -1,0 +1,120 @@
+Head To be used :
+
+
+For delhi :
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Car Rental Services in Delhi</title>
+    <meta name="description"
+        content="Axis Cabs offers reliable and affordable car rental services in Delhi. Book your ride now and enjoy 24/7 customer support. Contact us at +91 9922333305 or visit our website to learn more.">
+    <meta name="keywords" content="car rental Delhi, cab service Delhi, car hire Delhi, Delhi travel, transportation Delhi">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Axis Cabs - Car Rental Services in Delhi">
+    <meta property="og:description"
+        content="Axis Cabs offers reliable and affordable car rental services in Delhi. Book your ride now and enjoy 24/7 customer support. Contact us at +91 9922333305 or visit our website to learn more.">
+    <meta property="og:image" content="http://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="http://axiscabs.com/delhi">
+    <meta property="og:site_name" content="Axis cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Axis cabs",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "New Osmanpura",
+            "addressLocality": "Delhi", // 
+            "addressRegion": "Delhi",
+            "postalCode": "110001",
+            "addressCountry": "India"
+          },
+          "telephone": "+91 9922333305",
+          "image": "https://axiscabs.com/images/logo/axis-cabs-logo.png",
+          "url": "https://axiscabs.com/delhi"
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+
+-------------------script attributes --------------
+@context: Indicates the context in which the data is presented. In this case, it's set to "http://schema.org" to use schema.org vocabulary for structured data.
+
+@type: Specifies the type of schema being used. For the LocalBusiness markup, it indicates that the data represents a local business. For TravelAction, it indicates an action related to travel.
+
+name: Represents the name of the local business or the specific travel action.
+
+address: Contains the postal address of the local business, including street address, locality, region, postal code, and country.
+
+telephone: Represents the telephone number of the local business.
+
+image: Contains the URL of an image representing the local business or the travel action.
+
+url: Represents the URL of the webpage related to the local business or the travel action.
+
+sameAs: Provides URLs that point to the official social media profiles of the local business.
+
+contactPoint: Specifies a contact point for the local business, including the telephone number, contact type (e.g., customer service), and available languages.
+
+description: Provides a description of the travel action, highlighting its features or benefits.
+
+startDate and endDate: Specify the start and end dates of the travel action, if applicable.
+
+offers: Contains information about an offer related to the travel action, such as price, currency, availability, and a URL to book or purchase the offer.
+
+url outside of Offer: This represents the URL of the webpage related to the local business or the travel action. It is used to indicate the main page where users can find more information about the business or action.
+
+url within Offer: This represents the URL where users can directly book or purchase the offer related to the travel action. It is specific to the offer being presented and provides a direct link for users to take action.
+-----------------------------
+
+-----------------alt text should be -------------
+alt text should  provides a concise and meaningful description of the image, which is great for accessibility and SEO.
+Card 1: Romantic Destinations
+Alt text: A couple enjoying a scenic view, representing romantic destinations.
+
+Card 2: Family Fun Destinations
+Alt text: A family having fun on a beach, representing family fun destinations.
+
+Card 3: Spiritual Destinations
+Alt text: A serene temple surrounded by nature, representing spiritual destinations.
+
+Card 4: Unearth Indian History
+Alt text: A majestic historical monument, representing Indian history destinations.
+
+Card 5: Discover Northern Wonders
+Alt text: A beautiful mountain landscape, representing northern India's wonders.
+
+Card 6: Experience Southern Serenity
+Alt text: A tranquil beach scene, representing southern India's serenity.
+
+Card 7: Explore Eastern Charms
+Alt text: A traditional eastern Indian architecture, representing eastern India's charms.
+
+Card 8: Marvel at Western Delights
+Alt text: A grand palace, representing western India's marvels.
+
+Card 9: Why Our Taxi Services?
+Alt text: A modern taxi cab, representing reliable taxi services.
+
+Make sure to adjust the alt text descriptions based on the actual content and context of your images.
+------------------------------------------
+
+
+----------------------H2-----------------------------
+Home Page: "Axis Cabs - Travel Made Easy"
+Services Page: "Axis Cabs - Reliable Car Rental Services in India"
+About Us Page: "About Axis Cabs - Your Trusted Travel Partner"
+Contact Page: "Contact Axis Cabs - Book Your Ride Today"
+
+------------------------------------------------------------
+

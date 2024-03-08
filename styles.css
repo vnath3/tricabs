@@ -208,7 +208,7 @@ html {
 
 
 /* Modal Sections */
-
+/* 
 .modal {
     display: none;
     position: fixed;
@@ -221,10 +221,7 @@ html {
     align-items: center;
     overflow: auto;
     z-index: 1000;
-    /* Set a higher z-index */
-    /* 
-    width: 80vw;
-    max-width: 100%; */
+
 }
 
 
@@ -239,8 +236,79 @@ html {
     text-align: center;
     padding-bottom: 10%;
 
-    /* Add more padding as needed */
+
+} */
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: fit-content;
+    height: fit-content;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button Styles */
+.errorPopupButtons {
+    background-color: #f44336;
+    /* Red */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.errorPopupButtons:hover {
+    background-color: #d32f2f;
+    /* Darker Red */
+}
+
 
 #availableCabsTable {
     width: 100%;
@@ -671,10 +739,12 @@ button:hover {
     }
 
     .modal-content {
-        font-size: 55%;
+        font-size: 75%;
         /* Make font size smaller */
         /* Add other styles as needed */
     }
+
+
 
     .close {
         top: 1%;

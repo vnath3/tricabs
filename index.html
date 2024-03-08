@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axis Cabs - Travel Made Easy</title>
     <meta name="description"
-        content="Axis cabs offers reliable and affordable car rental services across India. Book your next ride with us and experience hassle-free travel. Axis cabs is India's best car rental service. For car rental please contact us at +91 9922333305.">
+        content="Axis Cabs offers reliable and affordable car rental services across India. Experience hassle-free travel with our modern fleet of vehicles. Book your ride now and enjoy 24/7 customer support. Contact us at +91 9922333305 or visit our website to learn more.">
 
     <!-- SEO Meta Tags -->
-    <meta name="keywords"
-        content="car rental, cab service, car hire, car booking, Axis cabs, India, travel, transportation, travel agency, travel guide">
+    <meta name="keywords" content="car rental, cab service, car hire, car booking, travel agency, travel guide">
 
     <meta name="robots" content="index, follow">
     <!-- Open Graph (OG) Meta Tags -->
-    <meta property="og:title" content="Axis Cabs - Travel Made Easy">
-    <meta property="og:description"
-        content="Axis cabs offers reliable and affordable car rental services across India. Book your next ride with us and experience hassle-free travel. Contact us at +91 9922333305.">
+    <meta property="og:title" content="Axis Cabs - Your Trusted Car Rental Partner">
+    <meta name="og:description"
+        content="Axis Cabs offers reliable and affordable car rental services across India. Experience hassle-free travel with our modern fleet of vehicles. Book your ride now and enjoy 24/7 customer support. Contact us at +91 9922333305 or visit our website to learn more.">
     <meta property="og:image" content="http://axiscabs.com/images/logo/axis-cabs-logo.png">
-    <meta property="og:url" content="http://axiscabs.com/about-us">
+    <meta property="og:url" content="http://axiscabs.com">
     <meta property="og:site_name" content="Axis cabs">
     <meta property="og:type" content="website">
 
@@ -26,7 +25,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-    <!-- Local Business Markup -->
+    <!-- Local Business Markup and TravelAction Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -41,10 +40,57 @@
         "addressCountry": "India"
       },
       "telephone": "+91 9922333305",
-      "image": "https://example.com/images/indian_cabbi_logo.jpg",
-      "url": "https://example.com/indiancabbi"
+      "image": "https://axiscabs.com/images/logo/axis-cabs-logo.png",
+      "url": "https://axiscabs.com",
+      "sameAs": [
+        "https://www.facebook.com/AxisCabs",
+        "https://twitter.com/AxisCabs",
+        "https://www.linkedin.com/company/axiscabs"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 9922333305",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Hindi"]
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "TravelAction",
+      "name": "Romantic Destinations",
+      "description": "Escape to less crowded destinations where love permeates the air. Your private cab awaits—no questions, just pure romance. 🌍💑 #CoupleGetaway",
+      "url": "https://axiscabs.com/explore/india/honeymoon-places/couple-destinations.html",
+      "image": "https://axiscabs.com/images/cardImages/couple_1.jpg",
+      "startDate": "2024-03-01",
+      "endDate": "2024-03-10",
+      "offers": {
+        "@type": "Offer",
+        "price": "3000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://axiscabs.com/explore/india/honeymoon-places/couple-destinations.html"
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "TravelAction",
+      "name": "Family Fun Destinations",
+      "description": "Unwind in family-friendly havens. Cherish moments where laughter echoes, and each experience becomes a cherished chapter in your family's adventure book. 🏖️👨‍👩‍👧‍👦",
+      "url": "https://example.com/ajanta.html",
+      "image": "https://example.com/images/cardImages/family_12.jpg",
+      "startDate": "2024-03-01",
+      "endDate": "2024-03-10",
+      "offers": {
+        "@type": "Offer",
+        "price": "100",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://example.com/book/family-fun-destinations"
+      }
     }
+    //Similarly for other cards
     </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Include Select2 CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
@@ -67,19 +113,11 @@
             </div>
         </div> -->
 
-    <div class="menu-options" id="menuOptions">
-        <a href="#booking">Book a Cab</a>
-        <a href="#summer">Summer Trips</a>
-        <a href="#winter">Winter Trips</a>
-        <a href="#rainy">Rainy Trips</a>
-        <a href="#guide">Guide to India</a>
-        <a href="#blog">Blog</a>
-        <a href="#about">About Us</a>
-    </div>
+
 
 
     <section id="home">
-        <h2>Travel Made Easy with Axis Cabs</h2>
+        <h2>Axis Cabs - Travel Made Easy</h2>
         <a href="#" class="whatsapp-icon-fixed whatsapp-link" data-phone="+919922333305">
             <i class="fab fa-whatsapp"></i>
         </a>
@@ -89,12 +127,12 @@
     <div class="image-slider">
         <div class="image-slider" id="imageSlider">
             <div class="slider-container" id="sliderContainer">
-                <div class="slider-item"><img src="images/sliderImages/Travel_Tips.png" alt="Image 1">
+                <div class="slider-item"><img src="images/sliderImages/Travel_Tips.png" alt="Travel Tips">
                 </div>
-                <div class="slider-item"><img src="images/sliderImages/Taxi_Fleet.png" alt="Image 2"></div>
-                <div class="slider-item"><img src="images/sliderImages/Safety_commitments.png" alt="Image 2">
+                <div class="slider-item"><img src="images/sliderImages/Taxi_Fleet.png" alt="Taxi Fleet"></div>
+                <div class="slider-item"><img src="images/sliderImages/Safety_commitments.png" alt="Safety Commitments">
                 </div>
-                <div class="slider-item"><img src="images/sliderImages/Our_Offering.png" alt="Image 2">
+                <div class="slider-item"><img src="images/sliderImages/Our_Offering.png" alt="Our Offering">
                 </div>
             </div>
             <div class="slider-dots" id="sliderDots"></div>
@@ -218,11 +256,12 @@
             <!-- Card 1: Romantic Destinations -->
             <div class="card">
                 <a href="explore/india/honeymoon-places/couple-destinations.html" class="card-link">
-                    <img src="images/cardImages/couple_1.jpg" alt="Romantic Destinations">
+                    <img src="images/cardImages/couple_1.jpg"
+                        alt="A couple enjoying a scenic view, representing romantic destinations.">
 
 
                     <div class="card-content">
-                        <h2 class="card-title">Couple Destinations</h2>
+                        <h2 class="card-title">Romantic Destinations</h2>
                 </a>
                 <p class="card-description">Escape to less crowded destinations where love permeates the air. Your
                     private cab awaits—no questions, just pure romance. 🌍💑 #CoupleGetaway </p>
@@ -232,7 +271,8 @@
         <!-- Card 2: Family Fun Destinations -->
         <div class="card">
             <a href="ajanta.html" class="card-link">
-                <img src="images/cardImages/family_12.jpg" alt="Family Fun Destinations">
+                <img src="images/cardImages/family_12.jpg"
+                    alt="A family having fun on a beach, representing family fun destinations.">
 
                 <div class="card-content">
                     <h2 class="card-title">Family Fun Destinations</h2>
@@ -246,7 +286,8 @@
         <!-- Card 3: Regilious Destinations  -->
         <div class="card">
             <a href="gateway.html" class="card-link">
-                <img src="images/cardImages/temple (2).jpg" alt="Spiritual Destination">
+                <img src="images/cardImages/temple (2).jpg"
+                    alt="A serene temple surrounded by nature, representing spiritual destinations.">
 
                 <div class="card-content">
                     <h2 class="card-title">Spiritual Destinations</h2>
@@ -259,7 +300,8 @@
         <!-- Card 4: Indian History -->
         <div class="card">
             <a href="elephanta.html" class="card-link">
-                <img src="images/cardImages/taj_mahal.jpg" alt="Historic Destinations">
+                <img src="images/cardImages/taj_mahal.jpg"
+                    alt="A majestic historical monument, representing Indian history destinations.">
 
                 <div class="card-content">
                     <h2 class="card-title">Unearth Indian History</h2>
@@ -272,7 +314,8 @@
         <!-- Card 5: Northern Wonders -->
         <div class="card">
             <a href="northern.html" class="card-link">
-                <img src="images/cardImages/kashmir (1).jpg" alt="Northern India Image">
+                <img src="images/cardImages/kashmir (1).jpg" alt="A beautiful mountain landscape, representing northern India's wonders.
+                ">
 
                 <div class="card-content">
                     <h2 class="card-title">Discover Northern Wonders</h2>
@@ -285,7 +328,8 @@
         <!-- Card 6: Southern Serenity -->
         <div class="card">
             <a href="southern.html" class="card-link">
-                <img src="images/cardImages/kodiakanal (1).jpg" alt="Southern India Image">
+                <img src="images/cardImages/kodiakanal (1).jpg"
+                    alt="A tranquil beach scene, representing southern India's serenity.">
 
                 <div class="card-content">
                     <h2 class="card-title">Experience Southern Serenity</h2>
@@ -298,7 +342,8 @@
         <!-- Card 7: Eastern Charms -->
         <div class="card">
             <a href="eastern.html" class="card-link">
-                <img src="images/cardImages/darjelling (1).jpg" alt="Eastern India Image">
+                <img src="images/cardImages/darjelling (1).jpg" alt="A traditional eastern Indian architecture, representing eastern India's charms.
+                ">
 
                 <div class="card-content">
                     <h2 class="card-title">Explore Eastern Charms</h2>
@@ -311,7 +356,7 @@
         <!-- Card 8: Western Marvels -->
         <div class="card">
             <a href="western.html" class="card-link">
-                <img src="images/cardImages/palace (1).jpg" alt="Western India Image">
+                <img src="images/cardImages/palace (1).jpg" alt="A grand palace, representing western India's marvels.">
 
                 <div class="card-content">
                     <h2 class="card-title">Marvel at Western Delights</h2>
@@ -324,7 +369,8 @@
         <!-- Card 9: Taxi Services -->
         <div class="card">
             <a href="taxi-services.html" class="card-link">
-                <img src="images/cardImages/stearing (1).jpg" alt="Taxi Services Image">
+                <img src="images/cardImages/stearing (1).jpg"
+                    alt="A modern taxi cab, representing reliable taxi services.">
 
                 <div class="card-content">
                     <h2 class="card-title">Why Our Taxi Services?</h2>
@@ -343,52 +389,41 @@
 
 
     <section>
-
         <div class="who-are-we">
-            <h2>Why <strong>Axis cabs</strong>?</h2>
-            <p><strong>Axis cabs</strong> is your top pick for cab services, making every ride excellent. With over
-                ten years of experience, we proudly claim to be India's biggest chauffeur-driven cab rental company.
-                Travel
-                confidently with us as we reach every corner, ensuring you travel comfortably.</p>
+            <h2>Why <strong>Axis Cabs</strong>?</h2>
+            <p><strong>Axis Cabs</strong> is your premier choice for cab services, ensuring every ride is exceptional.
+                With over a decade of experience, we proudly stand as India's largest chauffeur-driven cab rental
+                company. Travel confidently with us as we reach every corner, ensuring your journey is comfortable and
+                enjoyable.</p>
 
-            <p>Explore with Ease: <strong>Axis cabs</strong> - Your Go-To Cab Service</p>
-
-            <p>Ready to make travel hassle-free? Meet <strong>Axis cabs</strong>, your trusted choice for easy
-                Intercity and Local cab services across India. We're not just a service; we're here to make your
-                journeys
+            <h3>Explore with Ease: Axis Cabs - Your Go-To Cab Service</h3>
+            <p>Ready to make travel hassle-free? Meet <strong>Axis Cabs</strong>, your trusted choice for easy intercity
+                and local cab services across India. We're more than just a service; we're here to make your journeys
                 memorable and stress-free.</p>
-            <p><strong>Enjoy Easy Road Trips</strong></p>
 
-            <p>Imagine the excitement of a road trip across India, where every turn brings a new adventure. At
-                <strong>Axis cabs</strong>, we get the magic of road travel. Swap driving stress for a relaxing
+            <h3>Enjoy Easy Road Trips</h3>
+            <p>Picture the excitement of a road trip across India, where each turn brings a new adventure. At
+                <strong>Axis Cabs</strong>, we understand the magic of road travel. Swap driving stress for a relaxing
                 back-seat experience and let our skilled drivers guide you through an unforgettable journey.
             </p>
 
-            <p><strong>Covering Everywhere - 2000+ Cities and More</strong></p>
+            <h3>Covering Everywhere - 2000+ Cities and More</h3>
+            <p><strong>Axis Cabs</strong> isn't just a service; we're your travel buddy, covering 2000+ cities in India.
+                Whether it's the historical charm of Khajuraho, the tranquil scenes of Aleppey, or the coastal vibes of
+                Alibag and Tranquebar, we're here to bring your travel dreams to life.</p>
 
-            <p><strong>Axis cabs</strong> is not just about the service; we're your travel buddy, covering 2000+
-                cities
-                in India. Whether it's the historical charm of Khajuraho, the peaceful scenes of Aleppey, or the coastal
-                vibes of Alibag and Tranquebar, we're here to bring your travel dreams to life.</p>
+            <h3>Easy Escapes with Axis Cabs</h3>
+            <p>Planning your next getaway is easy with <strong>Axis Cabs</strong>. Book effortlessly on our
+                user-friendly website or call our team at <strong>9922333305</strong> for a personalized plan. Once
+                booked, receive a travel kit and expert help. Simplify your journey with our simple cab booking app,
+                designed to make your travel smoother.</p>
 
-            <p><strong>Easy Escapes with <strong>Axis cabs</strong></strong></p>
-
-            <p>Planning your next getaway is easy with <strong>Axis cabs</strong>. Book effortlessly on our
-                user-friendly
-                website or call our team at <strong>9922333305</strong> for a personalized plan. Once booked, get a
-                travel
-                kit and expert help. Simplify your journey with our simple cab booking app, designed to make your travel
-                smoother.</p>
-
-            <p><strong>Discover Every Place - No Destination Too Small</strong></p>
-
-            <p>For <strong>Axis cabs</strong>, every city is an adventure waiting to be explored. From weekend
-                getaways
+            <h3>Discover Every Place - No Destination Too Small</h3>
+            <p>For <strong>Axis Cabs</strong>, every city is an adventure waiting to be explored. From weekend getaways
                 to family reunions, our local taxi packages ensure you experience the best eateries, explore majestic
                 monuments, relax in green parks, and visit ancient temples. No more worrying about empty plans.</p>
 
-            <p><strong>Travel for Every Occasion</strong></p>
-
+            <h3>Travel for Every Occasion</h3>
             <ul>
                 <li>Planning a weekend escape? Count on our outstation cab services for a smooth journey.</li>
                 <li>Just landed? Choose our airport taxi service for an easy last-mile experience.</li>
@@ -397,16 +432,15 @@
                 <li>Offbeat traveler? Try our one-way drops on selected routes for an adventurous journey.</li>
             </ul>
 
-            <p><strong>Your Adventure Starts Here - <strong>Axis cabs</strong></strong></p>
-
-            <p>Believe us when we say: Your travel adventure starts with <strong>Axis cabs</strong>. Book now and
-                enjoy
-                the ease of exploration without the hassle. Your next adventure is just a ride away!</p>
+            <h3>Your Adventure Starts Here - Axis Cabs</h3>
+            <p>Your travel adventure begins with <strong>Axis Cabs</strong>. Book now and enjoy the ease of exploration
+                without the hassle. Your next adventure is just a ride away!</p>
 
             <a href="#" class="cta-button">Book Now</a>
         </div>
-
     </section>
+
+
 
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -428,10 +462,18 @@
     </div>
 
     <!-- Error Modal -->
-    <div id="errorModal" class="modal">
+    <!-- <div id="errorModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeErrorModal()">&times;</span>
             <p>Start and end, please! Our cabs aren't mind readers. 🚕📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div> -->
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Start and end, please! Our cabs aren't mind readers. 🚕📍</p>
             <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
         </div>
     </div>
