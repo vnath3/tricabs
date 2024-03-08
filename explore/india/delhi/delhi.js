@@ -2338,6 +2338,16 @@ function openWhatsApp() {
 // Call the function when the page loads
 document.addEventListener("DOMContentLoaded", openWhatsApp);
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Add event listener to burgerMenu
+    var burgerMenu = document.getElementById('burgerMenu');
+    if (burgerMenu) {
+        burgerMenu.addEventListener('click', toggleMenu);
+    } else {
+        console.error('Element with ID "burgerMenu" not found.');
+    }
+});
+
 // Define toggleMenu as a global function
 window.toggleMenu = function () {
     var menuOptions = document.querySelector('.menu-options');
