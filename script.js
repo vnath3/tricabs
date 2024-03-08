@@ -2207,8 +2207,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
-
     document.querySelectorAll('.menu-options a').forEach(function (link) {
         link.addEventListener('click', function (event) {
             event.preventDefault();
