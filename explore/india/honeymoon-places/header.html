@@ -41,7 +41,7 @@
 
         /* Burger Menu */
         .burger-menu {
-            display: none;
+            /* display: none; */
             cursor: pointer;
             position: absolute;
             top: 20px;
@@ -100,6 +100,11 @@
 
 
     <script>
+        // Define toggleMenu as a global function
+        window.toggleMenu = function () {
+            var menuOptions = document.querySelector('.menu-options');
+            menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+        };
         document.addEventListener('DOMContentLoaded', function () {
 
             function toggleMenu() {
