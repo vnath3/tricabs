@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .radio-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .radio-container input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="headerContainer"></div>
+
+
+    <h2 id="fromToValue"></h2>
+    <div>
+        <input type="radio" id="oneWay" name="tripType" value="One Way Trip" checked>
+        <label for="oneWay">One Way Trip</label>
+        <input type="radio" id="roundTrip" name="tripType" value="Round Trip">
+        <label for="roundTrip">Round Trip</label>
+    </div>
+    <table id="confirmationBody">
+        <thead>
+            <tr>
+                <th>Cab Type</th>
+                <th>Details</th>
+                <th>Distance</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <p id="journey-days"></p>
+        </tbody>
+    </table>
+
+    <div id="footerContainer"></div>
+
+    <script defer>
+        // Define toggleMenu as a global function
+        window.toggleMenu = function () {
+            var menuOptions = document.querySelector('.menu-options');
+            menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
+    <script>
+        // Retrieve the booking data from localStorage
+        var availableCabs = JSON.parse(localStorage.getItem('bookingData'));
+
+        // Display the booking data in the table
+        var confirmationBody = document.querySelector('#confirmationBody tbody');
+        availableCabs.forEach(cab => {
+            var row = document.createElement('tr');
+            row.innerHTML = `
+                    <td>${cab.type}</td>
+                    <td>${cab.details}</td>
+                    <td>${cab.distance}</td>
+                    <td>${cab.fare}</td>
+                `;
+            confirmationBody.appendChild(row);
+        });
+
+        // Update the <h2> tag with the source city
+        var fromCity = availableCabs[0].sourceCity;
+        var toCity = availableCabs[0].destinationCity;
+        var travelDate = availableCabs[0].date;
+        var distance = availableCabs[0].distance;
+
+        // Update the <h2> tag with the source city
+        var fromToValue = document.querySelector('#fromToValue');
+        fromToValue.innerText = `Booking confirmation from ${fromCity} to ${toCity} on ${travelDate}`;
+
+        // Store the original prices and distances
+        var originalPrices = Array.from(document.querySelectorAll('#confirmationBody tbody tr td:nth-child(4)')).map(element => parseFloat(element.innerText.split(' ')[0]));
+        var originalDistances = Array.from(document.querySelectorAll('#confirmationBody tbody tr td:nth-child(3)')).map(element => parseFloat(element.innerText.split(' ')[0]));
+
+        // Calculate and display the initial number of journey days
+        var initialDistance = originalDistances[0]; // Assuming the first distance is the total distance
+        var initialJourneyDays = Math.ceil(initialDistance / 300); // Calculate initial journey days
+        document.getElementById('journey-days').innerText = `Journey is of ${initialDistance} KM which might take ${initialJourneyDays} days.`;
+
+        // Handle radio button change event
+        var oneWayRadio = document.getElementById('oneWay');
+        var roundTripRadio = document.getElementById('roundTrip');
+
+        oneWayRadio.addEventListener('change', function () {
+            if (oneWayRadio.checked) {
+                updatePrices(originalPrices, 1); // Reset to original prices
+                updateDistances(originalDistances, 1); // Reset to original distances
+                updateJourneyDays(originalDistances[0], 1); // Update journey days for one way trip
+            }
+        });
+
+        roundTripRadio.addEventListener('change', function () {
+            if (roundTripRadio.checked) {
+                updatePrices(originalPrices, 2); // Double the prices
+                updateDistances(originalDistances, 2); // Double the distances
+                updateJourneyDays(originalDistances[0] * 2, 1); // Update journey days for round trip
+            }
+        });
+
+        function updatePrices(originalPrices, factor) {
+            var priceElements = document.querySelectorAll('#confirmationBody tbody tr td:nth-child(4)');
+
+            priceElements.forEach((element, index) => {
+                var price = originalPrices[index]; // Get original price
+                element.innerText = `${price * factor} ₹`; // Update price with doubled value
+            });
+        }
+
+        function updateDistances(originalDistances, factor) {
+            var distanceElements = document.querySelectorAll('#confirmationBody tbody tr td:nth-child(3)');
+
+            distanceElements.forEach((element, index) => {
+                var distance = originalDistances[index]; // Get original distance
+                element.innerText = `${distance * factor} Km`; // Update distance with doubled value
+            });
+        }
+
+        function updateJourneyDays(distance, factor) {
+            var journeyDays = Math.ceil(distance / 300); // Calculate journey days
+            document.getElementById('journey-days').innerText = `Journey is of ${distance} KM which might take ${journeyDays} days.`;
+        }
+
+        // Clear the booking data from localStorage
+        localStorage.removeItem('bookingData');
+
+        // Load the footer content from footer.html
+        fetch('../../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+
+        // Function to open WhatsApp with a predefined message
+        function openWhatsApp() {
+            // Get all elements with the class 'whatsapp-link'
+            var whatsappLinks = document.querySelectorAll('.whatsapp-link');
+
+            // Loop through each link
+            whatsappLinks.forEach(function (link) {
+                // Get the phone number from the data attribute
+                var phoneNumber = link.getAttribute('data-phone');
+
+                // Get the message you want to send (replace with your own)
+                var message = "Hi Axis cabs, Need some help to book a cab.";
+
+                // Encode the message for the URL
+                var encodedMessage = encodeURIComponent(message);
+
+                // Create the WhatsApp link with the phone number and message
+                var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+
+                // Set the href attribute of the WhatsApp link
+                link.href = whatsappLink;
+            });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            // Load the footer content from footer.html
+            fetch('../../../footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footerContainer').innerHTML = data;
+                    // Call openWhatsApp after loading the footer content
+                    openWhatsApp();
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+
+        // Load the header content from header.html
+        fetch('../../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerContainer').innerHTML = data;
+                // Attach event listener to burgerMenu after header is loaded
+                document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+</body>
+
+</html>
