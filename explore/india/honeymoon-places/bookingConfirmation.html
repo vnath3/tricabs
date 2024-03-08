@@ -95,8 +95,6 @@
             menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
         };
     </script>
-
-
     <script>
         // Retrieve the booking data from localStorage
         var availableCabs = JSON.parse(localStorage.getItem('bookingData'));
@@ -180,7 +178,7 @@
         localStorage.removeItem('bookingData');
 
         // Load the footer content from footer.html
-        fetch('footer.html')
+        fetch('../../../footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footerContainer').innerHTML = data;
@@ -225,7 +223,7 @@
         });
 
         // Load the header content from header.html
-        fetch('header.html')
+        fetch('../../../header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('headerContainer').innerHTML = data;
