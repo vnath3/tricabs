@@ -82,6 +82,7 @@
         </tbody>
     </table>
 
+    <div id="footerContainer"></div>
 
     <script>
         // Retrieve the booking data from localStorage
@@ -165,6 +166,13 @@
         // Clear the booking data from localStorage
         localStorage.removeItem('bookingData');
 
+        // Load the footer content from footer.html
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
     </script>
 </body>
 
