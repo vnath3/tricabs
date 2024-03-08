@@ -2328,3 +2328,42 @@ window.addEventListener('pageshow', function (event) {
     }
 });
 
+
+// Define toggleMenu as a global function
+window.toggleMenu = function () {
+    var menuOptions = document.querySelector('.menu-options');
+    menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+};
+// Call the function when the page loads
+document.addEventListener("DOMContentLoaded", function () {
+    // Load the footer content from footer.html
+    fetch('../../../footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footerContainer').innerHTML = data;
+            // Call openWhatsApp after loading the footer content
+            openWhatsApp();
+        })
+        .catch(error => console.error('Error loading footer:', error));
+});
+
+// Load the header content from header.html
+fetch('../../../header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('headerContainer').innerHTML = data;
+        // Attach event listener to burgerMenu after header is loaded
+        document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
+    })
+    .catch(error => console.error('Error loading header:', error));
+
+// Clear the booking data from localStorage
+localStorage.removeItem('bookingData');
+
+// Load the footer content from footer.html
+fetch('../../../footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footerContainer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
