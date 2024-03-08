@@ -87,7 +87,13 @@
     </table>
 
     <div id="footerContainer"></div>
-
+    <script defer>
+        // Define toggleMenu as a global function
+        window.toggleMenu = function () {
+            var menuOptions = document.querySelector('.menu-options');
+            menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
     <script>
         // Retrieve the booking data from localStorage
         var availableCabs = JSON.parse(localStorage.getItem('bookingData'));
@@ -224,8 +230,6 @@
                 document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
             })
             .catch(error => console.error('Error loading header:', error));
-
-
     </script>
 </body>
 
