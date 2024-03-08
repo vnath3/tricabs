@@ -231,8 +231,7 @@
 
 
         <div class="copyright">
-            <p>© <span id="currentYear"></span> Axis Cabs. All rights reserved.</p>
-            <!-- <p>&copy; 2024 Indian Cabbi. All rights reserved.</p> -->
+            <p>&copy; 2024 Axis Cabs. All rights reserved.</p>
         </div>
     </footer>
 
@@ -261,17 +260,10 @@
             });
         }
 
-        // Function to update the current year
-        function updateYear() {
-            var currentYearElement = document.getElementById('currentYear');
-            var currentYear = new Date().getFullYear();
-            currentYearElement.innerText = currentYear;
-        }
 
         // Call the functions when the page loads
         document.addEventListener("DOMContentLoaded", function () {
             openWhatsApp();
-            updateYear();
         });
 
     </script>
