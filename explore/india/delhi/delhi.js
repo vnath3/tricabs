@@ -2230,7 +2230,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
+    // document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
 
     document.querySelectorAll('.menu-options a').forEach(function (link) {
         link.addEventListener('click', function (event) {
@@ -2349,10 +2349,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Define toggleMenu as a global function
-// window.toggleMenu = function () {
-//     var menuOptions = document.querySelector('.menu-options');
-//     menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
-// };
+window.toggleMenu = function () {
+    var menuOptions = document.querySelector('.menu-options');
+    menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+};
 // Call the function when the page loads
 document.addEventListener("DOMContentLoaded", function () {
     // Load the footer content from footer.html
