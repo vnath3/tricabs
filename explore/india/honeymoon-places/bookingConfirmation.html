@@ -87,11 +87,19 @@
     </table>
 
     <div id="footerContainer"></div>
+
     <script defer>
         // Define toggleMenu as a global function
         window.toggleMenu = function () {
             var menuOptions = document.querySelector('.menu-options');
             menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
+
+    <script defer>
+        window.onload = function () {
+            // Assuming 'updateYear' is defined in the 'footer.html' file
+            document.getElementById('footerContainer').contentWindow.updateYear();
         };
     </script>
     <script>
