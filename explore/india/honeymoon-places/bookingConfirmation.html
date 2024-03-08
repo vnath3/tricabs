@@ -99,9 +99,10 @@
     <script defer>
         window.onload = function () {
             // Assuming 'updateYear' is defined in the 'footer.html' file
-            document.getElementById('footerContainer').contentWindow.updateYear();
+            updateYear();
         };
     </script>
+
     <script>
         // Retrieve the booking data from localStorage
         var availableCabs = JSON.parse(localStorage.getItem('bookingData'));
