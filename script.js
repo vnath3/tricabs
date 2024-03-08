@@ -1,21 +1,21 @@
-//Copy of script.js only css path is changed to booking wodget css
 // Include CSS styles
 const link = document.createElement('link');
 link.rel = 'stylesheet';
 link.type = 'text/css';
-// link.href = 'common.css'; // Replace 'styles.css' with the path to your CSS file
+link.href = 'styles.css'; // Replace 'styles.css' with the path to your CSS file
 document.head.appendChild(link);
-document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
-$(document).ready(function () {
-    // Initialize Select2 for the city dropdowns
-    $('.city-dropdown').select2({
-        placeholder: 'Search for a city',
-        allowClear: true // Enable clear option
-    });
+// HTML content for the modal
+const modalHTML = `
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <!-- Modal content goes here -->
+    </div>
+</div>
+`;
 
-});
-
+// Add the modal HTML to the document body
+document.body.insertAdjacentHTML('beforeend', modalHTML);
 
 // JavaScript code for your webpage
 function basicCheck() {
@@ -33,47 +33,58 @@ function basicCheck() {
 function submitBooking() {
     basicCheck();
     var roundOffDistance = calculateDistance()[1];
-    var selectedDate = document.getElementById('travelDate').value;
-    const sourceCity = document.getElementById('source').value;
-    const destinationCity = document.getElementById('destination').value;
-
 
     var availableCabs = [
-        { type: 'Hatchback', details: '3 seats, Non-AC, Economical', distance: roundOffDistance + ' Km', fare: calculatePrice()[2] + ' ₹', date: selectedDate, sourceCity, destinationCity },
-        { type: 'Sedan', details: '3 seats, AC, Comfortable', distance: roundOffDistance + ' Km', fare: calculatePrice()[0] + ' ₹', date: selectedDate },
-        { type: 'SUV', details: '6 seats, AC, Spacious', distance: roundOffDistance + ' Km', fare: calculatePrice()[1] + ' ₹', date: selectedDate },
-        { type: 'Force Traveller', details: '12 seats, AC, Mini-Bus', distance: roundOffDistance + ' Km', fare: calculatePrice()[3] + ' ₹', date: selectedDate },
-        { type: 'Self-Drive', details: 'For more details please call our support center.', distance: roundOffDistance + ' Km', fare: ' NA ₹', date: ' NA ' },
+        { type: 'Hatchback', details: '3 seats, Non-AC, Economical', distance: roundOffDistance + ' Km', fare: calculatePrice()[2].toLocaleString() + ' ₹' },
+        { type: 'Sedan', details: '3 seats, AC, Comfortable', distance: roundOffDistance + ' Km', fare: calculatePrice()[0].toLocaleString() + ' ₹' },
+        { type: 'SUV', details: '6 seats, AC, Spacious', distance: roundOffDistance + ' Km', fare: calculatePrice()[1].toLocaleString() + ' ₹' },
+        { type: 'Force Traveller', details: '12 seats, AC, Mini-Bus', distance: roundOffDistance + ' Km', fare: calculatePrice()[3].toLocaleString() + ' ₹' },
+        { type: 'Self-Drive', details: 'For more details please call our support center.', distance: roundOffDistance + ' Km', fare: ' NA ₹' },
         // Add more cabs as needed
     ];
 
+    // Display the modal
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'flex';
 
-    // Store the booking data in localStorage
-    localStorage.setItem('bookingData', JSON.stringify(availableCabs));
+    // Display the list of available cabs in the modal table
+    var availableCabsBody = document.getElementById('availableCabsBody');
+    availableCabsBody.innerHTML = '';
 
-    // Open a new window with the booking details
-    var bookingWindow = window.open('bookingConfirmation.html', '_self');
-
-    // Display the list of available cabs in the booking window
-    var availableCabsBody = bookingWindow.document.getElementById('availableCabsBody');
     availableCabs.forEach(cab => {
-        var row = bookingWindow.document.createElement('tr');
+        var row = document.createElement('tr');
+
+        var randomId = Math.random().toString(36).substring(7); // Generate a random ID
+        var nameInputId = `${cab.type.toLowerCase()}_Type_${randomId}`;
+        var mobileNumberInputId = `${cab.type.toLowerCase()}MobileNumber_${randomId}`;
+        var confirmButtonId = `confirmButton_${randomId}`;
 
         row.innerHTML = `
-            <td>${cab.type}</td>
-            <td>${cab.details}</td>
-            <td>${cab.distance}</td>
-            <td>${cab.fare}</td>
-            <td>${cab.date}</td>
-            <td>
-                <button onclick="confirmBooking('${cab.type}', '${cab.fare}', '${cab.distance}')">Confirm Booking</button>
-            </td>
-        `;
+    <td>${cab.type}</td>
+    <td>${cab.details}</td>
+    <td id>${cab.distance}</td>
+    <td>${cab.fare}</td>
+    <td>
+        <input type="text" id="${nameInputId}" placeholder="Full Name *" maxlength="25" pattern="[A-Za-z ]+" title="Please enter only alphabets and limit to 25 characters" required />
+        
+        <input type="tel" id="${mobileNumberInputId}" placeholder="10 digit Mobile Number *" maxlength="10" pattern="[0-9]{1,10}" title="Please enter a valid 1 to 12-digit mobile number" inputmode="numeric" pattern="[0-9]*" required />
+        <button id="${confirmButtonId}" onclick="confirmBooking('${cab.type}', '${cab.fare}', '${nameInputId}', '${mobileNumberInputId}','${cab.distance}')" disabled>Confirm Booking</button>
+    </td>
+`;
         availableCabsBody.appendChild(row);
-    });
 
-    // Clear the booking data from localStorage after opening bookingConfirmation.html
-    localStorage.removeItem('bookingData');
+        // Add input event listeners to enable/disable the button based on input validity
+        var nameInput = document.getElementById(nameInputId);
+        var mobileNumberInput = document.getElementById(mobileNumberInputId);
+        var confirmButton = document.getElementById(confirmButtonId);
+
+        nameInput.addEventListener('input', updateButtonState);
+        mobileNumberInput.addEventListener('input', updateButtonState);
+
+        function updateButtonState() {
+            confirmButton.disabled = !(nameInput.validity.valid && mobileNumberInput.validity.valid);
+        }
+    });
 }
 
 
@@ -2207,6 +2218,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
+
     document.querySelectorAll('.menu-options a').forEach(function (link) {
         link.addEventListener('click', function (event) {
             event.preventDefault();
@@ -2226,6 +2239,52 @@ document.addEventListener('DOMContentLoaded', function () {
             toggleMenu();
         }
     }
+
+    document.addEventListener('click', closeMenuOnClickOutside);
+    var currentSlide = 0;
+    var sliderContainer = document.getElementById('sliderContainer');
+    var dotsContainer = document.getElementById('sliderDots');
+
+    for (var i = 0; i < 4; i++) {
+        var dot = document.createElement('span');
+        dot.className = 'dot';
+        dot.setAttribute('data-index', i);
+        dotsContainer.appendChild(dot);
+    }
+
+    var dots = document.querySelectorAll('.dot');
+
+    function initSlider() {
+        showSlide(currentSlide);
+        setInterval(nextSlide, 7000);
+    }
+
+    function showSlide(index) {
+        currentSlide = index;
+        sliderContainer.style.transform = 'translateX(' + (-index * 100) + '%)';
+        updateDots();
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % 4;
+        showSlide(currentSlide);
+    }
+
+    function updateDots() {
+        dots.forEach(function (dot, index) {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
+
+    dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+            var index = parseInt(dot.getAttribute('data-index'));
+            showSlide(index);
+        });
+    });
+
+    initSlider();
+
 });
 
 function closeErrorModal() {
@@ -2297,7 +2356,7 @@ function openWhatsApp() {
         var phoneNumber = link.getAttribute('data-phone');
 
         // Get the message you want to send (replace with your own)
-        var message = "Hi Axis Cabs, Need some help to book a cab. Looking for some honeymoon destinations.";
+        var message = "Hi Axis cabs, Need some help to book a cab.";
 
         // Encode the message for the URL
         var encodedMessage = encodeURIComponent(message);
@@ -2313,55 +2372,11 @@ function openWhatsApp() {
 // Call the function when the page loads
 document.addEventListener("DOMContentLoaded", openWhatsApp);
 
-// Clear city selection on browser back button press
-window.addEventListener('pageshow', function (event) {
-    var source = document.getElementById('source');
-    var destination = document.getElementById('destination');
+$(document).ready(function () {
+    // Initialize Select2 for the city dropdowns
+    $('.city-dropdown').select2({
+        placeholder: 'Search for a city',
+        allowClear: true // Enable clear option
+    });
 
-    // Check if the source and destination elements exist
-    if (source && destination) {
-        // Clear the city selection
-        source.value = '';
-        destination.value = '';
-    }
 });
-
-
-// Define toggleMenu as a global function
-window.toggleMenu = function () {
-    var menuOptions = document.querySelector('.menu-options');
-    menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
-};
-// Call the function when the page loads
-document.addEventListener("DOMContentLoaded", function () {
-    // Load the footer content from footer.html
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footerContainer').innerHTML = data;
-            // Call openWhatsApp after loading the footer content
-            openWhatsApp();
-        })
-        .catch(error => console.error('Error loading footer:', error));
-});
-
-// Load the header content from header.html
-fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('headerContainer').innerHTML = data;
-        // Attach event listener to burgerMenu after header is loaded
-        document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
-    })
-    .catch(error => console.error('Error loading header:', error));
-
-// Clear the booking data from localStorage
-localStorage.removeItem('bookingData');
-
-// Load the footer content from footer.html
-fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footerContainer').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading footer:', error));
