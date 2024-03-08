@@ -61,6 +61,10 @@
 </head>
 
 <body>
+
+    <div id="headerContainer"></div>
+
+
     <h2 id="fromToValue"></h2>
     <div>
         <input type="radio" id="oneWay" name="tripType" value="One Way Trip" checked>
@@ -210,6 +214,14 @@
                 })
                 .catch(error => console.error('Error loading footer:', error));
         });
+
+        // Load the header content from header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
 
     </script>
 </body>

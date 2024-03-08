@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <style>
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        /* Logo styling */
+        .header-logo img {
+            max-width: 5%;
+            height: auto;
+            display: block;
+            /* margin: 0 auto; */
+        }
+
+        /* Responsive header logo */
+        @media screen and (max-width: 375px),
+        (max-width: 414px),
+        (max-width: 768px) {
+            .header-logo img {
+                max-width: 24%;
+            }
+        }
+
+        /* Burger Menu */
+        .burger-menu {
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .burger-icon {
+            font-size: 40px;
+        }
+
+        .menu-options {
+            display: none;
+            flex-direction: column;
+            position: static;
+            top: 60px;
+            right: 10px;
+            background-color: #000000;
+            border-radius: 0px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-options a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        .menu-options a:hover {
+            background-color: #333;
+            /* Change background color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-logo">
+        <img src="../../../images/logo/axis-cabs-logo-1.png" alt="axis-cabs-logo">
+        <div class="burger-menu" id="burgerMenu">
+            <i class="fas fa-bars burger-icon"></i>
+        </div>
+    </header>
+
+    <div class="menu-options" id="menuOptions">
+        <a href="#booking">Book a Cab</a>
+        <a href="#summer">Summer Trips</a>
+        <a href="#winter">Winter Trips</a>
+        <a href="#rainy">Rainy Trips</a>
+        <a href="#guide">Guide to India</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About Us</a>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function toggleMenu() {
+                var menuOptions = document.getElementById('menuOptions');
+                menuOptions.style.display = menuOptions.style.display === 'flex' ? 'none' : 'flex';
+            }
+
+            function closeMenuOnClickOutside(event) {
+                var menuOptions = document.getElementById('menuOptions');
+                var burgerMenu = document.getElementById('burgerMenu');
+
+                if (!menuOptions.contains(event.target) && !burgerMenu.contains(event.target)) {
+                    menuOptions.style.display = 'none';
+                }
+            }
+
+            document.getElementById('burgerMenu').addEventListener('click', toggleMenu);
+
+            document.querySelectorAll('.menu-options a').forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var sectionId = this.getAttribute('href').substring(1);
+                    scrollToSection(sectionId);
+                });
+            });
+
+            function scrollToSection(sectionId) {
+                var targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+
+                    toggleMenu();
+                }
+            }
+
+            document.addEventListener('click', closeMenuOnClickOutside);
+        });
+    </script>
+</body>
+
+</html>
