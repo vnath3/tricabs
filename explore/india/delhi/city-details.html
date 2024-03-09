@@ -55,11 +55,13 @@
 
         window.addEventListener('DOMContentLoaded', function () {
             // Assume mobileNumber is set globally
-            if (typeof mobileNumber !== 'undefined') {
-                updateMobileNumber(mobileNumber);
-            } else {
-                console.error('mobileNumber is undefined. Check config.js');
-            }
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
         });
 
     </script>
