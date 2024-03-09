@@ -52,7 +52,7 @@ function submitBooking() {
     localStorage.setItem('bookingData', JSON.stringify(availableCabs));
 
     // Open a new window with the booking details
-    var bookingWindow = window.open('bookingConfirmation.html', '_self');
+    var bookingWindow = window.open('../../../bookingConfirmation.html', '_self');
 
     // Display the list of available cabs in the booking window
     var availableCabsBody = bookingWindow.document.getElementById('availableCabsBody');
