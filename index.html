@@ -99,6 +99,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Include Select2 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script src="config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+
+    </script>
+
 </head>
 
 
@@ -106,11 +130,13 @@
     <div id="headerContainer"></div>
 
     <section id="home">
-        <h2>Axis Cabs - Travel Made Easy</h2>
-        <a href="#" class="whatsapp-icon-fixed whatsapp-link" data-phone="+919922333305">
-            <i class="fab fa-whatsapp"></i>
-        </a>
 
+        <section id="home">
+            <h2>Axis Cabs - Travel Made Easy</h2>
+            <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </section>
     </section>
     <div class="image-slider">
         <div class="image-slider" id="imageSlider">
