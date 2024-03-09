@@ -88,6 +88,28 @@
             }
         }
     </style>
+    <script src="config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+
+    </script>
 </head>
 
 <body>
@@ -223,7 +245,7 @@
             <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="whatsapp-link" data-phone="+919922333305" class="whatsapp-icon">
+            <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
