@@ -1,0 +1,36 @@
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js"></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab in Delhi.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            if (typeof mobileNumber !== 'undefined') {
+                updateMobileNumber(mobileNumber);
+            } else {
+                console.error('mobileNumber is undefined. Check config.js');
+            }
+        });
+
+    </script>
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+    <section id="home">
+        <h2>Explore Delhi with Axis Cabs</h2>
+        <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </section>
+
+
+

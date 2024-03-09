@@ -151,3 +151,19 @@ Responsive Design: Ensure that the content is displayed correctly on all devices
 "Start your journey with us. Book now!"
 
 -------------------------------------
+
+
+---------Sccript issues reason ------------
+The issue in your previous code was likely due to the timing of when the mobileNumber variable was being set and used. Here's a breakdown of the issues and the changes made to resolve them:
+
+Timing of config.js loading: In your original code, you were assuming that config.js sets a global variable mobileNumber. If config.js was not loaded or executed before your script, the mobileNumber variable would be undefined when your script tried to use it.
+
+Use of innerHTML with an <a> element: In your original code, you were using innerHTML to append an <a> element to mobileNumberContainer. This can be problematic because modifying the innerHTML of an <a> element can interfere with its existing properties, such as the href attribute.
+
+The revised code addresses these issues as follows:
+
+Check for mobileNumber existence: The revised code checks if mobileNumber is defined before calling updateMobileNumber. This ensures that the function is only called when mobileNumber is available.
+
+Use of <span> instead of <a> for mobileNumberContainer: To avoid potential issues with modifying the innerHTML of an <a> element, the revised code uses a <span> element for mobileNumberContainer. This allows you to safely set the textContent of the <span> element without affecting its attributes.
+
+By making these changes, the code ensures that updateMobileNumber is only called when mobileNumber is defined and uses a <span> element for mobileNumberContainer to avoid potential issues with modifying the innerHTML of an <a> element.
