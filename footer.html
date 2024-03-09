@@ -88,28 +88,6 @@
             }
         }
     </style>
-    <script src="config.js" defer></script>
-    <script>
-        function updateMobileNumber(mobileNumber) {
-            var whatsappLink = document.getElementById('whatsappLink');
-            var message = "Hi Axis Cabs, need some help to book a cab.";
-            var encodedMessage = encodeURIComponent(message);
-            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
-            whatsappLink.href = whatsappUrl;
-        }
-
-        window.addEventListener('DOMContentLoaded', function () {
-            // Assume mobileNumber is set globally
-            setTimeout(function () {
-                if (typeof mobileNumber !== 'undefined') {
-                    updateMobileNumber(mobileNumber);
-                } else {
-                    console.error('mobileNumber is undefined. Check config.js');
-                }
-            }, 1000);
-        });
-
-    </script>
 </head>
 
 <body>
@@ -245,7 +223,7 @@
             <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+            <a href="#" class="whatsapp-link" data-phone="+919922333305" class="whatsapp-icon">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
@@ -259,34 +237,34 @@
 
     <script>
         // Function to open WhatsApp with a predefined message
-        // function openWhatsApp() {
-        // Get all elements with the class 'whatsapp-link'
-        // var whatsappLinks = document.querySelectorAll('.whatsapp-link');
+        function openWhatsApp() {
+            // Get all elements with the class 'whatsapp-link'
+            var whatsappLinks = document.querySelectorAll('.whatsapp-link');
 
-        // Loop through each link
-        // whatsappLinks.forEach(function (link) {
-        // Get the phone number from the data attribute
-        // var phoneNumber = link.getAttribute('data-phone');
+            // Loop through each link
+            whatsappLinks.forEach(function (link) {
+                // Get the phone number from the data attribute
+                var phoneNumber = link.getAttribute('data-phone');
 
-        // Get the message you want to send (replace with your own)
-        // var message = "Hi Axis cabs, Need some help to book a cab.";
+                // Get the message you want to send (replace with your own)
+                var message = "Hi Axis cabs, Need some help to book a cab.";
 
-        // Encode the message for the URL
-        // var encodedMessage = encodeURIComponent(message);
+                // Encode the message for the URL
+                var encodedMessage = encodeURIComponent(message);
 
-        // Create the WhatsApp link with the phone number and message
-        // var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+                // Create the WhatsApp link with the phone number and message
+                var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
 
-        // Set the href attribute of the WhatsApp link
-        // link.href = whatsappLink;
-        // });
-        // }
+                // Set the href attribute of the WhatsApp link
+                link.href = whatsappLink;
+            });
+        }
 
 
         // Call the functions when the page loads
-        // document.addEventListener("DOMContentLoaded", function () {
-        // openWhatsApp();
-        // });
+        document.addEventListener("DOMContentLoaded", function () {
+            openWhatsApp();
+        });
 
     </script>
 </body>
