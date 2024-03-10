@@ -302,12 +302,6 @@ html {
         font-size: 200%;
         width: 10%;
     }
-
-    #myVideo {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
 }
 
 @media screen and (max-width: 480px) {
