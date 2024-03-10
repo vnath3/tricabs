@@ -16,12 +16,18 @@ html {
 }
 
 /* Home section */
-#home {
+.home {
     padding: 0px;
     height: 50px;
     text-align: center;
-    background-color: #00d3fb;
+    background-color: #000000;
 }
+
+.home h2 {
+
+    color: #fbff00;
+}
+
 
 
 /* Booking Widget */
@@ -301,12 +307,6 @@ html {
         bottom: 10%;
         font-size: 200%;
         width: 10%;
-    }
-
-    #myVideo {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
     }
 }
 

@@ -121,6 +121,14 @@
             }, 1000);
         });
 
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
     </script>
 
 </head>
@@ -129,15 +137,15 @@
 <body>
     <div id="headerContainer"></div>
 
-    <section id="home">
 
-        <section id="home">
-            <h2>Axis Cabs - Travel Made Easy</h2>
-            <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </section>
+
+    <section class="home" id="home">
+        <h2>Axis Cabs - Travel Made Easy</h2>
+        <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+            <i class="fab fa-whatsapp"></i>
+        </a>
     </section>
+
 
 
 
