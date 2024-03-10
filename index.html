@@ -90,16 +90,16 @@
     }
     //Similarly for other cards
     </script>
-
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Include Select2 CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css">
     <!-- // below script is for select2 JS for searchable dropdown  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Include Select2 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
+    <!-- Script used to load and update whats app number from config.js -->
     <script src="config.js" defer></script>
     <script>
         function updateMobileNumber(mobileNumber) {
@@ -138,127 +138,128 @@
             </a>
         </section>
     </section>
-    <div class="image-slider">
-        <div class="image-slider" id="imageSlider">
-            <div class="slider-container" id="sliderContainer">
-                <div class="slider-item"><img src="images/sliderImages/Travel_Tips.png" alt="Travel Tips">
-                </div>
-                <div class="slider-item"><img src="images/sliderImages/Taxi_Fleet.png" alt="Taxi Fleet"></div>
-                <div class="slider-item"><img src="images/sliderImages/Safety_commitments.png" alt="Safety Commitments">
-                </div>
-                <div class="slider-item"><img src="images/sliderImages/Our_Offering.png" alt="Our Offering">
-                </div>
-            </div>
-            <div class="slider-dots" id="sliderDots"></div>
+
+
+
+    <!-- Overlay booking widget -->
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="videos/hero-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
         </div>
+    </div>
 
-        <!-- Overlay booking widget -->
-        <section id="booking" class="booking-widget">
-            <h2>Book Your Car</h2>
-            <label for="source">Source City:</label>
-            <select id="source" required class="city-dropdown">
-                <option value="" selected disabled></option>
-                <option value="Mumbai">Mumbai, Maharashtra</option>
-                <option value="Pune">Pune, Maharashtra</option>
-                <option value="Nagpur">Nagpur, Maharashtra</option>
-                <option value="Thane">Thane, Maharashtra</option>
-                <option value="Nashik">Nashik, Maharashtra</option>
-                <option value="Aurangabad">Aurangabad, Maharashtra</option>
-                <option value="Solapur">Solapur, Maharashtra</option>
-                <option value="Amravati">Amravati, Maharashtra</option>
-                <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
-                <option value="Kolhapur">Kolhapur, Maharashtra</option>
-                <option value="Akola">Akola, Maharashtra</option>
-                <option value="Jalgaon">Jalgaon, Maharashtra</option>
-                <option value="Latur">Latur, Maharashtra</option>
-                <option value="Dhule">Dhule, Maharashtra</option>
-                <option value="Nanded">Nanded, Maharashtra</option>
-                <option value="Sangli">Sangli, Maharashtra</option>
-                <option value="Malegaon">Malegaon, Maharashtra</option>
-                <option value="Jalna">Jalna, Maharashtra</option>
-                <option value="Chandrapur">Chandrapur, Maharashtra</option>
-                <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
-                <option value="Parbhani">Parbhani, Maharashtra</option>
-                <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
-                <option value="Panvel">Panvel, Maharashtra</option>
-                <option value="Satara">Satara, Maharashtra</option>
-                <option value="Beed">Beed, Maharashtra</option>
-                <option value="Yavatmal">Yavatmal, Maharashtra</option>
-                <option value="Osmanabad">Osmanabad, Maharashtra</option>
-                <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
-                <option value="Wardha">Wardha, Maharashtra</option>
-                <option value="Gondia">Gondia, Maharashtra</option>
-                <option value="Hingoli">Hingoli, Maharashtra</option>
-                <option value="Khopoli">Khopoli, Maharashtra</option>
-                <option value="Nandurbar">Nandurbar, Maharashtra</option>
-                <option value="Palghar">Palghar, Maharashtra</option>
-                <option value="Washim">Washim, Maharashtra</option>
-                <option value="Karad">Karad, Maharashtra</option>
-                <option value="Baramati">Baramati, Maharashtra</option>
-                <option value="Chimur">Chimur, Maharashtra</option>
-                <option value="Deolali">Deolali, Maharashtra</option>
-                <option value="Gangapur">Gangapur, Maharashtra</option>
-                <option value="Junnar">Junnar, Maharashtra</option>
-                <option value="Kamthi">Kamthi, Maharashtra</option>
-                <option value="Panjim">Panjim, Goa</option>
 
-            </select>
-            <label for="destination">Destination City:</label>
-            <select id="destination" required class="city-dropdown">
-                <option value="" selected disabled></option>
-                <option value="Mumbai">Mumbai, Maharashtra</option>
-                <option value="Pune">Pune, Maharashtra</option>
-                <option value="Nagpur">Nagpur, Maharashtra</option>
-                <option value="Thane">Thane, Maharashtra</option>
-                <option value="Nashik">Nashik, Maharashtra</option>
-                <option value="Aurangabad">Aurangabad, Maharashtra</option>
-                <option value="Solapur">Solapur, Maharashtra</option>
-                <option value="Amravati">Amravati, Maharashtra</option>
-                <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
-                <option value="Kolhapur">Kolhapur, Maharashtra</option>
-                <option value="Akola">Akola, Maharashtra</option>
-                <option value="Jalgaon">Jalgaon, Maharashtra</option>
-                <option value="Latur">Latur, Maharashtra</option>
-                <option value="Dhule">Dhule, Maharashtra</option>
-                <option value="Nanded">Nanded, Maharashtra</option>
-                <option value="Sangli">Sangli, Maharashtra</option>
-                <option value="Malegaon">Malegaon, Maharashtra</option>
-                <option value="Jalna">Jalna, Maharashtra</option>
-                <option value="Chandrapur">Chandrapur, Maharashtra</option>
-                <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
-                <option value="Parbhani">Parbhani, Maharashtra</option>
-                <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
-                <option value="Panvel">Panvel, Maharashtra</option>
-                <option value="Satara">Satara, Maharashtra</option>
-                <option value="Beed">Beed, Maharashtra</option>
-                <option value="Yavatmal">Yavatmal, Maharashtra</option>
-                <option value="Osmanabad">Osmanabad, Maharashtra</option>
-                <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
-                <option value="Wardha">Wardha, Maharashtra</option>
-                <option value="Gondia">Gondia, Maharashtra</option>
-                <option value="Hingoli">Hingoli, Maharashtra</option>
-                <option value="Khopoli">Khopoli, Maharashtra</option>
-                <option value="Nandurbar">Nandurbar, Maharashtra</option>
-                <option value="Palghar">Palghar, Maharashtra</option>
-                <option value="Washim">Washim, Maharashtra</option>
-                <option value="Karad">Karad, Maharashtra</option>
-                <option value="Baramati">Baramati, Maharashtra</option>
-                <option value="Chimur">Chimur, Maharashtra</option>
-                <option value="Deolali">Deolali, Maharashtra</option>
-                <option value="Gangapur">Gangapur, Maharashtra</option>
-                <option value="Junnar">Junnar, Maharashtra</option>
-                <option value="Kamthi">Kamthi, Maharashtra</option>
-                <option value="Panjim">Panjim, Goa</option>
-
-            </select>
-            <label for="travelDate">Date:</label>
-            <input type="date" id="travelDate" value="" min="2024-01-27" required>
-            <!-- Set default value to current date + 1 -->
-            <label for="pickupTime">Pickup Time:</label>
-            <input type="time" id="pickupTime" value="07:00" required>
-            <!-- Set default value to 7 am -->
-            <button onclick="submitBooking()">Book Now</button>
-        </section>
     </div>
     <section class="card-section">
         <!-- Card Container -->
