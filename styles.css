@@ -147,7 +147,7 @@ html {
 
 .who-are-we p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin-bottom: 20px;
 }
 
@@ -159,7 +159,7 @@ html {
 
 .who-are-we ul {
     font-size: 1.0em;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin-bottom: 20px;
 }
 
@@ -308,8 +308,60 @@ html {
 
 .video-description p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin-bottom: 20px;
+}
+
+.car-types-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.car-types-table th,
+.car-types-table td {
+    padding: 0px;
+    border: 1px solid #ddd;
+    text-align: left;
+    line-height: 2em;
+}
+
+.car-types-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.car-types-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.car-types-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.cab-rates-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cab-rates-table th,
+.cab-rates-table td {
+    padding: 0px;
+    border: 1px solid #ddd;
+    text-align: left;
+    line-height: 2em;
+}
+
+.cab-rates-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.cab-rates-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cab-rates-table tbody tr:hover {
+    background-color: #f1f1f1;
 }
 
 
@@ -337,7 +389,6 @@ html {
     .modal-content {
         margin: auto;
     }
-
 
 }
 

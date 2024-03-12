@@ -1,482 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axis Cabs - Explore Delhi</title>
-    <meta name="description"
-        content="Explore the vibrant city of Delhi with Axis Cabs. Enjoy hassle-free travel and discover the rich history and culture of India's capital. Book your ride now and experience the convenience of our modern fleet of vehicles. Contact us at +91 9922333305 or visit our website to learn more.">
-
-    <!-- SEO Meta Tags -->
-    <meta name="robots" content="index, follow">
-    <!-- Open Graph (OG) Meta Tags -->
-    <meta property="og:title" content="Axis Cabs - Explore Delhi">
-    <meta name="og:description"
-        content="Explore the vibrant city of Delhi with Axis Cabs. Enjoy hassle-free travel and discover the rich history and culture of India's capital. Book your ride now and experience the convenience of our modern fleet of vehicles. Contact us at +91 9922333305 or visit our website to learn more.">
-    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
-    <meta property="og:url" content="https://axiscabs.com/explore/india/delhi/city-details.html">
-    <meta property="og:site_name" content="Axis Cabs">
-    <meta property="og:type" content="website">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <link rel="canonical" href="https://axiscabs.com/explore/india/delhi/city-details.html">
-
-    <!-- Local Business Markup and TravelAction Structured Data -->
-    <script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "City",
-          "name": "Delhi",
-          "description": "Explore the vibrant city of Delhi with Axis Cabs. Enjoy hassle-free travel and discover the rich history and culture of India's capital.",
-          "url": "https://axiscabs.com/delhi"
-        }
-    </script>
-    <link rel="stylesheet" href="../../../common.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Include Select2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-
-    <!-- // below script is for select2 JS for searchable dropdown  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Include Select2 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-
-    <!-- For mobile number configuration -->
-    <script src="../../../config.js" defer></script>
-    <script>
-        function updateMobileNumber(mobileNumber) {
-            var whatsappLink = document.getElementById('whatsappLink');
-            var message = "Hi Axis Cabs, need some help to book a cab in Delhi.";
-            var encodedMessage = encodeURIComponent(message);
-            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
-            whatsappLink.href = whatsappUrl;
+    <title>Delhi - City Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
 
-        window.addEventListener('DOMContentLoaded', function () {
-            // Assume mobileNumber is set globally
-            setTimeout(function () {
-                if (typeof mobileNumber !== 'undefined') {
-                    updateMobileNumber(mobileNumber);
-                } else {
-                    console.error('mobileNumber is undefined. Check config.js');
-                }
-            }, 1000);
-        });
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
 
-    </script>
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .fact-list {
+            margin-bottom: 10px;
+        }
+
+        .fact-list li {
+            margin-bottom: 5px;
+        }
+
+        .places-to-visit {
+            margin-top: 20px;
+        }
+
+        .places-to-visit h3 {
+            margin-bottom: 10px;
+        }
+
+        .places-to-visit ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .places-to-visit li {
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
-
-
 <body>
-    <div id="headerContainer"></div>
-
-    <section id="home">
-        <h2>Explore Delhi with Axis Cabs</h2>
-        <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </section>
-
-
-
-
-    <div class="container">
-
-        <!-- Left Half (Content) -->
-
-
-        <div class="location-info who-are-we" style="flex: 2; padding: 20px;">
-
-
-            <h1>Explore Delhi with Axis Cabs</h1>
-
-            <p>
-                Delhi, the vibrant capital city of India, is a captivating blend of history, culture, and modernity.
-                Known for its rich heritage and bustling streets, Delhi offers a myriad of experiences for travelers.
-
-                Delhi is home to some of the most iconic historical monuments in India, including the Red Fort, Qutub
-                Minar, and Humayun's Tomb. These architectural marvels are a testament to Delhi's rich history and offer
-                a glimpse into its Mughal past.
-
-                In addition to its historical landmarks, Delhi is also a cultural hub, with a thriving arts and music
-                scene. The city hosts numerous cultural events and festivals throughout the year, showcasing its diverse
-                heritage and traditions.<br><br>
-
-                Delhi is also a paradise for food lovers, with a wide range of culinary delights to tantalize your taste
-                buds. From street food like chaat and parathas to Mughlai delicacies like kebabs and biryanis, Delhi
-                offers a culinary experience like no other.<br><br>
-
-                When it comes to transportation, Delhi offers a range of options including buses, the Delhi Metro, and
-                auto-rickshaws. However, the city's cab services are particularly popular, offering commuters and
-                tourists a convenient way to navigate the city. App-based cab aggregators like Ola and Uber are widely
-                available, providing travelers with a reliable and hassle-free way to get around.<br><br>
-
-                Delhi's cab services have become an integral part of the city's transportation network, providing
-                residents and visitors alike with a convenient and efficient means of exploring everything that this
-                vibrant city has to offer. Whether you're exploring the historical monuments of Old Delhi or shopping in
-                the bustling markets of Connaught Place, Delhi's cab services ensure that you can travel in comfort and
-                style.
-            </p>
-            <h2>Cab options in Delhi</h2>
-            <p>
-                Axis Cabs offers a variety of cab options in Delhi, ranging from hatchbacks to luxury sedans, and even
-                larger
-                cabs like Innova and tempo travellers for groups. All our cabs are air-conditioned, regularly cleaned,
-                and
-                maintained for optimal service quality.
-            <p>
-
-            <table class="car-types-table">
-                <thead>
-                    <tr>
-                        <th>Car Type</th>
-                        <th>Models Included</th>
-                        <th>Capacity</th>
-                        <th>Ideal For</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AC Sedans</td>
-                        <td>Toyota Etios, Honda Amaze, Maruti Dzire, etc.</td>
-                        <td>Up to 4 Passengers</td>
-                        <td>Comfortable rides for small families</td>
-                    </tr>
-                    <tr>
-                        <td>AC Hatchbacks</td>
-                        <td>Tata Indica, Maruti Ritz, Nissan Micra, etc.</td>
-                        <td>Up to 4 Passengers</td>
-                        <td>Budget-friendly trips for short distances</td>
-                    </tr>
-                    <tr>
-                        <td>AC SUVs & MUVs</td>
-                        <td>Toyota Innova, Maruti Ertiga, Mahindra Xylo, etc.</td>
-                        <td>6-7 Passengers</td>
-                        <td>Premium travel experience for large families</td>
-                    </tr>
-                    <tr>
-                        <td>Premium SUVs</td>
-                        <td>Toyota Innova Crysta</td>
-                        <td>6-7 Passengers</td>
-                        <td>Luxury travel for groups of 6-7 people</td>
-                    </tr>
-                    <tr>
-                        <td>AC Minivans</td>
-                        <td>Tempo Travellers</td>
-                        <td>Up to 12 Passengers</td>
-                        <td>Convenient for large groups of friends & families</td>
-                    </tr>
-                    <tr>
-                        <td>Luxury Car Rental</td>
-                        <td>Toyota Corolla, Toyota Camry, BMW, etc.</td>
-                        <td>Up to 4 Passengers</td>
-                        <td>Indulge in luxury travel</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2>Taxi fares in Delhi</h2>
-
-            <p>
-                At Asis Cabs, we recognize the diverse needs of our passengers when selecting a taxi service. Hence, we
-                provide a variety of options to cater to every requirement, ranging from budget-friendly hatchbacks to
-                spacious tempo travellers ideal for larger families. Our transparent pricing approach ensures that our
-                taxi fares in Delhi are not only cost-effective but also clear and upfront. With Axis Cabs, you can
-                trust
-                that you'll only be charged for what you see, as we believe in transparency and have no hidden fees. For
-                your convenience, below is a summary of our cab rates as of March 2023.
-            </p>
-            <table class="cab-rates-table">
-                <thead>
-                    <tr>
-                        <th>Cab Type</th>
-                        <th>Outstation Price (per km)</th>
-                        <th>Full Day Taxi Price</th>
-                        <th>Extended Day Taxi Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Etios</td>
-                        <td>Starting from ₹10.25/km</td>
-                        <td>₹2224</td>
-                        <td>₹2965</td>
-                    </tr>
-                    <tr>
-                        <td>Innova</td>
-                        <td>Starting from ₹16/km</td>
-                        <td>₹3088</td>
-                        <td>₹3705</td>
-                    </tr>
-                    <tr>
-                        <td>Tempo Traveller</td>
-                        <td>Starting from ₹30/km</td>
-                        <td>₹4941</td>
-                        <td>NA</td>
-                    </tr>
-                </tbody>
-            </table>
-
-
-
-            <h2>Why Choose Axis Cabs as Your Preferred Taxi Service in Delhi?</h2>
-
-            <p>
-                At Axis Cabs, we are committed to exceeding your expectations with our exceptional service. From booking
-                your
-                ride to the professionalism of our drivers and the quality of our vehicles, we ensure a seamless and
-                enjoyable experience. When you book a cab with Axis Cabs, you can trust that we will deliver on our
-                promises.<br><br>
-
-                Customer Satisfaction - We prioritize customer satisfaction and have garnered positive reviews from
-                thousands of happy customers. Our aim is to consistently deliver excellence and ensure that every
-                customer
-                is satisfied. With an average rating of 4.2 stars or more on Google, our track record speaks for
-                itself.<br>
-
-                Professional Drivers - Our drivers are carefully selected, trained, and equipped to provide a safe and
-                comfortable journey. They undergo a rigorous 30-point checklist and have in-depth knowledge of their
-                assigned routes. With a fleet of over 25,000 drivers nationwide, our drivers are not just chauffeurs but
-                also your trip hosts and companions.<br>
-
-                Variety of Vehicles - Axis Cabs offers a diverse range of vehicles to cater to the needs of all types of
-                travelers, including sedans, SUVs, and luxury cars.<br>
-
-                24/7 Booking and Support - Our taxi service is available round the clock, making it convenient for you
-                to<br>
-                book a ride whenever you need one. We operate in over 2,000 cities across India, ensuring that you can
-                rely on us wherever you go.<br>
-            <p>
-
-            <h2>Conclusion:</h2>
-            <p>India's romantic destinations offer a blend of culture, adventure, and relaxation. Whether you're
-                exploring the beaches of Goa or the backwaters of Kerala, each destination promises a memorable
-                experience. Plan your romantic getaway to India and embark on a journey of love and discovery.</p>
-
-            <!-- Add more content as needed -->
-
-            <p>
-                For more information, contact us at <a href="mailto:info@example.com">info@example.com</a>.
-            </p>
-        </div>
-
-        <!-- Right Half (Booking Widget) -->
-        <div style="flex: 1; padding: 20px;">
-            <!-- Add your booking widget here -->
-            <!-- Example placeholder -->
-            <div>
-                <!-- Overlay booking widget -->
-                <section id="booking" class="booking-widget">
-                    <h2>Book Your Car</h2>
-                    <label for="source">Source City:</label>
-                    <select id="source" required class="city-dropdown">
-                        <option value="" selected disabled>Select Source City</option>
-                        option value="Mumbai">Mumbai, Maharashtra</option>
-                        <option value="Pune">Pune, Maharashtra</option>
-                        <option value="Nagpur">Nagpur, Maharashtra</option>
-                        <option value="Thane">Thane, Maharashtra</option>
-                        <option value="Nashik">Nashik, Maharashtra</option>
-                        <option value="Aurangabad">Aurangabad, Maharashtra</option>
-                        <option value="Solapur">Solapur, Maharashtra</option>
-                        <option value="Amravati">Amravati, Maharashtra</option>
-                        <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
-                        <option value="Kolhapur">Kolhapur, Maharashtra</option>
-                        <option value="Akola">Akola, Maharashtra</option>
-                        <option value="Jalgaon">Jalgaon, Maharashtra</option>
-                        <option value="Latur">Latur, Maharashtra</option>
-                        <option value="Dhule">Dhule, Maharashtra</option>
-                        <option value="Nanded">Nanded, Maharashtra</option>
-                        <option value="Sangli">Sangli, Maharashtra</option>
-                        <option value="Malegaon">Malegaon, Maharashtra</option>
-                        <option value="Jalna">Jalna, Maharashtra</option>
-                        <option value="Chandrapur">Chandrapur, Maharashtra</option>
-                        <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
-                        <option value="Parbhani">Parbhani, Maharashtra</option>
-                        <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
-                        <option value="Panvel">Panvel, Maharashtra</option>
-                        <option value="Satara">Satara, Maharashtra</option>
-                        <option value="Beed">Beed, Maharashtra</option>
-                        <option value="Yavatmal">Yavatmal, Maharashtra</option>
-                        <option value="Osmanabad">Osmanabad, Maharashtra</option>
-                        <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
-                        <option value="Wardha">Wardha, Maharashtra</option>
-                        <option value="Gondia">Gondia, Maharashtra</option>
-                        <option value="Hingoli">Hingoli, Maharashtra</option>
-                        <option value="Khopoli">Khopoli, Maharashtra</option>
-                        <option value="Nandurbar">Nandurbar, Maharashtra</option>
-                        <option value="Palghar">Palghar, Maharashtra</option>
-                        <option value="Washim">Washim, Maharashtra</option>
-                        <option value="Karad">Karad, Maharashtra</option>
-                        <option value="Baramati">Baramati, Maharashtra</option>
-                        <option value="Chimur">Chimur, Maharashtra</option>
-                        <option value="Deolali">Deolali, Maharashtra</option>
-                        <option value="Gangapur">Gangapur, Maharashtra</option>
-                        <option value="Junnar">Junnar, Maharashtra</option>
-                        <option value="Kamthi">Kamthi, Maharashtra</option>
-                        <option value="Panjim">Panjim, Goa</option>
-                        <!-- Add more cities as needed -->
-                    </select>
-                    <label for="destination">Destination City:</label>
-                    <select id="destination" required class="city-dropdown">
-                        <option value="" selected disabled>Select Destination City</option>
-                        option value="Mumbai">Mumbai, Maharashtra</option>
-                        <option value="Pune">Pune, Maharashtra</option>
-                        <option value="Nagpur">Nagpur, Maharashtra</option>
-                        <option value="Thane">Thane, Maharashtra</option>
-                        <option value="Nashik">Nashik, Maharashtra</option>
-                        <option value="Aurangabad">Aurangabad, Maharashtra</option>
-                        <option value="Solapur">Solapur, Maharashtra</option>
-                        <option value="Amravati">Amravati, Maharashtra</option>
-                        <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
-                        <option value="Kolhapur">Kolhapur, Maharashtra</option>
-                        <option value="Akola">Akola, Maharashtra</option>
-                        <option value="Jalgaon">Jalgaon, Maharashtra</option>
-                        <option value="Latur">Latur, Maharashtra</option>
-                        <option value="Dhule">Dhule, Maharashtra</option>
-                        <option value="Nanded">Nanded, Maharashtra</option>
-                        <option value="Sangli">Sangli, Maharashtra</option>
-                        <option value="Malegaon">Malegaon, Maharashtra</option>
-                        <option value="Jalna">Jalna, Maharashtra</option>
-                        <option value="Chandrapur">Chandrapur, Maharashtra</option>
-                        <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
-                        <option value="Parbhani">Parbhani, Maharashtra</option>
-                        <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
-                        <option value="Panvel">Panvel, Maharashtra</option>
-                        <option value="Satara">Satara, Maharashtra</option>
-                        <option value="Beed">Beed, Maharashtra</option>
-                        <option value="Yavatmal">Yavatmal, Maharashtra</option>
-                        <option value="Osmanabad">Osmanabad, Maharashtra</option>
-                        <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
-                        <option value="Wardha">Wardha, Maharashtra</option>
-                        <option value="Gondia">Gondia, Maharashtra</option>
-                        <option value="Hingoli">Hingoli, Maharashtra</option>
-                        <option value="Khopoli">Khopoli, Maharashtra</option>
-                        <option value="Nandurbar">Nandurbar, Maharashtra</option>
-                        <option value="Palghar">Palghar, Maharashtra</option>
-                        <option value="Washim">Washim, Maharashtra</option>
-                        <option value="Karad">Karad, Maharashtra</option>
-                        <option value="Baramati">Baramati, Maharashtra</option>
-                        <option value="Chimur">Chimur, Maharashtra</option>
-                        <option value="Deolali">Deolali, Maharashtra</option>
-                        <option value="Gangapur">Gangapur, Maharashtra</option>
-                        <option value="Junnar">Junnar, Maharashtra</option>
-                        <option value="Kamthi">Kamthi, Maharashtra</option>
-                        <option value="Panjim">Panjim, Goa</option>
-                        <!-- Add more cities as needed -->
-                    </select>
-                    <label for="travelDate">Date:</label>
-                    <input type="date" id="travelDate" value="" min="2024-01-27" required>
-                    <!-- Set default value to current date + 1 -->
-                    <label for="pickupTime">Pickup Time:</label>
-                    <input type="time" id="pickupTime" value="07:00" required>
-                    <!-- Set default value to 7 am -->
-                    <button onclick="submitBooking()">Book Now</button>
-                </section>
-            </div>
-        </div>
-
-    </div>
-
-    <div>
-
-    </div>
-
-    <section id="videoSection" class="video-section">
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/dkqj-tunkvU" frameborder="0" allowfullscreen></iframe>
-            <div class="video-description">
-                <br>
-                <h2>Delhi Diaries: A Tapestry of Tradition and Modernity</h2>
-
-                <p>
-                    Step into the heart of Old Delhi and immerse yourself in its chaotic charm. Lose yourself in the
-                    labyrinthine lanes filled with bustling markets, vibrant colors, and the cacophony of sounds that
-                    define this historic neighborhood. Experience the hustle and bustle of everyday life as vendors call
-                    out their wares and shoppers haggle for the best deals. Amidst the chaos, discover hidden gems like
-                    the majestic Jama Masjid and the bustling Chandni Chowk, where history and tradition come alive in
-                    every corner. Old Delhi may be chaotic, but it's a chaos that's full of life, energy, and stories
-                    waiting to be told.</p>
-                <br>
-                <a href="#booking" class="cta-button">Book Now</a>
-            </div>
-        </div>
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/JW1jSINTzaw" frameborder="0" allowfullscreen></iframe>
-            <div class="video-description">
-                <br>
-                <h2>Modern Delhi: Where Innovation Meets Tradition</h2>
-                <p>Explore the dynamic and vibrant spirit of Modern Delhi in this captivating video journey. From sleek
-                    skyscrapers to bustling marketplaces, discover how this city seamlessly blends tradition with
-                    innovation. Immerse yourself in the bustling streets, where the old and new coexist in perfect
-                    harmony, and experience the energy of a city that never sleeps. Join us as we uncover the hidden
-                    gems and modern marvels that make Modern Delhi a city like no other.</p>
-                <br>
-                <a href="#booking" class="cta-button">Book Now</a>
-            </div>
-        </div>
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/uvJOsGpexh4" frameborder="0" allowfullscreen></iframe>
-            <div class="video-description">
-                <br>
-                <h2>Must-Visit Places in Delhi: A Journey Through Time and Tradition</h2>
-                <p>Explore the rich tapestry of history and culture in Delhi through its must-visit places. From ancient
-                    monuments to modern marvels, embark on a journey that spans centuries. Discover the majestic Red
-                    Fort, a UNESCO World Heritage Site that echoes the grandeur of India's Mughal era. Wander through
-                    the bustling streets of Chandni Chowk, where history comes alive in every corner. Visit the serene
-                    Lotus Temple, a symbol of peace and unity. Experience the blend of tradition and modernity at the
-                    Akshardham Temple, a stunning example of contemporary architecture. Whether you're a history buff, a
-                    culture enthusiast, or simply looking for an adventure, Delhi has something for everyone.
-                </p>
-                <br>
-                <a href="#booking" class="cta-button">Book Now</a>
-            </div>
-        </div>
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/Fim1BA3HMK0" frameborder="0" allowfullscreen></iframe>
-            <div class="video-description">
-                <br>
-                <h2>Gate of India, Delhi: A Majestic Symbol of History and Heritage</h2>
-                <p>The Gate of India, also known as India Gate, stands tall as a majestic symbol of Delhi's rich history
-                    and heritage. Built as a memorial to commemorate the Indian soldiers who sacrificed their lives in
-                    World War I, this iconic monument holds a special place in the hearts of Indians. As you stand
-                    before its grandeur, you can't help but feel a sense of pride and reverence for the brave souls it
-                    honors. Surrounded by lush green lawns and bustling with activity, the Gate of India is not just a
-                    monument, but a living testament to India's resilience and spirit. Come, explore this historic
-                    landmark and pay homage to the heroes who gave their all for our nation.</p>
-                <br>
-                <a href="#booking" class="cta-button">Book Now</a>
-            </div>
-        </div>
-
-    </section>
-
-
-
-
-
-
-    <!-- Error Modal -->
-    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
-        aria-describedby="errorModalDesc">
-        <div class="modal-content">
-            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
-            <p id="errorModalDesc">Select source and destination city 📍</p>
-            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <div id="footerContainer"></div>
-
-    <script src="delhi.js"></script>
-
-
+    <header>
+        <h1>Delhi - City Details</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About Delhi</h2>
+            <p>Delhi, officially known as the National Capital Territory of Delhi (NCT), is a city and a union territory of India containing New Delhi, the capital of India. It is bordered by the state of Haryana on three sides and by Uttar Pradesh to the east. The NCT covers an area of 1,484 square kilometers (573 sq mi).</p>
+            <ul class="fact-list">
+                <li>Population: Approximately 30 million</li>
+                <li>Languages Spoken: Hindi, English, Punjabi, Urdu</li>
+                <li>Climate: Extreme climate with hot summers and cold winters</li>
+                <li>Currency: Indian Rupee (INR)</li>
+            </ul>
+        </section>
+        <section class="places-to-visit">
+            <h3>Places to Visit in Delhi</h3>
+            <ul>
+                <li><strong>Red Fort:</strong> A historic fort in the city that served as the main residence of the emperors of the Mughal dynasty for nearly 200 years.</li>
+                <li><strong>Qutub Minar:</strong> A UNESCO World Heritage Site and one of the tallest minarets in India, built in 1193.</li>
+                <li><strong>India Gate:</strong> A war memorial located astride the Rajpath, originally called the All India War Memorial.</li>
+                <li><strong>Lotus Temple:</strong> A Bahá'í House of Worship known for its flowerlike shape and stunning architecture.</li>
+                <li><strong>Akshardham Temple:</strong> A Hindu temple complex known for its intricate carvings and stunning architecture.</li>
+                <li><strong>Jama Masjid:</strong> One of the largest mosques in India, built by Mughal Emperor Shah Jahan between 1644 and 1656.</li>
+                <li><strong>Humayun's Tomb:</strong> Another UNESCO World Heritage Site, it is the tomb of the Mughal Emperor Humayun.</li>
+            </ul>
+        </section>
+    </main>
 </body>
-
 </html>
