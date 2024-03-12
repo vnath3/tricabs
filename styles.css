@@ -33,11 +33,10 @@ html {
 /* Booking Widget */
 .booking-widget {
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 0.5em solid #c8ff00;
     border-radius: 5px;
-    padding: 20px;
-    width: 90%;
-    max-width: 350px;
+    padding: 2em;
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -66,11 +65,15 @@ html {
 
 .booking-widget input,
 .booking-widget select {
-    width: 100%;
+    width: auto;
     padding: 0px;
     margin-bottom: 16px;
     box-sizing: border-box;
     font-size: larger;
+}
+
+.booking-widget select span {
+    max-width: 10%;
 }
 
 
@@ -286,7 +289,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
-    text-align: center;
+    /* text-align: center; */
     z-index: 1;
 }
 
