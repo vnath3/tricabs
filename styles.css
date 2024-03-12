@@ -269,6 +269,51 @@ html {
     z-index: 1;
 }
 
+
+
+
+/* new changes */
+/* Container for the video section  css to be added */
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    /* Set your desired height */
+}
+
+.video-description {
+    padding: 5px 20px;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-description h3 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.video-description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .booking-widget {
