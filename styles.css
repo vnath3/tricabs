@@ -15,25 +15,10 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Home section */
-.home {
-    padding: 0px;
-    height: 50px;
-    text-align: center;
-    background-color: #000000;
-}
-
-.home h2 {
-
-    color: #fbff00;
-}
-
-
-
 /* Booking Widget */
 .booking-widget {
     background-color: #fff;
-    border: 0.5em solid #c8ff00;
+    border: 0.5em solid #fffe59;
     border-radius: 5px;
     padding: 2em;
     max-width: 100%;
@@ -75,7 +60,6 @@ html {
 .booking-widget select span {
     max-width: 10%;
 }
-
 
 /* Flexbox Card structure */
 .card-container {
@@ -244,16 +228,8 @@ html {
 /* Button Styles */
 .errorPopupButtons {
     background-color: #f44336;
-    /* Red */
-    /* border: none; */
     color: white;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
     border-radius: 2em;
 }
 
@@ -311,6 +287,13 @@ html {
         font-size: 200%;
         width: 10%;
     }
+
+    /* Modal Content */
+    .modal-content {
+        margin: auto;
+    }
+
+
 }
 
 @media screen and (max-width: 480px) {
