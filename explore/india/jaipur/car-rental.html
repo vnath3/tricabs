@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Explore Jaipur</title>
+    <meta name="description"
+        content="Explore the vibrant city of Jaipur with Axis Cabs. Enjoy hassle-free travel and discover the rich history and culture of India's Pink City. Book your ride now and experience the convenience of our modern fleet of vehicles. Contact us at +91 9922333305 or visit our website to learn more.">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Explore Jaipur">
+    <meta name="og:description"
+        content="Explore the vibrant city of Jaipur with Axis Cabs. Enjoy hassle-free travel and discover the rich history and culture of India's Pink City. Book your ride now and experience the convenience of our modern fleet of vehicles. Contact us at +91 9922333305 or visit our website to learn more.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/explore/india/jaipur/city-details.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://axiscabs.com/explore/india/jaipur/city-details.html">
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "City",
+          "name": "Jaipur",
+          "description": "Explore the vibrant city of Jaipur with Axis Cabs. Enjoy hassle-free travel and discover the rich history and culture of India's Pink City.",
+          "url": "https://axiscabs.com/jaipur"
+        }
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab in Delhi.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+
+    </script>
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/jaipur-hero-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Explore Jaipur with Axis Cabs</h1>
+            <p>
+                Jaipur, famously known as the Pink City, is a mesmerizing blend of history, culture, and architectural
+                splendor. Known for its majestic forts, vibrant markets, and rich heritage, Jaipur offers a unique
+                experience for travelers.<br><br>
+                Jaipur is home to some of the most magnificent forts and palaces in India, including the iconic Amber
+                Fort, Jaigarh Fort, and City Palace. These architectural marvels reflect the grandeur and opulence of
+                Rajasthan's royal past, offering visitors a glimpse into the region's rich history.<br><br>
+                In addition to its historical landmarks, Jaipur is also famous for its vibrant culture and traditions.
+                The city is known for its colorful festivals, traditional Rajasthani cuisine, and vibrant markets. The
+                bustling streets of Jaipur are filled with shops selling local handicrafts, textiles, and jewelry,
+                making it a paradise for shoppers.<br><br>
+                When it comes to transportation, Jaipur offers a variety of options including buses, auto-rickshaws, and
+                taxis. However, for a convenient and comfortable travel experience, Axis Cabs is the preferred choice
+                for many travelers. With a fleet of modern vehicles and professional drivers, Axis Cabs ensures a
+                hassle-free travel experience for all its customers.<br><br>
+                Whether you're exploring the majestic forts of Jaipur, shopping in its bustling markets, or experiencing
+                its vibrant culture, Axis Cabs is here to make your journey memorable and comfortable.
+            </p>
+            <h2>Cab options in Jaipur</h2>
+            <p>
+                Axis Cabs offers a range of cab options in Jaipur to suit every traveler's needs. From hatchbacks and
+                sedans to SUVs and luxury cars, we have a vehicle for every occasion. All our cabs are well-maintained
+                and driven by experienced drivers, ensuring a safe and comfortable journey for our passengers.
+            </p>
+            <table class="car-types-table">
+                <thead>
+                    <tr>
+                        <th>Car Type</th>
+                        <th>Models Included</th>
+                        <th>Capacity</th>
+                        <th>Ideal For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AC Sedans</td>
+                        <td>Toyota Etios, Honda Amaze, Maruti Dzire, etc.</td>
+                        <td>Up to 4 Passengers</td>
+                        <td>Comfortable rides for small families</td>
+                    </tr>
+                    <tr>
+                        <td>AC Hatchbacks</td>
+                        <td>Tata Indica, Maruti Ritz, Nissan Micra, etc.</td>
+                        <td>Up to 4 Passengers</td>
+                        <td>Budget-friendly trips for short distances</td>
+                    </tr>
+                    <tr>
+                        <td>AC SUVs & MUVs</td>
+                        <td>Toyota Innova, Maruti Ertiga, Mahindra Xylo, etc.</td>
+                        <td>6-7 Passengers</td>
+                        <td>Premium travel experience for large families</td>
+                    </tr>
+                    <tr>
+                        <td>Premium SUVs</td>
+                        <td>Toyota Innova Crysta</td>
+                        <td>6-7 Passengers</td>
+                        <td>Luxury travel for groups of 6-7 people</td>
+                    </tr>
+                    <tr>
+                        <td>AC Minivans</td>
+                        <td>Tempo Travellers</td>
+                        <td>Up to 12 Passengers</td>
+                        <td>Convenient for large groups of friends & families</td>
+                    </tr>
+                    <tr>
+                        <td>Luxury Car Rental</td>
+                        <td>Toyota Corolla, Toyota Camry, BMW, etc.</td>
+                        <td>Up to 4 Passengers</td>
+                        <td>Indulge in luxury travel</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Taxi fares in Jaipur</h2>
+            <p>
+                Axis Cabs offers competitive taxi fares in Jaipur, ensuring that our customers get the best value for
+                their money. Our transparent pricing policy means that you only pay for what you see, with no hidden
+                fees or charges. Below is a summary of our cab rates as of March 2023.
+            </p>
+            <table class="cab-rates-table">
+                <thead>
+                    <tr>
+                        <th>Cab Type</th>
+                        <th>Outstation Price (per km)</th>
+                        <th>Full Day Taxi Price</th>
+                        <th>Extended Day Taxi Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Etios</td>
+                        <td>Starting from ₹10.25/km</td>
+                        <td>₹2224</td>
+                        <td>₹2965</td>
+                    </tr>
+                    <tr>
+                        <td>Innova</td>
+                        <td>Starting from ₹16/km</td>
+                        <td>₹3088</td>
+                        <td>₹3705</td>
+                    </tr>
+                    <tr>
+                        <td>Tempo Traveller</td>
+                        <td>Starting from ₹30/km</td>
+                        <td>₹4941</td>
+                        <td>NA</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Why Choose Axis Cabs as Your Preferred Taxi Service in Jaipur?</h2>
+            <p>
+                Axis Cabs is committed to providing exceptional service to our customers in Jaipur. With a focus on
+                customer satisfaction, professionalism, and transparency, we strive to exceed your expectations every
+                time you ride with us.<br><br>
+                Whether you're a local resident or a tourist visiting Jaipur for the first time, Axis Cabs is your
+                reliable partner for all your transportation needs. Book a cab with us today and experience the
+                difference!
+            </p>
+            <h2>Conclusion:</h2>
+            <p>Jaipur, with its rich history, vibrant culture, and architectural marvels, is a city that captures the
+                heart of every traveler. Whether you're exploring the majestic forts, shopping in the bustling markets,
+                or experiencing the local cuisine, Jaipur offers a unique and memorable experience. Plan your trip to
+                Jaipur with Axis Cabs and make your journey comfortable and enjoyable.</p>
+            <!-- Add more content as needed -->
+            <p>
+                For more information, contact us at <a href="mailto:info@example.com">info@axiscabs.com</a>.
+            </p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+        <section id="videoSection" class="video-section">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/3GGZ_xSVQzk" frameborder="0" allowfullscreen></iframe>
+                <div class="video-description">
+                    <br>
+                    <h2>Jaipur: The Pink City</h2>
+                    <p>
+                        Explore the vibrant culture and rich heritage of Jaipur, the Pink City, in this captivating
+                        video
+                        journey. From the majestic Amber Fort to the bustling markets of Johari Bazaar, discover the
+                        timeless beauty of this historic city. Immerse yourself in the colors, sounds, and flavors of
+                        Jaipur as you explore its palaces, temples, and gardens. Join us as we take you on a journey
+                        through the streets of Jaipur and uncover the secrets of this enchanting city.</p>
+                    <br>
+                    <a href="#booking" class="cta-button">Book Now</a>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/u-jhbtGp7bU" frameborder="0" allowfullscreen></iframe>
+                <div class="video-description">
+                    <br>
+                    <h2>Jaipur: A City of Heritage and Hospitality</h2>
+                    <p>Experience the charm and hospitality of Jaipur in this captivating video journey. From the
+                        magnificent City Palace to the serene Jal Mahal, discover the beauty and grandeur of Rajasthan's
+                        capital. Immerse yourself in the rich culture and heritage of Jaipur as you explore its
+                        centuries-old traditions and vibrant markets. Join us as we take you on a journey through the
+                        streets of Jaipur and discover why it is known as the Pink City.</p>
+                    <br>
+                    <a href="#booking" class="cta-button">Book Now</a>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/79dnJ7dGi4c" frameborder="0" allowfullscreen></iframe>
+                <div class="video-description">
+                    <br>
+                    <h2>Jaipur: A Journey Through Time</h2>
+                    <p>Embark on a journey through time and discover the rich history and heritage of Jaipur. From the
+                        majestic Amber Fort to the beautiful Hawa Mahal, explore the architectural wonders of this
+                        historic city. Immerse yourself in the vibrant culture and traditions of Jaipur as you wander
+                        through its bustling streets and markets. Join us as we take you on a journey through the
+                        centuries and uncover the secrets of Jaipur's past.</p>
+                    <br>
+                    <a href="#booking" class="cta-button">Book Now</a>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/3XfQ041s_Fc" frameborder="0" allowfullscreen></iframe>
+                <div class="video-description">
+                    <br>
+                    <h2>Jaipur: A City of Contrasts</h2>
+                    <p>Experience the contrasts of Jaipur, from its ancient palaces to its modern skyscrapers, in this
+                        captivating video journey. Discover the beauty of Rajasthan's capital as you explore its
+                        centuries-old forts and palaces, and marvel at its modern infrastructure and development. Join
+                        us as we take you on a journey through the heart of Jaipur and uncover the many facets of this
+                        fascinating city.</p>
+                    <br>
+                    <a href="#booking" class="cta-button">Book Now</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="jaipur.js"></script>
+</body>
+
+</html>

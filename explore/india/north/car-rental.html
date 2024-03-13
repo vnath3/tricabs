@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Discover Northern Wonders</title>
+    <meta name="description"
+        content="Discover the wonders of Northern India with Axis Cabs. From the serene hills of Binsar to the ancient forts of Mandu, explore these hidden gems with our reliable cab services. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Discover Northern Wonders">
+    <meta name="og:description"
+        content="Discover the wonders of Northern India with Axis Cabs. From the serene hills of Binsar to the ancient forts of Mandu, explore these hidden gems with our reliable cab services. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/discover-northern-wonders.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://axiscabs.com/discover-northern-wonders.html">
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Axis Cabs - Discover Northern Wonders",
+          "description": "Discover the wonders of Northern India with Axis Cabs. From the serene hills of Binsar to the ancient forts of Mandu, explore these hidden gems with our reliable cab services.",
+          "url": "https://axiscabs.com/discover-northern-wonders.html"
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/hero-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Discover Northern Wonders</h1>
+            <p>
+                Northern India is home to some of the most enchanting destinations in the country, offering a perfect
+                blend of natural beauty, rich culture, and architectural marvels. Explore these hidden gems with Axis
+                Cabs
+                and experience the magic of Northern India.
+            </p>
+            <h2>Binsar, Uttarakhand</h2>
+            <p>
+                Binsar, Uttarakhand, is a serene hill station offering panoramic views of the Himalayan peaks. Known for
+                its wildlife sanctuary, ancient temples, and scenic trekking routes, Binsar is a perfect retreat for
+                nature lovers and adventure enthusiasts. Experience the tranquility and natural beauty of Binsar with
+                Axis Cabs, offering the best local cab services in the region.
+
+                Visit the Binsar Wildlife Sanctuary and explore its diverse flora and fauna, including rare species of
+                birds and animals. Enjoy a peaceful trek through the sanctuary's dense forests and soak in the
+                breathtaking views of the surrounding mountains.
+
+                Explore the ancient temples in Binsar, such as the Binsar Mahadev Temple, dedicated to Lord Shiva, and
+                the Jageshwar Temple Complex, known for its exquisite stone carvings and architecture.
+
+                With Axis Cabs, you can explore Binsar comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the region, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Binsar trip. Experience the best cabs and affordable rates with Axis Cabs in Uttarakhand.
+            </p>
+            <h2>Majuli, Assam</h2>
+            <p>Majuli is the world's largest river island, located in the Brahmaputra River. It is known for its rich
+                culture, including the unique Assamese Vaishnavite culture, traditional handicrafts, and scenic beauty.
+                A visit to Majuli is like stepping back in time, where life is simple yet vibrant. Experience the
+                tranquility and cultural richness of Majuli with Axis Cabs, offering the best local cab services in
+                Assam.</p>
+
+            <p>Explore the unique culture of Majuli by visiting the Satras, which are traditional Assamese monasteries
+                known for their dance, music, and drama performances. Witness the traditional art of mask-making and
+                pottery, which are integral parts of the island's culture.</p>
+
+            <p>With Axis Cabs, you can explore Majuli comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions on the island, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Majuli trip. Experience the best cabs and affordable rates with Axis Cabs in Assam.</p>
+            </p>
+            <h2>Mcleodganj, Himachal Pradesh</h2>
+            <p>Often referred to as "Little Lhasa," Mcleodganj is home to a large Tibetan community and is the residence
+                of the 14th Dalai Lama. It offers a blend of Tibetan and Indian cultures, with stunning views of the
+                surrounding mountains. The peaceful ambiance and spiritual vibe of Mcleodganj make it a must-visit
+                destination. Experience the tranquility and cultural diversity of Mcleodganj with Axis Cabs, offering
+                the best local cab services in Himachal Pradesh.</p>
+
+            <p>Visit the Tsuglagkhang Complex, which houses the Namgyal Monastery, the official residence of the Dalai
+                Lama, and the Tibet Museum, showcasing the history and culture of Tibet. Explore the Bhagsu Waterfall, a
+                picturesque waterfall surrounded by lush greenery and ideal for a peaceful retreat.</p>
+
+            <p>With Axis Cabs, you can explore Mcleodganj comfortably and conveniently. Our experienced drivers will
+                take you to all the major attractions in the town, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Mcleodganj trip. Experience the best cabs and affordable rates with Axis Cabs in Himachal Pradesh.
+            </p>
+            <h2>Orchha, Madhya Pradesh</h2>
+            <p>Orchha is a hidden gem known for its stunning palaces, temples, and cenotaphs built by the Bundela
+                rulers. It offers a glimpse into India's rich architectural and cultural heritage, with its beautifully
+                preserved monuments telling the tales of its glorious past. Explore the architectural splendor and
+                cultural heritage of Orchha with Axis Cabs, offering the best local cab services in Madhya Pradesh.</p>
+
+            <p>Visit the Orchha Fort complex, which houses several palaces, temples, and cenotaphs, including the
+                Jahangir Mahal, the Raj Mahal, and the Chaturbhuj Temple. Explore the architectural marvels of these
+                structures, which reflect a blend of Mughal and Rajput architectural styles.</p>
+
+            <p>With Axis Cabs, you can explore Orchha comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the town, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Orchha trip. Experience the best cabs and affordable rates with Axis Cabs in Madhya Pradesh.</p>
+            <h2>Tawang, Arunachal Pradesh</h2>
+            <p>Tawang is a remote town located in the Himalayas, known for its Buddhist monasteries, stunning
+                landscapes, and rich tribal culture. The Tawang Monastery, one of the largest monasteries in India, is a
+                major attraction, offering a spiritual retreat amidst the breathtaking natural beauty of the region.
+                Explore the tranquility and cultural richness of Tawang with Axis Cabs, offering the best local cab
+                services in Arunachal Pradesh.</p>
+
+            <p>Visit the Tawang Monastery and immerse yourself in its serene ambiance, surrounded by snow-capped
+                mountains and lush valleys. Explore the monastic complex, which houses several temples, residential
+                buildings, and a library with a vast collection of ancient scriptures and texts.</p>
+
+            <p>With Axis Cabs, you can explore Tawang comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the town, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Tawang trip. Experience the best cabs and affordable rates with Axis Cabs in Arunachal Pradesh.</p>
+            <h2>Chopta, Uttarakhand</h2>
+            <p>Known as the "Mini Switzerland of India," Chopta is a picturesque hill station surrounded by dense
+                forests and towering peaks. It is an ideal destination for trekking and camping enthusiasts, offering
+                stunning views of the Himalayas and a peaceful environment to rejuvenate the mind and soul. Explore the
+                natural beauty and tranquility of Chopta with Axis Cabs, offering the best local cab services in
+                Uttarakhand.</p>
+
+            <p>Embark on a trek to Tungnath, the highest Shiva temple in the world, located amidst the scenic beauty of
+                Chopta. Witness the mesmerizing views of the Himalayan peaks, including Nanda Devi, Trishul, and
+                Chaukhamba, from Chandrashila, a short trek from Tungnath.</p>
+
+            <p>With Axis Cabs, you can explore Chopta comfortably and conveniently. Our experienced drivers will take
+                you to all the major trekking points and attractions in the region, ensuring a memorable travel
+                experience. Whether you're traveling solo, with family, or in a group, Axis Cabs offers the best
+                transportation solution for your Chopta trip. Experience the best cabs and affordable rates with Axis
+                Cabs in Uttarakhand.</p>
+            <h2>Mandu, Madhya Pradesh</h2>
+            <p>Mandu is an ancient fort city known for its magnificent Afghan architecture, including palaces, mosques,
+                and tombs. The city's rich history and stunning monuments make it a must-visit destination for history
+                buffs, offering a glimpse into the grandeur of its past. Explore the historical and architectural
+                wonders of Mandu with Axis Cabs, offering the best local cab services in Madhya Pradesh.</p>
+
+            <p>Visit the Mandu Fort, also known as the Shadiabad Fort, which houses several architectural marvels,
+                including the Jahaz Mahal, Hindola Mahal, and Jami Masjid. Explore the intricate carvings, stunning
+                arches, and serene lakes that dot the fort complex, reflecting the city's rich cultural heritage.</p>
+
+            <p>With Axis Cabs, you can explore Mandu comfortably and conveniently. Our experienced drivers will take you
+                to all the major attractions in the city, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Mandu trip. Experience the best cabs and affordable rates with Axis Cabs in Madhya Pradesh.</p>
+            <!-- Add more destinations as needed -->
+            <p>
+                For more information about our cab services to these Northern wonders, contact us at <a
+                    href="mailto:info@axiscabs.com">info@axiscabs.com</a>.
+            </p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="north.js"></script>
+</body>
+
+</html>

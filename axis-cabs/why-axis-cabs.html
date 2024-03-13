@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Why Choose Our Taxi Services</title>
+    <meta name="description"
+        content="Discover why Axis Cabs is the best choice for your taxi service needs. From our modern fleet to our professional drivers, we ensure a safe, comfortable, and reliable travel experience. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Why Choose Our Taxi Services">
+    <meta name="og:description"
+        content="Discover why Axis Cabs is the best choice for your taxi service needs. From our modern fleet to our professional drivers, we ensure a safe, comfortable, and reliable travel experience. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/why-choose-our-taxi-services.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://axiscabs.com/why-choose-our-taxi-services.html">
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Axis Cabs - Why Choose Our Taxi Services",
+          "description": "Discover why Axis Cabs is the best choice for your taxi service needs. From our modern fleet to our professional drivers, we ensure a safe, comfortable, and reliable travel experience.",
+          "url": "https://axiscabs.com/why-choose-our-taxi-services.html"
+        }
+    </script>
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <!-- <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/hero-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+       
+    <label for="pickupTime">Pickup Time:</label>
+    <input type="time" id="pickupTime" value="07:00" required>
+
+    <button onclick="submitBooking()">Book Now</button>
+    </section>
+    </div>
+    </div> -->
+
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Why Choose Our Taxi Services</h1>
+            <p>
+                At Axis Cabs, we understand the importance of reliable and comfortable transportation. That's why we
+                strive to provide the best taxi services to our customers. Here are a few reasons why you should choose
+                Axis Cabs for your travel needs:
+            </p>
+            <h2>Modern Fleet</h2>
+            <p>
+                Our fleet consists of modern vehicles that are well-maintained and equipped with the latest amenities to
+                ensure a comfortable ride for our customers.
+            </p>
+            <h2>Professional Drivers</h2>
+            <p>
+                Our drivers are experienced, professional, and courteous. They are well-versed with the local routes and
+                will ensure that you reach your destination safely and on time.
+            </p>
+            <h2>Reliable Service</h2>
+            <p>
+                We understand the importance of being on time. That's why we offer reliable and punctual service to our
+                customers, ensuring that you never miss an appointment or a flight.
+            </p>
+            <h2>Easy Booking</h2>
+            <p>
+                Booking a cab with Axis Cabs is quick and easy. You can book your ride through our website or mobile app
+                in just a few clicks.
+            </p>
+            <h2>Safe Travel</h2>
+            <p>
+                Your safety is our top priority. We adhere to strict safety guidelines to ensure that you have a safe
+                and
+                comfortable journey with us.
+            </p>
+            <h2>Affordable Rates</h2>
+            <p>
+                We offer competitive rates for our taxi services, ensuring that you get the best value for your money.
+            </p>
+
+            <p>
+                For more information about our taxi services, contact us at <a
+                    href="mailto:info@axiscabs.com">info@axiscabs.com</a>.
+            </p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="basic-details.js"></script>
+</body>
+
+</html>
