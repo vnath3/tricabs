@@ -1,9 +1,10 @@
 //Copy of script.js only css path is changed to booking wodget css
 // Include CSS styles
-const link = document.createElement('link');
-link.rel = 'stylesheet';
-link.type = 'text/css';
+// link.rel = 'stylesheet';
+// link.type = 'text/css';
 // link.href = 'common.css'; // Replace 'styles.css' with the path to your CSS file
+
+const link = document.createElement('link');
 document.head.appendChild(link);
 document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
 
