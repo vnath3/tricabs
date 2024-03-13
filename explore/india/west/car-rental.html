@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Marvel at Western Delights</title>
+    <meta name="description"
+        content="Marvel at the delights of Western India with Axis Cabs. From the stunning beaches of Diu to the picturesque hill station of Mahabaleshwar, explore the rich culture and natural beauty of the West. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Marvel at Western Delights">
+    <meta name="og:description"
+        content="Marvel at the delights of Western India with Axis Cabs. From the stunning beaches of Diu to the picturesque hill station of Mahabaleshwar, explore the rich culture and natural beauty of the West. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/marvel-western-delights.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://axiscabs.com/marvel-western-delights.html">
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Axis Cabs - Marvel at Western Delights",
+          "description": "Marvel at the delights of Western India with Axis Cabs. From the stunning beaches of Diu to the picturesque hill station of Mahabaleshwar, explore the rich culture and natural beauty of the West.",
+          "url": "https://axiscabs.com/marvel-western-delights.html"
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/hero-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Marvel at Western Delights</h1>
+            <p>Western India is a treasure trove of natural beauty, rich history, and vibrant culture. Explore these
+                enchanting destinations with Axis Cabs and experience the magic of the West. Discover the architectural
+                wonders, scenic landscapes, and cultural heritage of Western India with Axis Cabs, offering the best
+                local cab services in the region.</p>
+
+            <p>Visit the historic city of Mumbai and explore its bustling markets, colonial-era buildings, and vibrant
+                nightlife. Experience the stunning beaches of Goa and indulge in water sports, beach parties, and
+                delicious seafood.</p>
+
+            <p>With Axis Cabs, you can explore Western India comfortably and conveniently. Our experienced drivers will
+                take you to all the major attractions in the region, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Western India trip. Experience the best cabs and affordable rates with Axis Cabs in Western India.
+            </p>
+            <h2>Diu, Gujarat</h2>
+            <p>Diu is a small island located off the coast of Gujarat. It is known for its stunning beaches, historic
+                forts, and Portuguese colonial architecture. The blend of Indian and Portuguese cultures makes it a
+                unique destination. Experience the beauty and charm of Diu with Axis Cabs, offering the best local cab
+                services in Gujarat.</p>
+
+            <p>Explore the beautiful beaches of Diu, such as Nagoa Beach and Ghogla Beach, and enjoy water sports and
+                sunbathing. Visit the historic Diu Fort, built by the Portuguese in the 16th century, and explore its
+                ramparts and cannons.</p>
+
+            <p>With Axis Cabs, you can explore Diu comfortably and conveniently. Our experienced drivers will take you
+                to all the major attractions on the island, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Diu trip. Experience the best cabs and affordable rates with Axis Cabs in Gujarat.</p>
+            <h2>Daman, Daman and Diu</h2>
+            <p>Daman is another coastal town with Portuguese colonial heritage, located in the union territory of Daman
+                and Diu. It is known for its beautiful beaches, historic forts, and vibrant local culture. Experience
+                the charm and beauty of Daman with Axis Cabs, offering the best local cab services in Daman and Diu.</p>
+
+            <p>Explore the stunning beaches of Daman, such as Devka Beach and Jampore Beach, and enjoy water sports and
+                beachside relaxation. Visit the historic forts of Daman, such as Fort Diu and Moti Daman Fort, and
+                explore their fascinating history and architecture.</p>
+
+            <p>With Axis Cabs, you can explore Daman comfortably and conveniently. Our experienced drivers will take you
+                to all the major attractions in the town, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Daman trip. Experience the best cabs and affordable rates with Axis Cabs in Daman and Diu.</p>
+            <h2>Matheran, Maharashtra</h2>
+            <p>Matheran is a picturesque hill station near Mumbai, known for its panoramic views, lush forests, and
+                serene atmosphere. It is one of the few places in India where motor vehicles are not allowed, making it
+                a peaceful retreat. Experience the tranquility and natural beauty of Matheran with Axis Cabs, offering
+                the best local cab services in Maharashtra.</p>
+
+            <p>Explore the scenic viewpoints of Matheran, such as Panorama Point and Echo Point, and enjoy breathtaking
+                views of the surrounding valleys and hills. Take a leisurely stroll through the lush forests of Matheran
+                and soak in the fresh mountain air.</p>
+
+            <p>With Axis Cabs, you can explore Matheran comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the hill station, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Matheran trip. Experience the best cabs and affordable rates with Axis Cabs in Maharashtra.</p>
+            <h2>Matheran, Maharashtra</h2>
+            <p>Matheran is a picturesque hill station near Mumbai, known for its panoramic views, lush forests, and
+                serene atmosphere. It is one of the few places in India where motor vehicles are not allowed, making it
+                a peaceful retreat. Experience the tranquility and natural beauty of Matheran with Axis Cabs, offering
+                the best local cab services in Maharashtra.</p>
+
+            <p>Explore the scenic viewpoints of Matheran, such as Panorama Point and Echo Point, and enjoy breathtaking
+                views of the surrounding hills and valleys. Take a leisurely walk or horse ride through the forest
+                trails and immerse yourself in the beauty of nature.</p>
+
+            <p>With Axis Cabs, you can explore Matheran comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the hill station, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Matheran trip. Experience the best cabs and affordable rates with Axis Cabs in Maharashtra.</p>
+            <h2>Mahabaleshwar, Maharashtra</h2>
+            <p>Mahabaleshwar is a popular hill station known for its stunning views, lush forests, and pleasant climate.
+                It is famous for its strawberries and offers opportunities for trekking, boating, and horse riding.
+                Experience the natural beauty and pleasant climate of Mahabaleshwar with Axis Cabs, offering the best
+                local cab services in Maharashtra.</p>
+
+            <p>Explore the scenic viewpoints of Mahabaleshwar, such as Arthur's Seat and Kate's Point, and enjoy
+                panoramic views of the valleys and mountains. Visit the Mapro Garden to taste delicious strawberry-based
+                products and enjoy a peaceful boat ride in the Venna Lake.</p>
+
+            <p>With Axis Cabs, you can explore Mahabaleshwar comfortably and conveniently. Our experienced drivers will
+                take you to all the major attractions in the hill station, ensuring a memorable travel experience.
+                Whether you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation
+                solution for your Mahabaleshwar trip. Experience the best cabs and affordable rates with Axis Cabs in
+                Maharashtra.</p>
+            <h2>Saputara, Gujarat</h2>
+            <p>Saputara is a hill station located in the Western Ghats, known for its beautiful lakes, gardens, and
+                tribal culture. It is a popular destination for nature lovers and adventure enthusiasts. Experience the
+                natural beauty and cultural richness of Saputara with Axis Cabs, offering the best local cab services in
+                Gujarat.</p>
+
+            <p>Explore the scenic beauty of Saputara by visiting attractions like the Saputara Lake, Sunset Point, and
+                the Rose Garden. Immerse yourself in the local tribal culture by visiting the artist village of Saputara
+                and witnessing the traditional dance and music performances.</p>
+
+            <p>With Axis Cabs, you can explore Saputara comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the hill station, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Saputara trip. Experience the best cabs and affordable rates with Axis Cabs in Gujarat.</p>
+            <h2>Mount Abu, Rajasthan</h2>
+            <p>Mount Abu is the only hill station in Rajasthan, known for its cool climate, stunning landscapes, and
+                rich flora and fauna. The Dilwara Temples, Nakki Lake, and Guru Shikhar are popular attractions.
+                Experience the natural beauty and cultural heritage of Mount Abu with Axis Cabs, offering the best local
+                cab services in Rajasthan.</p>
+
+            <p>Visit the famous Dilwara Temples, known for their intricate marble carvings and stunning architecture.
+                Enjoy a boat ride on the serene Nakki Lake and visit the nearby Toad Rock for panoramic views of the
+                surrounding area.</p>
+
+            <p>With Axis Cabs, you can explore Mount Abu comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the hill station, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Mount Abu trip. Experience the best cabs and affordable rates with Axis Cabs in Rajasthan.</p>
+            <!-- Add more destinations as needed -->
+            <p>
+                For more information about our cab services to these Western delights, contact us at <a
+                    href="mailto:info@axiscabs.com">info@axiscabs.com</a>.
+            </p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="west.js"></script>
+</body>
+
+</html>

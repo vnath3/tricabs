@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Explore Eastern Charms</title>
+    <meta name="description"
+        content="Explore the charming destinations of Eastern India with Axis Cabs. From the world's largest river island of Majuli to the stunning views of Darjeeling, discover the rich culture and natural beauty of the East. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Explore Eastern Charms">
+    <meta name="og:description"
+        content="Explore the charming destinations of Eastern India with Axis Cabs. From the world's largest river island of Majuli to the stunning views of Darjeeling, discover the rich culture and natural beauty of the East. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/explore-eastern-charms.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://axiscabs.com/explore-eastern-charms.html">
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Axis Cabs - Explore Eastern Charms",
+          "description": "Explore the charming destinations of Eastern India with Axis Cabs. From the world's largest river island of Majuli to the stunning views of Darjeeling, discover the rich culture and natural beauty of the East.",
+          "url": "https://axiscabs.com/explore-eastern-charms.html"
+        }
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/hero-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Explore Eastern Charms</h1>
+            <p>Eastern India is a land of diverse landscapes, rich cultures, and vibrant traditions. Explore these
+                enchanting destinations with Axis Cabs and experience the magic of the East. Discover the hidden gems
+                and cultural treasures of Eastern India with Axis Cabs, offering the best local cab services in the
+                region.</p>
+
+            <p>Visit the stunning hill stations of Darjeeling and Gangtok, known for their breathtaking views of the
+                Himalayas and vibrant Tibetan culture. Explore the ancient temples of Bhubaneswar and Puri, reflecting
+                the rich architectural heritage of the region.</p>
+
+            <p>With Axis Cabs, you can explore Eastern India comfortably and conveniently. Our experienced drivers will
+                take you to all the major attractions in the region, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Eastern India trip. Experience the best cabs and affordable rates with Axis Cabs in Eastern India.
+            </p>
+            <h2>Majuli, Assam</h2>
+            <p>Majuli is the world's largest river island, located in the Brahmaputra River. It is known for its rich
+                culture, including the unique Assamese Vaishnavite culture, traditional handicrafts, and scenic beauty.
+                Experience the cultural richness and natural beauty of Majuli with Axis Cabs, offering the best local
+                cab services in Assam.</p>
+
+            <p>Explore the Satras, traditional Assamese monasteries, in Majuli and witness the unique dance, music, and
+                drama performances. Visit the Samaguri Satra, known for its mask-making, and Auniati Satra, known for
+                its ancient manuscripts and artifacts.</p>
+
+            <p>With Axis Cabs, you can explore Majuli comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions on the island, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Majuli trip. Experience the best cabs and affordable rates with Axis Cabs in Assam.</p>
+            <h2>Puri, Odisha</h2>
+            <p>Known for its famous Jagannath Temple, Puri is a coastal town with a rich cultural heritage. It is also
+                known for its beautiful beaches, vibrant festivals, and traditional handicrafts. Experience the
+                spiritual aura and cultural richness of Puri with Axis Cabs, offering the best local cab services in
+                Odisha.</p>
+
+            <p>Visit the Jagannath Temple, dedicated to Lord Jagannath, and witness the elaborate rituals and ceremonies
+                that take place daily. Explore the beautiful beaches of Puri, such as Puri Beach and Swargadwar Beach,
+                and enjoy the serene ambiance and stunning views of the Bay of Bengal.</p>
+
+            <p>With Axis Cabs, you can explore Puri comfortably and conveniently. Our experienced drivers will take you
+                to all the major attractions in the town, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Puri trip. Experience the best cabs and affordable rates with Axis Cabs in Odisha.</p>
+            <h2>Darjeeling, West Bengal</h2>
+            <p>Known as the "Queen of the Hills," Darjeeling is famous for its stunning views of the Himalayas, lush tea
+                gardens, and charming colonial architecture. The Darjeeling Himalayan Railway, a UNESCO World Heritage
+                Site, is a major attraction. Experience the breathtaking beauty and colonial charm of Darjeeling with
+                Axis Cabs, offering the best local cab services in West Bengal.</p>
+
+            <p>Ride the iconic Darjeeling Himalayan Railway, also known as the Toy Train, and journey through
+                picturesque landscapes and quaint hillside villages. Visit the Tiger Hill viewpoint early in the morning
+                to witness the mesmerizing sunrise over the snow-capped peaks of Kanchenjunga.</p>
+
+            <p>With Axis Cabs, you can explore Darjeeling comfortably and conveniently. Our experienced drivers will
+                take you to all the major attractions in the hill station, ensuring a memorable travel experience.
+                Whether you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation
+                solution for your Darjeeling trip. Experience the best cabs and affordable rates with Axis Cabs in West
+                Bengal.</p>
+            <h2>Konark, Odisha</h2>
+            <p>Konark is famous for its Sun Temple, a UNESCO World Heritage Site known for its stunning architecture and
+                intricate stone carvings. The town is also known for its beautiful beaches and traditional dance forms.
+                Experience the architectural marvels and cultural richness of Konark with Axis Cabs, offering the best
+                local cab services in Odisha.</p>
+
+            <p>Visit the Sun Temple, dedicated to the Hindu Sun God Surya, and marvel at its impressive architecture and
+                detailed stone carvings depicting various aspects of life and mythology. Explore the Chandrabhaga Beach,
+                known for its golden sands and clear waters, ideal for a relaxing stroll or sunbathing.</p>
+
+            <p>With Axis Cabs, you can explore Konark comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the town, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Konark trip. Experience the best cabs and affordable rates with Axis Cabs in Odisha.</p>
+            <h2>Tawang, Arunachal Pradesh</h2>
+            <p>Tawang is a remote town located in the Himalayas, known for its Buddhist monasteries, stunning
+                landscapes, and rich tribal culture. The Tawang Monastery, one of the largest monasteries in India, is a
+                major attraction. Experience the spiritual tranquility and natural beauty of Tawang with Axis Cabs,
+                offering the best local cab services in Arunachal Pradesh.</p>
+
+            <p>Visit the Tawang Monastery, also known as Galden Namgyal Lhatse, and explore its vast complex comprising
+                temples, a library, and residential quarters for monks. Witness the stunning views of the surrounding
+                valleys and mountains from the monastery.</p>
+
+            <p>With Axis Cabs, you can explore Tawang comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the town, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Tawang trip. Experience the best cabs and affordable rates with Axis Cabs in Arunachal Pradesh.</p>
+            <h2>Chilika Lake, Odisha</h2>
+            <p>Chilika Lake is the largest coastal lagoon in India and a haven for birdwatchers. The lake is home to a
+                variety of bird species, including flamingos, herons, and pelicans, making it a paradise for nature
+                lovers. Experience the natural beauty and wildlife diversity of Chilika Lake with Axis Cabs, offering
+                the best local cab services in Odisha.</p>
+
+            <p>Take a boat ride on Chilika Lake and explore the various islands and bird sanctuaries that dot its
+                expanse. Visit the Nalabana Bird Sanctuary, a designated Ramsar site, and witness thousands of migratory
+                birds during the winter months.</p>
+
+            <p>With Axis Cabs, you can explore Chilika Lake comfortably and conveniently. Our experienced drivers will
+                take you to all the major attractions around the lake, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Chilika Lake trip. Experience the best cabs and affordable rates with Axis Cabs in Odisha.</p>
+            <h2>Sundarbans, West Bengal</h2>
+            <p>The Sundarbans is the largest mangrove forest in the world and a UNESCO World Heritage Site. It is home
+                to the Royal Bengal Tiger and offers opportunities for boat cruises, wildlife spotting, and exploring
+                the unique ecosystem. Experience the wilderness and natural beauty of the Sundarbans with Axis Cabs,
+                offering the best local cab services in West Bengal.</p>
+
+            <p>Embark on a thrilling boat cruise through the narrow creeks and waterways of the Sundarbans and witness
+                the rich biodiversity of the region, including various bird species, crocodiles, and deer. Explore the
+                watchtowers in the forest for a chance to spot the elusive Royal Bengal Tiger in its natural habitat.
+            </p>
+
+            <p>With Axis Cabs, you can explore the Sundarbans comfortably and conveniently. Our experienced drivers will
+                take you to all the major attractions in the region, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Sundarbans trip. Experience the best cabs and affordable rates with Axis Cabs in West Bengal.</p>
+            <!-- Add more destinations as needed -->
+            <p>
+                For more information about our cab services to these Eastern charms, contact us at <a
+                    href="mailto:info@axiscabs.com">info@axiscabs.com</a>.
+            </p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="east.js"></script>
+</body>
+
+</html>

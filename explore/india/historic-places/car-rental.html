@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Unearth Indian History</title>
+    <meta name="description"
+        content="Explore the rich history of India with Axis Cabs. From the iconic Taj Mahal to the majestic Red Fort, uncover the stories behind these historic monuments. Book your ride now and embark on a journey through India's fascinating history. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Unearth Indian History">
+    <meta name="og:description"
+        content="Explore the rich history of India with Axis Cabs. From the iconic Taj Mahal to the majestic Red Fort, uncover the stories behind these historic monuments. Book your ride now and embark on a journey through India's fascinating history. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/unearth-indian-history.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://axiscabs.com/unearth-indian-history.html">
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Axis Cabs - Unearth Indian History",
+          "description": "Explore the rich history of India with Axis Cabs. From the iconic Taj Mahal to the majestic Red Fort, uncover the stories behind these historic monuments.",
+          "url": "https://axiscabs.com/unearth-indian-history.html"
+        }
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/agra-hero-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Unearth Indian History</h1>
+            <p>
+                India is a land of rich history and heritage, with a myriad of historic sites that showcase its cultural
+                and architectural brilliance. Explore these historic sites with Axis Cabs and discover the fascinating
+                stories behind them.
+            </p>
+            <h2>Taj Mahal, Agra</h2>
+            <p>
+
+                One of the most famous monuments in the world, the Taj Mahal is a symbol of love and a UNESCO World
+                Heritage Site. Built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal, it is renowned for its
+                stunning white marble architecture and intricate craftsmanship. Experience the grandeur of the Taj Mahal
+                with Axis Cabs, offering the best local cab services in Agra.
+            <p>
+                Visit the Taj Mahal and marvel at its beauty, especially during sunrise or sunset when the white marble
+                reflects the changing colors of the sky. Explore the intricate carvings and calligraphy that adorn the
+                walls of the monument, depicting verses from the Quran.
+            <p>
+                Explore other attractions in Agra, such as the Agra Fort, another UNESCO World Heritage Site known for
+                its Mughal architecture and history. Visit the Tomb of Itimad-ud-Daulah, also known as the "Baby Taj,"
+                and admire its exquisite marble craftsmanship.
+            <p>
+                With Axis Cabs, you can explore Agra comfortably and conveniently. Our experienced drivers will take you
+                to all the major attractions in the city, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Agra trip. Experience the best cabs and affordable rates with Axis Cabs in Agra.
+            </p>
+            <h2>Red Fort, Delhi</h2>
+            <p>
+
+                A majestic fort built of red sandstone, the Red Fort is a symbol of India's rich history and
+                architecture. Built by Emperor Shah Jahan, it served as the main residence of the Mughal emperors for
+                nearly 200 years. Experience the grandeur of the Red Fort with Axis Cabs, offering the best local cab
+                services in Delhi.
+            <p>
+                Visit the Red Fort and explore its impressive architecture, including its massive walls and intricately
+                designed gates. Discover the fort's history as you wander through its palaces, mosques, and gardens,
+                which once housed the royal family and their courtiers.
+            <p>
+                Explore other attractions in Delhi, such as the Jama Masjid, India's largest mosque, located near the
+                Red Fort. Visit Chandni Chowk, one of Delhi's oldest and busiest markets, and experience the vibrant
+                culture and flavors of the city.
+            <p>
+                With Axis Cabs, you can explore Delhi comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the city, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Delhi trip. Experience the best cabs and affordable rates with Axis Cabs in Delhi.
+            </p>
+            <h2>Qutub Minar, Delhi</h2>
+            <p>
+                A UNESCO World Heritage Site, the Qutub Minar is the tallest brick minaret in the world, built in the
+                early 13th century. It is a fine example of Indo-Islamic architecture and is surrounded by several other
+                historic and architectural marvels. Explore the beauty of Qutub Minar and its surroundings with Axis
+                Cabs, offering the best local cab services in Delhi.
+            <p>
+                Visit the Qutub Minar and marvel at its towering height and intricate carvings, which showcase the skill
+                and craftsmanship of the artisans of that era. Explore the nearby Quwwat-ul-Islam Mosque, which was
+                built using materials from demolished Hindu temples and is one of the oldest mosques in India.
+            <p>
+                Explore other attractions in Delhi, such as the Humayun's Tomb, another UNESCO World Heritage Site known
+                for its Mughal architecture and beautiful gardens. Visit the Lotus Temple, a Bahá'í House of Worship
+                known for its unique lotus-like shape and peaceful atmosphere.
+            <p>
+                With Axis Cabs, you can explore Delhi comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the city, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Delhi trip. Experience the best cabs and affordable rates with Axis Cabs in Delhi.
+            </p>
+            <h2>Jaipur City Palace, Rajasthan</h2>
+            <p>
+                A magnificent palace complex that combines Rajput and Mughal architecture, the Jaipur City Palace
+                showcases royal artifacts and history. It is a symbol of the royal heritage of the Rajput rulers of
+                Jaipur. Experience the grandeur of the Jaipur City Palace with Axis Cabs, offering the best local cab
+                services in Jaipur.
+            <p>
+                Visit the City Palace and explore its various courtyards, gardens, and buildings, each showcasing a
+                unique blend of Rajput and Mughal architectural styles. Marvel at the intricate carvings, beautiful
+                paintings, and stunning architecture that adorn the palace.
+            <p>
+                Explore other attractions in Jaipur, such as the Hawa Mahal, also known as the Palace of Winds, a
+                beautiful five-story palace with a façade adorned with intricate latticework. Visit the Jantar Mantar,
+                an astronomical observatory built by Maharaja Jai Singh II, which houses several impressive instruments
+                used for astronomical observations.
+            <p>
+                With Axis Cabs, you can explore Jaipur comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the city, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Jaipur trip. Experience the best cabs and affordable rates with Axis Cabs in Jaipur.
+            </p>
+            <h2>Gateway of India, Mumbai</h2>
+            <p>
+                Built to commemorate the visit of King George V and Queen Mary, the Gateway of India is an iconic
+                monument in Mumbai. It has historical significance as the point from where the last British troops left
+                India. Explore the history and grandeur of the Gateway of India with Axis Cabs, offering the best local
+                cab services in Mumbai.
+            <p>
+                Visit the Gateway of India and admire its impressive architecture, which combines elements of Hindu and
+                Muslim architectural styles. The monument stands as a symbol of India's rich history and struggle for
+                independence.
+            <p>
+                Explore other attractions in Mumbai, such as the Elephanta Caves, a UNESCO World Heritage Site known for
+                its rock-cut temples dedicated to Lord Shiva. Visit the Chhatrapati Shivaji Maharaj Vastu Sangrahalaya,
+                formerly known as the Prince of Wales Museum, and explore its vast collection of artifacts and exhibits
+                related to Indian history and culture.
+            <p>
+                With Axis Cabs, you can explore Mumbai comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the city, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Mumbai trip. Experience the best cabs and affordable rates with Axis Cabs in Mumbai.
+            </p>
+            <h2>Ajanta Caves, Maharashtra</h2>
+            <p>
+                A UNESCO World Heritage Site, the Ajanta Caves are rock-cut cave monuments known for their exquisite
+                ancient Buddhist paintings and sculptures. They date back to the 2nd century BCE and are a testament to
+                India's rich artistic heritage. Explore the ancient art and history of the Ajanta Caves with Axis Cabs,
+                offering the best local cab services in Maharashtra.
+            <p>
+                Visit the Ajanta Caves and marvel at the intricate paintings and sculptures that depict scenes from the
+                life of Buddha and various Buddhist deities. The caves are also home to impressive rock-cut
+                architecture, with elaborate facades and detailed carvings.
+            <p>
+                Explore other attractions near the Ajanta Caves, such as the Ellora Caves, another UNESCO World Heritage
+                Site known for its rock-cut temples and monasteries dedicated to Buddhism, Hinduism, and Jainism. Visit
+                the Aurangabad Caves, a group of rock-cut caves dating back to the 6th and 7th centuries.
+            <p>
+                With Axis Cabs, you can explore the Ajanta Caves and its surrounding areas comfortably and conveniently.
+                Our experienced drivers will take you to all the major attractions in the region, ensuring a memorable
+                travel experience. Whether you're traveling solo, with family, or in a group, Axis Cabs offers the best
+                transportation solution for your Ajanta Caves trip. Experience the best cabs and affordable rates with
+                Axis Cabs in Maharashtra.
+            </p>
+            <h2>Ellora Caves, Maharashtra</h2>
+            <p>
+                Another UNESCO World Heritage Site, the Ellora Caves are a series of rock-cut caves featuring Buddhist,
+                Hindu, and Jain temples and monasteries. They showcase India's religious harmony and architectural
+                brilliance. Explore the diverse religious art and architecture of the Ellora Caves with Axis Cabs,
+                offering the best local cab services in Maharashtra.
+            <p>
+                Visit the Ellora Caves and marvel at the intricate carvings and sculptures that depict scenes from Hindu
+                mythology, Buddhist teachings, and Jain principles. The caves are a testament to the skill and
+                craftsmanship of ancient Indian artisans.
+            <p>
+                Explore other attractions near the Ellora Caves, such as the Ajanta Caves, another UNESCO World Heritage
+                Site known for its ancient Buddhist paintings and sculptures. Visit the Daulatabad Fort, a majestic
+                hilltop fortress known for its strong defense systems and impressive architecture.
+            <p>
+                With Axis Cabs, you can explore the Ellora Caves and its surrounding areas comfortably and conveniently.
+                Our experienced drivers will take you to all the major attractions in the region, ensuring a memorable
+                travel experience. Whether you're traveling solo, with family, or in a group, Axis Cabs offers the best
+                transportation solution for your Ellora Caves trip. Experience the best cabs and affordable rates with
+                Axis Cabs in Maharashtra.
+            </p>
+            <!-- Add more destinations as needed -->
+            <p>
+                For more information about our cab services to these historic sites, contact us at <a
+                    href="mailto:info@axiscabs.com">info@axiscabs.com</a>.
+            </p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="historic-places.js"></script>
+</body>
+
+</html>

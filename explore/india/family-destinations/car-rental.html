@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Family Destinations</title>
+    <meta name="description"
+        content="Discover the best family-friendly destinations in India with Axis Cabs. From the serene backwaters of Kerala to the picturesque hills of Ooty, explore these amazing destinations with your loved ones. Book your ride now and make unforgettable memories with Axis Cabs. Contact us at +91 9922333305 or visit our website to learn more.">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Family Destinations">
+    <meta name="og:description"
+        content="Discover the best family-friendly destinations in India with Axis Cabs. From the serene backwaters of Kerala to the picturesque hills of Ooty, explore these amazing destinations with your loved ones. Book your ride now and make unforgettable memories with Axis Cabs. Contact us at +91 9922333305 or visit our website to learn more.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/family-destinations.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://axiscabs.com/family-destinations.html">
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Axis Cabs - Family Destinations",
+          "description": "Discover the best family-friendly destinations in India with Axis Cabs. From the serene backwaters of Kerala to the picturesque hills of Ooty, explore these amazing destinations with your loved ones.",
+          "url": "https://axiscabs.com/family-destinations.html"
+        }
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/hero-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
+        </div>
+    </div>
+
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Family Destinations in India</h1>
+            <p>
+                India is home to a plethora of family-friendly destinations that offer a perfect blend of natural
+                beauty,
+                cultural richness, and recreational activities. Whether you're looking to relax amidst serene landscapes
+                or explore historical sites, these destinations have something for everyone in the family.<br><br>
+                Explore these top family destinations in India with Axis Cabs and create unforgettable memories with
+                your
+                loved ones.
+            </p>
+            <h2>Kerala</h2>
+            <p>
+                Kerala, often referred to as "God's Own Country," is a perfect destination for a family vacation. Known
+                for its serene backwaters, lush greenery, and tranquil beaches, Kerala offers a blend of relaxation and
+                adventure.
+            <p>
+                Explore the picturesque hill stations of Munnar and Wayanad, where you can immerse yourself in the
+                beauty of rolling hills, tea gardens, and pristine valleys. Trekking opportunities abound, offering a
+                chance to connect with nature and create lasting memories with your loved ones.
+            <p>
+                Cruise along the backwaters of Alleppey on a traditional houseboat, and witness the unique lifestyle of
+                the people living along the waterways. The backwaters offer a peaceful retreat, with scenic views of
+                lush landscapes and local villages.
+            <p>
+                For those seeking sun and sand, the beaches of Kovalam and Varkala are perfect for relaxation and water
+                activities. The golden sands, clear blue waters, and stunning sunsets create a picturesque setting for
+                family fun.
+            <p>
+                With its natural beauty, rich culture, and warm hospitality, Kerala is sure to enchant every member of
+                the family, making it a memorable destination for your next vacation.
+            </p>
+            <h2>Ooty, Tamil Nadu</h2>
+            <p>
+
+                Ooty, also known as the Queen of Hill Stations, is a charming hill station in Tamil Nadu that offers a
+                perfect retreat for families looking to escape the hustle and bustle of city life. Situated in the
+                Nilgiri Hills, Ooty is known for its pleasant climate, lush tea gardens, and breathtaking views.
+            <p>
+                Take a stroll through the beautiful Botanical Gardens, which feature a variety of exotic plants and
+                flowers. The gardens are a perfect spot for a leisurely picnic or a relaxing walk amidst nature. For a
+                more adventurous experience, take a ride on the Nilgiri Mountain Railway, a UNESCO World Heritage Site
+                that offers stunning views of the surrounding hills and valleys.
+            <p>
+                For wildlife enthusiasts, a visit to the nearby Mudumalai National Park is a must. The park is home to a
+                variety of wildlife, including elephants, tigers, and leopards, and offers thrilling safari experiences
+                for visitors.
+            <p>
+                Whether you're looking for a peaceful retreat in nature or exciting outdoor adventures, Ooty has
+                something to offer for every member of the family.
+            </p>
+            <h2>Sikkim</h2>
+            <p>
+
+                Sikkim, nestled in the Himalayas, is a paradise for nature lovers and adventure enthusiasts. Explore the
+                stunning landscapes of Gangtok, the capital city, where you can witness breathtaking views of the
+                surrounding mountains and valleys. Visit the ancient monasteries of Pelling, such as Pemayangtse
+                Monastery, where you can immerse yourself in the rich Buddhist culture and history of the region.
+            <p>
+                For those seeking adventure, Sikkim offers plenty of opportunities for trekking and hiking. Head to
+                Yuksom, the gateway to the majestic Kanchenjunga National Park, and embark on a trek through the scenic
+                trails. Along the way, you'll encounter pristine forests, cascading waterfalls, and panoramic views of
+                the Himalayas.
+            <p>
+                Sikkim is also home to the beautiful Tsomgo Lake, a glacial lake located at an altitude of over 12,000
+                feet. The lake is surrounded by snow-capped mountains and is a popular destination for picnics and boat
+                rides.
+            <p>
+                Whether you're looking to immerse yourself in nature, explore ancient culture, or embark on thrilling
+                adventures, Sikkim has something to offer for everyone in the family.
+            </p>
+            <h2>Ranthambore National Park, Rajasthan</h2>
+            <p>
+
+                Ranthambore National Park is not only one of the largest national parks in India but also one of the
+                most popular destinations for wildlife enthusiasts. Located in Rajasthan, this park is renowned for its
+                diverse wildlife and is particularly famous for its population of majestic tigers.
+            <p>
+                Embarking on a safari in Ranthambore is a thrilling experience as you explore the park's rugged terrain
+                and dense forests in search of wildlife. Alongside tigers, you may also spot leopards, sloth bears, wild
+                boars, and a variety of bird species in their natural habitat.
+            <p>
+                The park's picturesque landscapes, including lakes, hills, and ancient ruins, add to the allure of the
+                safari experience. The ruins of Ranthambore Fort, which dates back to the 10th century, offer a glimpse
+                into the region's rich history and provide a stunning backdrop for wildlife sightings.
+            <p>
+                Guided safaris are available in various zones of the park, each offering a unique experience. Whether
+                you choose to explore by jeep or on the back of an elephant, a safari in Ranthambore National Park
+                promises to be an unforgettable adventure for the whole family.
+            </p>
+            <h2>Goa</h2>
+            <p>
+
+                Goa, with its beautiful beaches, vibrant culture, and delicious cuisine, is a great destination for a
+                family vacation. The state offers a mix of relaxation and adventure, with plenty of activities to keep
+                everyone entertained.
+            <p>
+                For beach lovers, Goa boasts some of the best beaches in India. Whether you prefer the lively atmosphere
+                of Baga Beach or the serene beauty of Palolem Beach, there's a beach for every taste. Enjoy swimming,
+                sunbathing, or simply relaxing by the shore.
+            <p>
+                Adventure enthusiasts can try their hand at a variety of water sports, including parasailing, jet
+                skiing, and banana boat rides. These activities are sure to create lasting memories for the whole
+                family.
+            <p>
+                Explore the historic forts and monuments that dot the Goan landscape, such as Fort Aguada and Chapora
+                Fort. These sites offer a glimpse into Goa's rich history and provide stunning views of the surrounding
+                area.
+            <p>
+                No trip to Goa is complete without sampling the local cuisine. Indulge in fresh seafood delicacies, such
+                as prawn curry and fish fry, or try the famous Goan sausage pav. The state's vibrant food scene is sure
+                to tantalize your taste buds.
+            <p>
+                Whether you're looking for relaxation, adventure, or cultural experiences, Goa has something to offer
+                for every member of the family.
+            </p>
+
+            <h2>Darjeeling, West Bengal</h2>
+            <p>
+
+                Darjeeling, nestled in the foothills of the Himalayas, is a charming hill station famous for its tea
+                gardens, stunning views, and rich cultural heritage. One of the most iconic attractions in Darjeeling is
+                the Darjeeling Himalayan Railway, also known as the "Toy Train." This UNESCO World Heritage Site offers
+                a scenic journey through the picturesque landscapes of the region, providing breathtaking views of the
+                mountains and valleys.
+            <p>
+                For those interested in adventure and mountaineering, the Himalayan Mountaineering Institute is a
+                must-visit. Founded by Tenzing Norgay, who conquered Mount Everest with Sir Edmund Hillary, the
+                institute offers mountaineering courses and has a fascinating museum showcasing the history of
+                mountaineering in the region.
+            <p>
+                Darjeeling is also known for its vibrant markets, where you can shop for local handicrafts, souvenirs,
+                and of course, Darjeeling tea. The bustling markets offer a glimpse into the local culture and are a
+                great place to interact with the friendly locals.
+            <p>
+                Don't forget to explore the tea gardens that dot the hillsides of Darjeeling. Take a guided tour of a
+                tea estate to learn about the process of tea production and sample some of the finest teas in the world.
+            <p>
+                Whether you're interested in history, adventure, or simply soaking in the natural beauty of the
+                Himalayas, Darjeeling has something to offer for every traveler.
+            </p>
+            <h2>Travel Tips for Families:</h2>
+            <ul>
+                <li>Plan your itinerary in advance to make the most of your time at each destination.</li>
+                <li>Carry essential items like sunscreen, hats, and comfortable clothing.</li>
+                <li>Keep snacks and water handy, especially during long journeys.</li>
+                <li>Respect the local culture and customs, and dress modestly when visiting religious sites.</li>
+                <li>Ensure the safety of your children at all times, especially in crowded or unfamiliar places.</li>
+                <li>Book your accommodation and transportation in advance, especially during peak tourist seasons.</li>
+                <li>Check the weather forecast before your trip and pack accordingly.</li>
+            </ul>
+            <!-- Add more destinations and travel tips as needed -->
+            <p>
+                For more information about our cab services in these destinations, contact us at <a
+                    href="mailto:info@example.com">info@axiscabs.com</a>.
+            </p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="family.js"></script>
+</body>
+
+</html>

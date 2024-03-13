@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Cabs - Discover Southern Charms</title>
+    <meta name="description"
+        content="Discover the charming destinations of Southern India with Axis Cabs. From the pristine beaches of Gokarna to the ancient ruins of Hampi, explore these hidden gems with our reliable cab services. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Axis Cabs - Discover Southern Charms">
+    <meta name="og:description"
+        content="Discover the charming destinations of Southern India with Axis Cabs. From the pristine beaches of Gokarna to the ancient ruins of Hampi, explore these hidden gems with our reliable cab services. Contact us at info@axiscabs.com or visit our website to learn more.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/discover-southern-charms.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="canonical" href="https://axiscabs.com/discover-southern-charms.html">
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Axis Cabs - Discover Southern Charms",
+          "description": "Discover the charming destinations of Southern India with Axis Cabs. From the pristine beaches of Gokarna to the ancient ruins of Hampi, explore these hidden gems with our reliable cab services.",
+          "url": "https://axiscabs.com/discover-southern-charms.html"
+        }
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab.";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/hero-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Discover Southern Charms</h1>
+            <p>
+                Southern India is a treasure trove of natural beauty, cultural heritage, and historical wonders. Explore
+                these enchanting destinations with Axis Cabs and experience the magic of Southern India.
+            </p>
+            <h2>Gokarna, Karnataka</h2>
+            <p>Known for its pristine beaches and laid-back vibe, Gokarna is a popular alternative to the more crowded
+                beaches of Goa. It also has a spiritual significance, with several ancient temples and a relaxed,
+                hippie-friendly atmosphere. Experience the serene beaches and spiritual aura of Gokarna with Axis Cabs,
+                offering the best local cab services in Karnataka.</p>
+
+            <p>Visit the famous beaches of Gokarna, such as Om Beach, Kudle Beach, and Half Moon Beach, known for their
+                beautiful sunsets and peaceful surroundings. Explore the Mahabaleshwar Temple, dedicated to Lord Shiva,
+                and witness its unique architecture and spiritual ambiance.</p>
+
+            <p>With Axis Cabs, you can explore Gokarna comfortably and conveniently. Our experienced drivers will take
+                you to all the major beaches and temples in the area, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Gokarna trip. Experience the best cabs and affordable rates with Axis Cabs in Karnataka.</p>
+            <h2>Hampi, Karnataka</h2>
+            <p>A UNESCO World Heritage Site, Hampi is an ancient village known for its stunning ruins, including
+                temples, palaces, and other structures from the Vijayanagara Empire. The unique landscape and rich
+                history make it a fascinating destination for history and architecture enthusiasts. Explore the ancient
+                ruins and architectural wonders of Hampi with Axis Cabs, offering the best local cab services in
+                Karnataka.</p>
+
+            <p>Visit the Virupaksha Temple, dedicated to Lord Shiva, and marvel at its intricate carvings and towering
+                gopuram (entrance tower). Explore the Vittala Temple complex, known for its iconic stone chariot and
+                musical pillars that produce melodious sounds when tapped.</p>
+
+            <p>With Axis Cabs, you can explore Hampi comfortably and conveniently. Our experienced drivers will take you
+                to all the major attractions in the village, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Hampi trip. Experience the best cabs and affordable rates with Axis Cabs in Karnataka.</p>
+            <h2>Chettinad, Tamil Nadu</h2>
+            <p>Chettinad is known for its unique cuisine, architecture, and cultural heritage. The region is home to the
+                Chettiars, a prosperous banking and business community, whose grand mansions, known as "Chettinad
+                mansions," are a major attraction. Experience the rich cultural heritage and unique architecture of
+                Chettinad with Axis Cabs, offering the best local cab services in Tamil Nadu.</p>
+
+            <p>Visit the Chettinad mansions and explore their intricate architecture, which blends traditional Tamil and
+                European styles. Marvel at the elaborate woodwork, colorful tiles, and spacious courtyards that
+                characterize these mansions.</p>
+
+            <p>With Axis Cabs, you can explore Chettinad comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the region, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Chettinad trip. Experience the best cabs and affordable rates with Axis Cabs in Tamil Nadu.</p>
+            <h2>Coorg, Karnataka</h2>
+            <p>Known for its lush coffee plantations, misty hills, and rich biodiversity, Coorg is a charming hill
+                station in Karnataka. It offers opportunities for trekking, bird watching, and exploring the local
+                culture. Experience the natural beauty and cultural richness of Coorg with Axis Cabs, offering the best
+                local cab services in Karnataka.</p>
+
+            <p>Explore the coffee plantations of Coorg and learn about the coffee-making process from bean to cup. Visit
+                the Dubare Elephant Camp and interact with elephants, or trek to the picturesque Abbey Falls and enjoy
+                the scenic beauty of the cascading waterfalls.</p>
+
+            <p>With Axis Cabs, you can explore Coorg comfortably and conveniently. Our experienced drivers will take you
+                to all the major attractions in the hill station, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Coorg trip. Experience the best cabs and affordable rates with Axis Cabs in Karnataka.</p>
+            <h2>Badami, Karnataka</h2>
+            <p>Badami is known for its stunning rock-cut cave temples, dating back to the 6th century. The temples,
+                carved out of sandstone cliffs, are dedicated to Hindu and Jain deities and are a fine example of
+                ancient Indian rock-cut architecture. Explore the ancient rock-cut cave temples of Badami with Axis
+                Cabs, offering the best local cab services in Karnataka.</p>
+
+            <p>Visit the four cave temples of Badami, dedicated to Lord Shiva and Vishnu, and admire their intricate
+                carvings and sculptures. Explore the nearby Bhutanatha Group of Temples, situated on the banks of the
+                Agastya Lake, and enjoy the serene ambiance of the surroundings.</p>
+
+            <p>With Axis Cabs, you can explore Badami comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the town, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Badami trip. Experience the best cabs and affordable rates with Axis Cabs in Karnataka.</p>
+            <h2>Alleppey, Kerala</h2>
+            <p>While Kerala is known for its backwaters, Alleppey offers a more off-the-beaten-path experience. It is
+                known for its serene backwaters, lush paddy fields, and traditional houseboat cruises, offering a
+                glimpse into Kerala's rural life. Experience the tranquility and charm of Alleppey with Axis Cabs,
+                offering the best local cab services in Kerala.</p>
+
+            <p>Embark on a houseboat cruise in Alleppey and meander through the picturesque backwaters, passing by lush
+                greenery and traditional villages. Experience the beauty of Kerala's rural life as you witness locals
+                going about their daily activities along the backwaters.</p>
+
+            <p>With Axis Cabs, you can explore Alleppey comfortably and conveniently. Our experienced drivers will take
+                you to all the major attractions in the town, ensuring a memorable travel experience. Whether you're
+                traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for your
+                Alleppey trip. Experience the best cabs and affordable rates with Axis Cabs in Kerala.</p>
+            <h2>Araku Valley, Andhra Pradesh</h2>
+            <p>Tucked away in the Eastern Ghats, Araku Valley is known for its stunning landscapes, coffee plantations,
+                and tribal culture. The valley is also home to the Borra Caves, known for their unique limestone
+                formations. Experience the natural beauty and cultural richness of Araku Valley with Axis Cabs, offering
+                the best local cab services in Andhra Pradesh.</p>
+
+            <p>Explore the picturesque coffee plantations of Araku Valley and learn about the coffee-making process.
+                Visit the Tribal Museum to get an insight into the rich tribal culture of the region, or take a ride on
+                the Araku Valley Toy Train, offering panoramic views of the surrounding hills.</p>
+
+            <p>With Axis Cabs, you can explore Araku Valley comfortably and conveniently. Our experienced drivers will
+                take you to all the major attractions in the valley, ensuring a memorable travel experience. Whether
+                you're traveling solo, with family, or in a group, Axis Cabs offers the best transportation solution for
+                your Araku Valley trip. Experience the best cabs and affordable rates with Axis Cabs in Andhra Pradesh.
+            </p>
+            <!-- Add more destinations as needed -->
+            <p>
+                For more information about our cab services to these Southern charms, contact us at <a
+                    href="mailto:info@axiscabs.com">info@axiscabs.com</a>.
+            </p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="south.js"></script>
+</body>
+
+</html>
