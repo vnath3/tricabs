@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couple Destinations - Axis Cabs</title>
+    <meta name="description"
+        content="Discover the most romantic destinations for couples with Axis Cabs. Explore stunning locations, plan your perfect getaway, and book your ride hassle-free.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="couple destinations, romantic getaways, travel for couples">
+
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Couple Destinations - Axis Cabs">
+    <meta name="og:description"
+        content="Discover the most romantic destinations for couples with Axis Cabs. Explore stunning locations, plan your perfect getaway, and book your ride hassle-free.">
+    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
+    <meta property="og:url" content="https://axiscabs.com/explore/india/honeymoon-places/couple-destinations.html">
+    <meta property="og:site_name" content="Axis Cabs">
+    <meta property="og:type" content="website">
+
+    <!-- Specify Image Dimensions -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Local Business Markup and TravelAction Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Axis Cabs",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "New Osmanpura",
+        "addressLocality": "Jyoti Nagar",
+        "addressRegion": "Maharashtra",
+        "postalCode": "431005",
+        "addressCountry": "India"
+      }
+    }
+    //Similarly for other cards
+    </script>
+
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Include Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- // below script is for select2 JS for searchable dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Select2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!-- For mobile number configuration -->
+    <script src="../../../config.js" defer></script>
+    <script>
+        function updateMobileNumber(mobileNumber) {
+            var whatsappLink = document.getElementById('whatsappLink');
+            var message = "Hi Axis Cabs, need some help to book a cab. Yes its an honeymoon Trip.!!";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + mobileNumber + "?text=" + encodedMessage;
+            whatsappLink.href = whatsappUrl;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            // Assume mobileNumber is set globally
+            setTimeout(function () {
+                if (typeof mobileNumber !== 'undefined') {
+                    updateMobileNumber(mobileNumber);
+                } else {
+                    console.error('mobileNumber is undefined. Check config.js');
+                }
+            }, 1000);
+        });
+        // Check if page is loaded from the cache
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                // Page is loaded from the cache, force reload
+                window.location.reload();
+            }
+        });
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="headerContainer"></div>
+
+
+
+
+
+    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <div class="container">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="../../../videos/snow-fall-video.mp4" type=" video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <section id="booking" class="booking-widget">
+                <h2>Book Your Car</h2>
+                <label for="source">Source City:</label>
+                <select id="source" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="destination">Destination City:</label>
+                <select id="destination" required class="city-dropdown">
+                    <option value="" selected disabled></option>
+                    <option value="Mumbai">Mumbai, Maharashtra</option>
+                    <option value="Pune">Pune, Maharashtra</option>
+                    <option value="Nagpur">Nagpur, Maharashtra</option>
+                    <option value="Thane">Thane, Maharashtra</option>
+                    <option value="Nashik">Nashik, Maharashtra</option>
+                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                    <option value="Solapur">Solapur, Maharashtra</option>
+                    <option value="Amravati">Amravati, Maharashtra</option>
+                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                    <option value="Akola">Akola, Maharashtra</option>
+                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                    <option value="Latur">Latur, Maharashtra</option>
+                    <option value="Dhule">Dhule, Maharashtra</option>
+                    <option value="Nanded">Nanded, Maharashtra</option>
+                    <option value="Sangli">Sangli, Maharashtra</option>
+                    <option value="Malegaon">Malegaon, Maharashtra</option>
+                    <option value="Jalna">Jalna, Maharashtra</option>
+                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                    <option value="Parbhani">Parbhani, Maharashtra</option>
+                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                    <option value="Panvel">Panvel, Maharashtra</option>
+                    <option value="Satara">Satara, Maharashtra</option>
+                    <option value="Beed">Beed, Maharashtra</option>
+                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                    <option value="Wardha">Wardha, Maharashtra</option>
+                    <option value="Gondia">Gondia, Maharashtra</option>
+                    <option value="Hingoli">Hingoli, Maharashtra</option>
+                    <option value="Khopoli">Khopoli, Maharashtra</option>
+                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                    <option value="Palghar">Palghar, Maharashtra</option>
+                    <option value="Washim">Washim, Maharashtra</option>
+                    <option value="Karad">Karad, Maharashtra</option>
+                    <option value="Baramati">Baramati, Maharashtra</option>
+                    <option value="Chimur">Chimur, Maharashtra</option>
+                    <option value="Deolali">Deolali, Maharashtra</option>
+                    <option value="Gangapur">Gangapur, Maharashtra</option>
+                    <option value="Junnar">Junnar, Maharashtra</option>
+                    <option value="Kamthi">Kamthi, Maharashtra</option>
+                    <option value="Panjim">Panjim, Goa</option>
+
+                </select>
+                <label for="travelDate">Date:</label>
+                <input type="date" id="travelDate" value="" min="2024-01-27" required>
+                <!-- Set default value to current date + 1 -->
+                <label for="pickupTime">Pickup Time:</label>
+                <input type="time" id="pickupTime" value="07:00" required>
+                <!-- Set default value to 7 am -->
+                <button onclick="submitBooking()">Book Now</button>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section>
+        <div class="who-are-we">
+            <h1>Discover the Best Summer Destinations in India</h1>
+
+            <p>India's diverse landscapes offer a wide range of summer destinations, from the cool hill stations to
+                the
+                serene valleys and picturesque lakes. Here's a guide to some of the top summer destinations in India:
+            </p>
+
+            <!-- Content for each destination with SEO-friendly descriptions, do's and don'ts, and video sections -->
+
+            <!-- Shimla -->
+            <h2>1. Shimla - Queen of Hill Stations</h2>
+            <p>Shimla, the capital of Himachal Pradesh, is a charming hill station known for its colonial architecture,
+                scenic beauty, and pleasant weather. Explore the Mall Road, visit the Jakhu Temple, and enjoy the
+                panoramic views from the Ridge.</p>
+
+            <p>Shimla, often referred to as the "Queen of Hill Stations," is a picturesque hill station located in the
+                state of Himachal Pradesh, India. Situated at an altitude of 2,205 meters, Shimla is renowned for its
+                colonial charm, stunning views of the Himalayas, and pleasant climate. Here's a detailed guide to help
+                you explore this enchanting destination.</p>
+
+            <h3>Activities</h3>
+            <p>Shimla offers a wide range of activities for visitors to enjoy. Take a leisurely stroll along the Mall
+                Road, which is lined with shops, cafes, and colonial-era buildings. Visit the Jakhu Temple, dedicated to
+                Lord Hanuman, and enjoy panoramic views of the surrounding hills and valleys. The Ridge, a large open
+                space in the heart of Shimla, offers stunning views of the snow-capped peaks of the Himalayas.</p>
+
+            <h3>Places to Visit</h3>
+            <p>Don't miss the opportunity to visit the Christ Church, one of the oldest churches in North India, known
+                for its Neo-Gothic architecture and beautiful stained glass windows. The Viceregal Lodge, also known as
+                the Rashtrapati Niwas, is another must-visit destination, showcasing the colonial architecture and
+                history of Shimla. The Shimla State Museum is home to a vast collection of artifacts, showcasing the
+                rich cultural heritage of the region.</p>
+
+            <h3>Culture</h3>
+            <p>The culture of Shimla is a blend of British and Himachali influences, reflecting its colonial past and
+                local traditions. The local cuisine is known for its use of local ingredients and aromatic spices, with
+                dishes like Sidu, Chana Madra, and Kaale Channe being popular choices. The people of Shimla are known
+                for their warm hospitality and friendly nature.</p>
+
+            <h3>History</h3>
+            <p>Shimla has a rich history that dates back to the early 19th century when it was established as a hill
+                station by the British. It served as the summer capital of British India and was a favorite retreat for
+                the British during the colonial era. Today, Shimla is a popular tourist destination known for its
+                natural beauty, colonial architecture, and cultural heritage.</p>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do dress warmly, especially during the winter months when temperatures can drop significantly.</li>
+                <li>Don't pluck flowers or disturb the natural surroundings. Help in preserving Shimla's pristine
+                    beauty.</li>
+                <li>Do try the local cuisine, which is known for its unique flavors and use of local ingredients.</li>
+                <li>Don't engage in activities that harm the environment. Follow the principles of responsible tourism.
+                </li>
+                <li>Do respect the local customs and traditions, especially when visiting religious sites and
+                    interacting with locals.</li>
+            </ul>
+
+            <p>Visiting Shimla is like stepping back in time. Its colonial architecture, stunning views, and pleasant
+                weather make it a destination worth exploring.</p>
+
+
+            <!-- Manali -->
+            <h2>2. Manali - Adventure and Tranquility</h2>
+            <p>Manali, nestled in the Himalayas, is a popular summer destination known for its adventure sports, lush
+                greenery, and scenic landscapes. Visit the Hadimba Temple, Solang Valley, and Rohtang Pass for
+                breathtaking views and adventure activities.</p>
+
+            <p>Manali, located in the state of Himachal Pradesh, India, is a charming hill station nestled in the Pir
+                Panjal and Dhauladhar ranges of the Himalayas. Situated at an altitude of 2,050 meters, Manali is famous
+                for its natural beauty, adventure sports, and tranquil environment. Here's a detailed guide to help you
+                explore this enchanting destination.</p>
+
+            <h3>Activities</h3>
+            <p>Manali offers a wide range of activities for visitors to enjoy. Adventure enthusiasts can indulge in
+                activities like paragliding, river rafting, and trekking. The Solang Valley, located about 14 kilometers
+                from Manali, is a popular destination for adventure sports. In winter, the valley transforms into a
+                skiing paradise, attracting enthusiasts from around the world.</p>
+
+            <h3>Places to Visit</h3>
+            <p>Don't miss the opportunity to visit the Hadimba Temple, an ancient cave temple dedicated to Hadimba Devi,
+                wife of Bhima from the Mahabharata. The temple is known for its exquisite wooden carvings and tranquil
+                surroundings. The Solang Valley, with its breathtaking views of snow-capped peaks and lush greenery, is
+                another must-visit destination. The Rohtang Pass, located about 51 kilometers from Manali, offers
+                panoramic views of the surrounding mountains and valleys.</p>
+
+            <h3>Culture</h3>
+            <p>The culture of Manali is a blend of Hindu and Tibetan influences, reflecting its diverse population. The
+                local cuisine is known for its use of local ingredients and aromatic spices, with dishes like Sidu,
+                Thenthuk, and Mittha being popular choices. The people of Manali are known for their warm hospitality
+                and friendly nature.</p>
+
+            <h3>History</h3>
+            <p>Manali has a rich history that dates back to ancient times. It was once a part of the ancient kingdom of
+                Kullu and was later established as a hill station by the British. The region has been a popular
+                destination for travelers for centuries, drawn to its natural beauty and tranquil environment. Today,
+                Manali is a popular tourist destination known for its adventure sports, scenic beauty, and cultural
+                heritage.</p>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do dress warmly, especially during the winter months when temperatures can drop significantly.</li>
+                <li>Don't pluck flowers or disturb the natural surroundings. Help in preserving Manali's pristine
+                    beauty.</li>
+                <li>Do try the local cuisine, which is known for its unique flavors and use of local ingredients.</li>
+                <li>Don't engage in activities that harm the environment. Follow the principles of responsible tourism.
+                </li>
+                <li>Do respect the local customs and traditions, especially when visiting religious sites and
+                    interacting with locals.</li>
+            </ul>
+
+            <p>Visiting Manali is a journey into the heart of the Himalayas. Its natural beauty, adventure sports, and
+                tranquil environment make it a destination worth exploring.</p>
+
+
+            <!-- Darjeeling -->
+            <h2>3. Darjeeling - Land of Tea Gardens</h2>
+            <p>Darjeeling, in West Bengal, is renowned for its tea gardens, stunning views of the Himalayas, and
+                colonial charm. Visit the Tiger Hill for a mesmerizing sunrise, take a ride on the Darjeeling Himalayan
+                Railway, and explore the tea estates.</p>
+
+            <p>Darjeeling, often referred to as the "Queen of the Hills," is a charming hill station located in the
+                state of West Bengal, India. Situated at an altitude of 2,042 meters, Darjeeling is famous for its tea
+                gardens, breathtaking views of the Himalayas, and colonial architecture. Here's a detailed guide to help
+                you explore this enchanting destination.</p>
+
+            <h3>Activities</h3>
+            <p>Darjeeling offers a wide range of activities for visitors to enjoy. Start your day with a visit to Tiger
+                Hill to witness a breathtaking sunrise over the Himalayas. Take a ride on the famous Darjeeling
+                Himalayan Railway, also known as the "Toy Train," which offers scenic views of the surrounding mountains
+                and valleys. Explore the tea estates and learn about the process of tea production, from plucking to
+                processing.</p>
+
+            <h3>Places to Visit</h3>
+            <p>Don't miss the opportunity to visit the Padmaja Naidu Himalayan Zoological Park, which is home to
+                endangered species like the snow leopard and red panda. The Peace Pagoda, a Buddhist stupa located on a
+                hilltop, offers panoramic views of the surrounding mountains and valleys. The Rock Garden and Ganga Maya
+                Park are also popular attractions known for their scenic beauty and tranquil atmosphere.</p>
+
+            <h3>Culture</h3>
+            <p>The culture of Darjeeling is a blend of Nepali, Tibetan, and British influences, reflecting its diverse
+                population and colonial past. The local cuisine is known for its use of fresh ingredients and aromatic
+                spices, with dishes like momos and thukpa being popular choices. The people of Darjeeling are known for
+                their warm hospitality and friendly nature.</p>
+
+            <h3>History</h3>
+            <p>Darjeeling has a rich history that dates back to the early 19th century when it was established as a hill
+                station by the British. The region was a favorite retreat for the British during the colonial era, who
+                were drawn to its cool climate and scenic beauty. Today, Darjeeling is a popular tourist destination
+                known for its natural beauty, tea gardens, and rich cultural heritage.</p>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do dress warmly, especially during the winter months when temperatures can drop significantly.</li>
+                <li>Don't pluck flowers or disturb the natural surroundings. Help in preserving Darjeeling's pristine
+                    beauty.</li>
+                <li>Do try the local tea, which is renowned for its unique flavor and aroma.</li>
+                <li>Don't engage in activities that harm the environment. Follow the principles of responsible tourism.
+                </li>
+                <li>Do respect the local customs and traditions, especially when visiting religious sites and
+                    interacting with locals.</li>
+            </ul>
+
+            <p>Visiting Darjeeling is like stepping back in time. Its colonial charm, stunning views, and tea gardens
+                make it a destination worth exploring.</p>
+
+
+            <!-- Ooty -->
+            <h2>4. Ooty - Queen of the Nilgiris</h2>
+            <p>Ooty, also known as Udagamandalam, is a picturesque hill station in Tamil Nadu known for its botanical
+                gardens, tea estates, and scenic landscapes. Explore the Ooty Lake, Botanical Gardens, and Doddabetta
+                Peak for panoramic views.</p>
+
+            <p>Ooty, the "Queen of the Nilgiris," is a charming hill station nestled in the Nilgiri Hills of Tamil Nadu,
+                India. Situated at an altitude of 2,240 meters, Ooty is renowned for its stunning natural beauty,
+                pleasant climate, and colonial charm. Here's a detailed guide to help you explore this enchanting
+                destination.</p>
+
+            <h3>Activities</h3>
+            <p>Ooty offers a wide range of activities for visitors to enjoy. Take a leisurely boat ride on the
+                picturesque Ooty Lake, surrounded by eucalyptus trees and rolling hills. Explore the Botanical Gardens,
+                which are home to a vast collection of exotic plants and flowers. For breathtaking views of the
+                surrounding hills and valleys, trek to the Doddabetta Peak, the highest point in the Nilgiris.</p>
+
+            <h3>Places to Visit</h3>
+            <p>Don't miss the opportunity to visit the Rose Garden, which is the largest rose garden in India and
+                features over 2,000 varieties of roses. The Government Museum in Ooty is another must-visit destination,
+                showcasing the rich history and culture of the region. For a glimpse into the region's colonial past,
+                visit the St. Stephen's Church, which dates back to the 19th century.</p>
+
+            <h3>Culture</h3>
+            <p>The culture of Ooty is a blend of Tamil and British influences, reflecting its colonial past. The local
+                cuisine is known for its use of fresh ingredients and aromatic spices, with dishes like Ooty varkey and
+                Ooty chocolate being popular choices. The people of Ooty are known for their warm hospitality and
+                friendly nature.</p>
+
+            <h3>History</h3>
+            <p>Ooty has a rich history that dates back to the early 19th century when it was established as a hill
+                station by the British. The region was a favorite retreat for the British during the colonial era, who
+                were drawn to its cool climate and scenic beauty. Today, Ooty is a popular tourist destination known for
+                its natural beauty and tranquil environment.</p>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do dress warmly, especially during the winter months when temperatures can drop significantly.</li>
+                <li>Don't pluck flowers or disturb the natural surroundings. Help in preserving Ooty's pristine beauty.
+                </li>
+                <li>Do try the local cuisine, including the famous Ooty chocolates and teas.</li>
+                <li>Don't litter or engage in activities that harm the environment. Follow the principles of responsible
+                    tourism.</li>
+                <li>Do explore the local markets and support the local economy by purchasing locally made handicrafts
+                    and products.</li>
+            </ul>
+
+            <p>Visiting Ooty is like stepping into a tranquil paradise. Its lush greenery, serene lakes, and cool
+                climate make it the perfect destination for a relaxing getaway.</p>
+
+
+            <!-- Munnar -->
+            <h2>5. Munnar - Tranquil Hill Station</h2>
+            <p>Munnar, located in Kerala's Western Ghats, is known for its tea gardens, misty hills, and breathtaking
+                landscapes. Visit the Eravikulam National Park, Mattupetty Dam, and Tea Museum for a memorable
+                experience.</p>
+
+            <p>Munnar, a picturesque hill station nestled in the Western Ghats of Kerala, India, is renowned for its
+                stunning natural beauty, lush tea gardens, and tranquil atmosphere. Situated at an altitude of 1,600
+                meters, Munnar offers a perfect escape from the hustle and bustle of city life. Here's a comprehensive
+                guide to help you explore this enchanting destination.</p>
+
+            <h3>Activities</h3>
+            <p>Munnar offers a variety of activities for visitors to enjoy. Explore the scenic tea gardens and learn
+                about the tea-making process at the Tea Museum. Trekking enthusiasts can embark on a trek to the Anamudi
+                Peak, the highest peak in South India, for breathtaking views of the surrounding landscape. Wildlife
+                enthusiasts can visit the Eravikulam National Park, home to the endangered Nilgiri Tahr.</p>
+
+            <h3>Places to Visit</h3>
+            <p>Don't miss the opportunity to visit the Mattupetty Dam, which offers stunning views of the surrounding
+                hills and is a great spot for boating. The Top Station viewpoint, located at the highest point on the
+                Munnar-Kodaikanal road, offers panoramic views of the Western Ghats. The Attukal Waterfalls, located
+                about 9 kilometers from Munnar, is another must-visit destination known for its natural beauty and
+                serenity.</p>
+
+            <h3>Culture</h3>
+            <p>The culture of Munnar is influenced by its location in Kerala, known as "God's Own Country," and the
+                predominant Malayali culture. The people of Munnar are known for their warm hospitality and traditional
+                way of life. The cuisine of Munnar is a blend of Kerala's famous seafood dishes, such as fish curry and
+                appam, along with traditional vegetarian dishes like olan and avial.</p>
+
+            <h3>History</h3>
+            <p>Munnar has a rich history that dates back to the British colonial era. The region was discovered by
+                British planters in the late 19th century, who recognized its potential for tea cultivation. The Tata
+                Tea Company played a significant role in the development of Munnar as a tea-producing region. Today,
+                Munnar is one of the largest tea-producing regions in India.</p>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do respect the local customs and traditions, especially when visiting religious sites.</li>
+                <li>Don't pluck flowers or disturb the natural surroundings. Help in preserving Munnar's natural beauty.
+                </li>
+                <li>Do try the local cuisine, including the famous Kerala seafood dishes.</li>
+                <li>Don't litter or smoke in public places. Help in keeping Munnar clean and pollution-free.</li>
+                <li>Do carry warm clothing, as the weather in Munnar can be unpredictable, especially during the winter
+                    months.</li>
+            </ul>
+
+            <p>Visiting Munnar is an experience that will stay with you for a lifetime. Its tranquil beauty, lush
+                landscapes, and rich culture will leave you enchanted and longing to return.</p>
+
+
+            <!-- Gulmarg -->
+            <h2>6. Gulmarg - Meadow of Flowers</h2>
+            <p>Gulmarg, in Jammu and Kashmir, is a stunning hill station known for its meadows of flowers, scenic
+                beauty, and adventure activities. Enjoy the Gondola ride, trek to the Alpather Lake, and explore the
+                Gulmarg Biosphere Reserve.</p>
+
+            <p>Gulmarg, often referred to as the "Meadow of Flowers," is a picturesque hill station located in the state
+                of Jammu and Kashmir, India. Situated at an altitude of 2,650 meters, Gulmarg is renowned for its
+                stunning natural beauty, lush green meadows, and snow-capped peaks. Here's a detailed guide to help you
+                explore this enchanting destination.</p>
+
+            <h3>Activities</h3>
+            <p>Gulmarg offers a wide range of activities for visitors to enjoy. One of the most popular activities is
+                the Gondola ride, which is one of the highest cable cars in the world. The ride offers breathtaking
+                views of the surrounding mountains and valleys. Adventure enthusiasts can also indulge in trekking,
+                horse riding, and skiing during the winter months.</p>
+
+            <h3>Places to Visit</h3>
+            <p>Don't miss the opportunity to visit the Alpather Lake, which is located at the foot of the Apharwat Peak.
+                The lake is surrounded by lush green meadows and offers a tranquil setting for picnics and relaxation.
+                The Gulmarg Biosphere Reserve is another must-visit destination, home to a variety of flora and fauna,
+                including rare and endangered species.</p>
+
+            <h3>Culture</h3>
+            <p>The culture of Gulmarg is influenced by its location in the Kashmir Valley and the predominance of Islam
+                in the region. The local cuisine is a blend of Kashmiri, Mughlai, and Persian influences, with dishes
+                like Rogan Josh, Yakhni, and Wazwan being popular choices. The people of Gulmarg are known for their
+                warm hospitality and welcoming nature.</p>
+
+            <h3>History</h3>
+            <p>Gulmarg has a rich history that dates back to ancient times. It was a favorite retreat for Mughal
+                emperors, who were enchanted by its beauty and tranquility. The region has also been a popular
+                destination for British colonizers, who established a golf course here in the early 20th century. Today,
+                Gulmarg is a popular tourist destination known for its natural beauty and adventure opportunities.</p>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do dress appropriately, especially during the winter months when temperatures can drop
+                    significantly.</li>
+                <li>Don't litter or disturb the natural surroundings. Help in keeping Gulmarg clean and pristine.</li>
+                <li>Do try the local cuisine and interact with the friendly locals to learn more about their culture and
+                    way of life.</li>
+                <li>Don't forget to carry sunscreen and sunglasses to protect yourself from the sun's rays, which can be
+                    harsh at higher altitudes.</li>
+                <li>Do respect the local customs and traditions, especially when visiting religious sites and
+                    interacting with locals.</li>
+            </ul>
+
+            <p>Visiting Gulmarg is an experience like no other. Its natural beauty, rich culture, and warm hospitality
+                will leave you with memories to cherish for a lifetime.</p>
+
+
+            <!-- Ladakh -->
+            <h2>7. Ladakh - Land of High Passes</h2>
+            <p>Ladakh, known for its rugged terrain, stunning landscapes, and Buddhist monasteries, is a popular
+                destination for adventure enthusiasts. Visit Leh Palace, Pangong Lake, and Nubra Valley for an
+                unforgettable experience.</p>
+
+            <p>Ladakh, often referred to as the "Land of High Passes," is a region in the northern part of India known
+                for its breathtaking landscapes, rich culture, and adventure opportunities. Situated at an altitude of
+                over 3,000 meters, Ladakh is a paradise for nature lovers and thrill-seekers alike. Here's a
+                comprehensive guide to help you explore this enchanting destination.</p>
+
+            <h3>Activities</h3>
+            <p>Adventurers can indulge in a variety of activities in Ladakh, including trekking, river rafting, and
+                mountain biking. The region offers some of the most scenic trekking routes in the world, such as the
+                Markha Valley Trek and the Stok Kangri Trek. For those interested in culture and spirituality, Ladakh is
+                home to numerous ancient monasteries, such as Hemis, Thiksey, and Diskit, where you can witness Buddhist
+                rituals and teachings.</p>
+
+            <h3>Places to Visit</h3>
+            <p>Leh, the capital of Ladakh, is a must-visit destination. Explore the historic Leh Palace, which offers
+                panoramic views of the surrounding mountains and valleys. Pangong Lake, located at a height of over
+                4,000 meters, is another popular attraction known for its stunning blue waters and picturesque
+                surroundings. Nubra Valley, famous for its sand dunes and double-humped camels, is a great place to
+                experience the unique landscape of Ladakh.</p>
+
+            <h3>Culture</h3>
+            <p>The culture of Ladakh is deeply influenced by Tibetan Buddhism, which is practiced by the majority of the
+                population. The region is known for its vibrant festivals, such as Hemis Festival and Losar, which
+                showcase traditional music, dance, and rituals. Ladakhi cuisine, which includes dishes like Thukpa,
+                Momos, and Butter Tea, is a delightful culinary experience that reflects the region's Tibetan heritage.
+            </p>
+
+            <h3>History</h3>
+            <p>Ladakh has a rich history that dates back to ancient times. It was an important center for trade along
+                the historic Silk Route, connecting India with Central Asia. The region has been ruled by various
+                dynasties, including the Kushans, Tibetans, and Mughals. The influence of these different cultures is
+                reflected in the architecture, art, and traditions of Ladakh.</p>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do acclimatize properly to the high altitude to avoid altitude sickness.</li>
+                <li>Don't litter or disturb the fragile ecosystem of Ladakh. Follow the principles of responsible
+                    tourism.</li>
+                <li>Do respect the local customs and traditions, especially when visiting monasteries and other
+                    religious sites.</li>
+                <li>Don't underestimate the weather conditions in Ladakh. Carry warm clothing and necessary medications.
+                </li>
+                <li>Do support the local economy by buying locally made handicrafts and products.</li>
+            </ul>
+
+            <p>Visiting Ladakh is a truly transformative experience. Its stunning landscapes, rich culture, and warm
+                hospitality will leave you with memories to cherish for a lifetime.</p>
+
+
+            <!-- Kashmir -->
+            <h2>8. Kashmir - Paradise on Earth</h2>
+            <p>Kashmir, often referred to as "Paradise on Earth," is known for its stunning valleys, pristine lakes, and
+                snow-capped mountains. Explore the Dal Lake, Mughal Gardens, and Sonamarg for a magical experience.</p>
+
+            <p>Visiting Kashmir is like stepping into a picture-perfect postcard. Its breathtaking landscapes have
+                inspired poets, writers, and filmmakers for generations. Here's a comprehensive guide to help you make
+                the most of your trip to this heavenly destination.</p>
+
+            <h3>Activities</h3>
+            <p>Enjoy a shikara ride on the Dal Lake, where you can marvel at the surrounding mountains and the floating
+                gardens. Trekking enthusiasts can head to Sonamarg for some thrilling adventures amidst the snow-capped
+                peaks. Gulmarg is another must-visit destination, especially for skiing enthusiasts. The Gulmarg
+                Gondola, one of the highest cable cars in the world, offers breathtaking views of the snow-covered
+                peaks.</p>
+
+            <h3>Places to Visit</h3>
+            <p>Don't miss the opportunity to visit the Mughal Gardens, such as Shalimar Bagh and Nishat Bagh, which are
+                famous for their stunning architecture and breathtaking views. Take a stroll in the old city of Srinagar
+                to experience its rich cultural heritage. Pahalgam, known as the "Valley of Shepherds," is another
+                picturesque destination worth exploring. It is also the starting point for the annual Amarnath Yatra
+                pilgrimage.</p>
+
+            <h3>Culture</h3>
+            <p>Kashmiri culture is a blend of various influences, including Persian, Central Asian, and Indian. The
+                traditional Kashmiri attire, known as the phiran, is a loose tunic worn by both men and women. The
+                cuisine of Kashmir is also something to look forward to, with dishes like Rogan Josh and Yakhni being
+                popular choices. Kashmiri handicrafts, such as Pashmina shawls, carpets, and paper-mâché items, are
+                renowned for their exquisite craftsmanship.</p>
+
+            <h3>History</h3>
+            <p>Kashmir has a rich history that dates back to ancient times. It has been ruled by various dynasties,
+                including the Mauryas, Kushans, and Mughals. The region's history is also marked by the arrival of Islam
+                in the 14th century, which has had a significant influence on its culture and traditions. The beautiful
+                wooden mosques of Kashmir, such as the Shah Hamdan Mosque in Srinagar, are architectural marvels that
+                reflect this cultural fusion.</p>
+
+            <h3>Do's and Don'ts</h3>
+            <ul>
+                <li>Do respect the local customs and traditions.</li>
+                <li>Don't litter the beautiful landscapes. Help in keeping Kashmir clean and pristine.</li>
+                <li>Do try the local cuisine and interact with the friendly locals.</li>
+                <li>Don't forget to carry warm clothing, as the weather can be unpredictable, especially in higher
+                    altitudes.</li>
+                <li>Do engage in responsible tourism. Support local businesses and contribute to the sustainable
+                    development of the region.</li>
+            </ul>
+
+            <p>Visiting Kashmir is an experience of a lifetime. Its natural beauty and warm hospitality will leave you
+                mesmerized and longing to return.</p>
+
+
+            <!-- Travel Tips -->
+            <h2>Summer Travel Tips for Hill Stations:</h2>
+            <ul>
+                <li>👗 Dress in layers to accommodate varying temperatures.</li>
+                <li>💧 Stay hydrated, as the air is often drier at higher altitudes.</li>
+                <li>🧢 Wear a hat to protect your head from the sun.</li>
+                <li>📱 Keep important documents and emergency contacts handy.</li>
+                <li>🚗 Rent a car from Axis Cabs for convenience and flexibility in exploring the hill station.</li>
+                <li>🍽️ Enjoy local cuisine and stay energized for your adventures.</li>
+            </ul>
+
+            <!-- Conclusion -->
+            <h2>Conclusion:</h2>
+            <p>Planning a summer getaway to these stunning destinations is made easy with Axis Cabs. Whether you're
+                looking for adventure in the mountains or tranquility by the lakeside, we ensure a comfortable and
+                memorable journey. With our reliable services and experienced drivers, your summer trip is sure to be
+                hassle-free and enjoyable.</p>
+
+            <p>Book with Axis Cabs today and experience the beauty of India's summer destinations like never before!
+            </p>
+
+            <!-- Contact Information -->
+            <p>For more information, contact us at <a href="mailto:info@example.com">info@axiscabs.com</a>.</p>
+            <a href="#" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
+        aria-describedby="errorModalDesc">
+        <div class="modal-content">
+            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+            <p id="errorModalDesc">Select source and destination city 📍</p>
+            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+    <div id="footerContainer"></div>
+    <script src="summer.js"></script>
+</body>
+
+</html>
