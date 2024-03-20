@@ -10,6 +10,10 @@
 
 
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
         header {
             background-color: #000000;
             color: #fff;
@@ -84,6 +88,42 @@
             background-color: #333;
             /* Change background color on hover */
         }
+
+        /* Search bar styling */
+        .search-bar {
+            /* position: relative; */
+            transform: translate(-100%, 0%);
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .search-results {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            width: 99%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-top: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-results li {
+            padding: 8px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .search-results li:hover {
+            background-color: #f9f9f9;
+        }
     </style>
 </head>
 
@@ -95,10 +135,19 @@
         </div>
     </header> -->
 
-    <header class="header-logo">
+    <header class="header header-logo">
         <a href="https://axiscabs.com">
             <img src="../../../images/logo/axis-cabs-logo-1.png" alt="axis-cabs-logo">
         </a>
+        <!-- <input class="search-input" type="text" placeholder="Search for a city">
+        <ul class="search-results"></ul> -->
+
+        <div class="search-bar">
+            <input class="search-input" type="text" placeholder="Search for a city">
+            <!-- <input type="text" id="searchInput" placeholder="Search for a city"> -->
+            <ul class="search-results" id="searchResults"></ul>
+        </div>
+
         <div class="burger-menu" id="burgerMenu">
             <i class="fas fa-bars burger-icon"></i>
         </div>
@@ -161,6 +210,55 @@
 
             document.addEventListener('click', closeMenuOnClickOutside);
         });
+
+        var cityUrls = {
+            'Delhi': 'https://axiscabs.com/explore/india/delhi/car-rental.html',
+            'Jaipur': 'https://axiscabs.com/explore/india/jaipur/car-rental.html',
+            'Agra': 'https://axiscabs.com/explore/india/agra/car-rental.html',
+            'Varanasi': 'https://axiscabs.com/explore/india/varanasi/car-rental.html',
+            // Add more city URLs as needed
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var searchInput = document.querySelector('.search-input');
+            var searchResults = document.querySelector('.search-results');
+
+            function displaySearchResults(results) {
+                if (results.length > 0) {
+                    searchResults.innerHTML = '';
+                    results.forEach(function (result) {
+                        var li = document.createElement('li');
+                        li.textContent = result;
+                        li.addEventListener('click', function () {
+                            searchInput.value = result;
+                            searchResults.style.display = 'none';
+                            if (cityUrls[result]) {
+                                window.location.href = cityUrls[result];
+                            }
+                        });
+                        searchResults.appendChild(li);
+                    });
+                    searchResults.style.display = 'block';
+                } else {
+                    searchResults.style.display = 'none';
+                }
+            }
+
+            searchInput.addEventListener('input', function () {
+                var inputValue = this.value.toLowerCase();
+                var results = Object.keys(cityUrls).filter(function (city) {
+                    return city.toLowerCase().startsWith(inputValue);
+                });
+                displaySearchResults(results);
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!searchResults.contains(event.target) && event.target !== searchInput) {
+                    searchResults.style.display = 'none';
+                }
+            });
+        });
+
     </script>
 
 </body>
