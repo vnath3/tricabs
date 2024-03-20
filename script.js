@@ -2332,32 +2332,25 @@ function sendSMS(fullName, bookingMobileNumber, cabType, fare, sourceCity, desti
             // Handle error, display error message, etc.
         });
 }
-// Function to open WhatsApp with a predefined message
 function openWhatsApp() {
-    // Get all elements with the class 'whatsapp-link'
     var whatsappLinks = document.querySelectorAll('.whatsapp-link');
 
-    // Loop through each link
     whatsappLinks.forEach(function (link) {
-        // Get the phone number from the data attribute
         var phoneNumber = link.getAttribute('data-phone');
-
-        // Get the message you want to send (replace with your own)
         var message = "Hi Axis Cabs, need some help to book a cab.";
-
-        // Encode the message for the URL
         var encodedMessage = encodeURIComponent(message);
 
-        // Create the WhatsApp link with the phone number and message
-        var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
-
-        // Set the href attribute of the WhatsApp link
-        link.href = whatsappLink;
+        if (phoneNumber !== null) {
+            var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+            link.href = whatsappLink;
+        } else {
+            // Handle the case when phoneNumber is null
+            console.error("Phone number is null for WhatsApp link:", link);
+        }
     });
 }
-
-// Call the function when the page loads
 document.addEventListener("DOMContentLoaded", openWhatsApp);
+
 
 // Clear city selection on browser back button press
 window.addEventListener('pageshow', function (event) {
