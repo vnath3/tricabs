@@ -211,19 +211,22 @@
             document.addEventListener('click', closeMenuOnClickOutside);
         });
 
-        var cityUrls = {
-            'Delhi': 'https://axiscabs.com/explore/india/delhi/car-rental.html',
-            'Jaipur': 'https://axiscabs.com/explore/india/jaipur/car-rental.html',
-            'Agra': 'https://axiscabs.com/explore/india/agra/car-rental.html',
-            'Varanasi': 'https://axiscabs.com/explore/india/varanasi/car-rental.html',
-            // Add more city URLs as needed
-        };
 
         document.addEventListener('DOMContentLoaded', function () {
+            var cityUrls = {
+                'Delhi': 'https://axiscabs.com/explore/india/delhi/car-rental.html',
+                'Jaipur': 'https://axiscabs.com/explore/india/jaipur/car-rental.html',
+                'Agra': 'https://axiscabs.com/explore/india/agra/car-rental.html',
+                'Varanasi': 'https://axiscabs.com/explore/india/varanasi/car-rental.html',
+                // Add more city URLs as needed
+            };
+
+
             var searchInput = document.querySelector('.search-input');
             var searchResults = document.querySelector('.search-results');
 
             function displaySearchResults(results) {
+                console.log("Test City " + results)
                 if (results.length > 0) {
                     searchResults.innerHTML = '';
                     results.forEach(function (result) {
