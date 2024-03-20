@@ -2353,7 +2353,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var searchResults = document.querySelector('.search-results');
 
     function displaySearchResults(results) {
-        console.log("Test City " + results)
         if (results.length > 0) {
             searchResults.innerHTML = '';
             results.forEach(function (result) {
