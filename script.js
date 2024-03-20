@@ -2338,6 +2338,58 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Error loading footer:', error));
 });
 
+//Script for search bar 
+document.addEventListener('DOMContentLoaded', function () {
+    var cityUrls = {
+        'Delhi': 'https://axiscabs.com/explore/india/delhi/car-rental.html',
+        'Jaipur': 'https://axiscabs.com/explore/india/jaipur/car-rental.html',
+        'Agra': 'https://axiscabs.com/explore/india/agra/car-rental.html',
+        'Varanasi': 'https://axiscabs.com/explore/india/varanasi/car-rental.html',
+        // Add more city URLs as needed
+    };
+
+
+    var searchInput = document.querySelector('.search-input');
+    var searchResults = document.querySelector('.search-results');
+
+    function displaySearchResults(results) {
+        console.log("Test City " + results)
+        if (results.length > 0) {
+            searchResults.innerHTML = '';
+            results.forEach(function (result) {
+                var li = document.createElement('li');
+                li.textContent = result;
+                li.addEventListener('click', function () {
+                    searchInput.value = result;
+                    searchResults.style.display = 'none';
+                    if (cityUrls[result]) {
+                        window.location.href = cityUrls[result];
+                    }
+                });
+                searchResults.appendChild(li);
+            });
+            searchResults.style.display = 'block';
+        } else {
+            searchResults.style.display = 'none';
+        }
+    }
+
+    searchInput.addEventListener('input', function () {
+        var inputValue = this.value.toLowerCase();
+        var results = Object.keys(cityUrls).filter(function (city) {
+            return city.toLowerCase().startsWith(inputValue);
+        });
+        displaySearchResults(results);
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!searchResults.contains(event.target) && event.target !== searchInput) {
+            searchResults.style.display = 'none';
+        }
+    });
+});
+
+
 // Load the header content from header.html
 fetch('../../../header.html')
     .then(response => response.text())
