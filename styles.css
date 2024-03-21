@@ -425,6 +425,11 @@ html {
         margin: auto;
     }
 
+    .search-input {
+        width: 53%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: 480px) {
