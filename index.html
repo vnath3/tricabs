@@ -3,105 +3,119 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensure mobile responsiveness -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- The main title of the page, appears on browser tab and is important for SEO -->
     <title>Axis Cabs - Travel Made Easy</title>
-    <meta name="description"
-        content="Axis Cabs offers reliable and affordable car rental services across India. Experience hassle-free travel with our modern fleet of vehicles. Book your ride now and enjoy 24/7 customer support. Contact us at +91 9922333305 or visit our website to learn more.">
+    <!-- Short description for SEO and when the site is shared -->
+    <meta content="Axis Cabs offers reliable and affordable car rental services across India. Experience hassle-free travel with our modern fleet of vehicles. Book your ride now and enjoy 24/7 customer support. Contact us at +91 9922333305 or visit our website to learn more."
+          name="description">
 
-    <!-- SEO Meta Tags -->
-    <meta name="keywords" content="car rental, cab service, car hire, car booking, travel agency, travel guide">
-
-    <meta name="robots" content="index, follow">
-    <!-- Open Graph (OG) Meta Tags -->
-    <meta property="og:title" content="Axis Cabs - Your Trusted Car Rental Partner">
-    <meta name="og:description"
-        content="Axis Cabs offers reliable and affordable car rental services across India. Experience hassle-free travel with our modern fleet of vehicles. Book your ride now and enjoy 24/7 customer support. Contact us at +91 9922333305 or visit our website to learn more.">
-    <meta property="og:image" content="https://axiscabs.com/images/logo/axis-cabs-logo.png">
-    <meta property="og:url" content="https://axiscabs.com">
-    <meta property="og:site_name" content="Axis cabs">
-    <meta property="og:type" content="website">
+    <!-- SEO: Relevant keywords for search engines -->
+    <meta content="car rental, cab service, car hire, car booking, travel agency, travel guide" name="keywords">
+    <!-- Allow search engines to index and follow links on this page -->
+    <meta content="index, follow" name="robots">
+    <!-- Social sharing (Open Graph) tags for richer display when the page is shared on social media -->
+    <meta content="Axis Cabs - Your Trusted Car Rental Partner" property="og:title">
+    <meta content="Axis Cabs offers reliable and affordable car rental services across India. Experience hassle-free travel with our modern fleet of vehicles. Book your ride now and enjoy 24/7 customer support. Contact us at +91 9922333305 or visit our website to learn more."
+          name="og:description">
+    <meta content="https://axiscabs.com/images/logo/axis-cabs-logo.png" property="og:image">
+    <meta content="https://axiscabs.com" property="og:url">
+    <meta content="Axis cabs" property="og:site_name">
+    <meta content="website" property="og:type">
 
     <!-- Specify Image Dimensions -->
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta content="1200" property="og:image:width">
+    <meta content="630" property="og:image:height">
 
-    <!-- Local Business Markup and TravelAction Structured Data -->
+    <!-- Structured data for better SEO and to enable rich search results -->
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Axis cabs",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "New Osmanpura",
-        "addressLocality": "Jyoti Nagar",
-        "addressRegion": "Maharashtra",
-        "postalCode": "431005",
-        "addressCountry": "India"
-      },
-      "telephone": "+91 9922333305",
-      "image": "https://axiscabs.com/images/logo/axis-cabs-logo.png",
-      "url": "https://axiscabs.com",
-      "sameAs": [
-        "https://www.facebook.com/AxisCabs",
-        "https://twitter.com/AxisCabs",
-        "https://www.linkedin.com/company/axiscabs"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91 9922333305",
-        "contactType": "customer service",
-        "availableLanguage": ["English", "Hindi"]
-      }
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "TravelAction",
-      "name": "Romantic Destinations",
-      "description": "Escape to less crowded destinations where love permeates the air. Your private cab awaits—no questions, just pure romance. 🌍💑 #CoupleGetaway",
-      "url": "https://axiscabs.com/explore/india/honeymoon-places/couple-destinations.html",
-      "image": "https://axiscabs.com/images/cardImages/couple_1.jpg",
-      "startDate": "2024-03-01",
-      "endDate": "2024-03-10",
-      "offers": {
+        {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Axis cabs",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "New Osmanpura",
+                "addressLocality": "Jyoti Nagar",
+                "addressRegion": "Maharashtra",
+                "postalCode": "431005",
+                "addressCountry": "India"
+            },
+            "telephone": "+91 9922333305",
+            "image": "https://axiscabs.com/images/logo/axis-cabs-logo.png",
+            "url": "https://axiscabs.com",
+            "sameAs": [
+                "https://www.facebook.com/AxisCabs",
+                "https://twitter.com/AxisCabs",
+                "https://www.linkedin.com/company/axiscabs"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91 9922333305",
+                "contactType": "customer service",
+                "availableLanguage": [
+                    "English",
+                    "Hindi"
+                ]
+            }
+        },
+        {
+        "@context": "http://schema.org",
+        "@type": "TravelAction",
+        "name": "Romantic Destinations",
+        "description": "Escape to less crowded destinations where love permeates the air. Your private cab awaits—no questions, just pure romance. 🌍💑 #CoupleGetaway",
+        "url": "https://axiscabs.com/explore/india/honeymoon-places/couple-destinations.html",
+        "image": "https://axiscabs.com/images/cardImages/couple_1.jpg",
+        "startDate": "2024-03-01",
+        "endDate": "2024-03-10",
+        "offers": {
         "@type": "Offer",
         "price": "3000",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "url": "https://axiscabs.com/explore/india/honeymoon-places/couple-destinations.html"
-      }
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "TravelAction",
-      "name": "Family Fun Destinations",
-      "description": "Unwind in family-friendly havens. Cherish moments where laughter echoes, and each experience becomes a cherished chapter in your family's adventure book. 🏖️👨‍👩‍👧‍👦",
-      "url": "https://example.com/ajanta.html",
-      "image": "https://example.com/images/cardImages/family_12.jpg",
-      "startDate": "2024-03-01",
-      "endDate": "2024-03-10",
-      "offers": {
+        }
+        },
+        {
+        "@context": "http://schema.org",
+        "@type": "TravelAction",
+        "name": "Family Fun Destinations",
+        "description": "Unwind in family-friendly havens. Cherish moments where laughter echoes, and each experience becomes a cherished chapter in your family's adventure book. 🏖️👨‍👩‍👧‍👦",
+        "url": "https://example.com/ajanta.html",
+        "image": "https://example.com/images/cardImages/family_12.jpg",
+        "startDate": "2024-03-01",
+        "endDate": "2024-03-10",
+        "offers": {
         "@type": "Offer",
         "price": "100",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
         "url": "https://example.com/book/family-fun-destinations"
-      }
-    }
-    //Similarly for other cards
+        }
+        }
     </script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Include Select2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Main site CSS for layout and branding -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Font Awesome for social and action icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Select2 for styled/searchable dropdowns in the booking form -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet"/>
     <!-- // below script is for select2 JS for searchable dropdown  -->
+    <!-- jQuery (dependency for Select2) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Include Select2 JS -->
+    <!-- Select2 JS for enhanced dropdowns -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
     <!-- Script used to load and update whats app number from config.js -->
-    <script src="config.js" defer></script>
+    <!-- Config file for dynamic variables (like WhatsApp mobile number) -->
+    <script defer src="config.js"></script>
+    <!-- Inline script for WhatsApp button and page behaviors -->
     <script>
+        // Function to update WhatsApp link with the current mobile number
+
         function updateMobileNumber(mobileNumber) {
             var whatsappLink = document.getElementById('whatsappLink');
             var message = "Hi Axis Cabs, need some help to book a cab.";
@@ -111,17 +125,20 @@
         }
 
         window.addEventListener('DOMContentLoaded', function () {
-            // Assume mobileNumber is set globally
+            // Use a timeout to ensure config.js has loaded (if deferred)
             setTimeout(function () {
+             // If mobileNumber is defined, update the WhatsApp link
                 if (typeof mobileNumber !== 'undefined') {
                     updateMobileNumber(mobileNumber);
                 } else {
+                  // Log an error for debugging if config.js fails to define mobileNumber
                     console.error('mobileNumber is undefined. Check config.js');
                 }
             }, 1000);
         });
 
         // Check if page is loaded from the cache
+        // If the page is loaded from cache (like navigating back), force reload for freshness
         window.addEventListener('pageshow', function (event) {
             if (event.persisted) {
                 // Page is loaded from the cache, force reload
@@ -135,340 +152,360 @@
 
 
 <body>
-    <div id="headerContainer"></div>
+<!-- Placeholder for header; filled dynamically (see script.js) -->
+<div id="headerContainer"></div>
 
 
+<!--
+  Optionally, you can show a welcome hero section here
+  <section class="home" id="home">
+    <h2>Axis Cabs - Travel Made Easy</h2>
+  </section>
+-->
+<!-- Search bar for city search (top of page) -->
+<div class="search-bar">
+    <input class="search-input" placeholder="Explore cities" type="text">
+    <!-- Dynamic search results will appear here -->
+    <ul class="search-results" id="searchResults"></ul>
+</div>
+<!-- Fixed-position WhatsApp chat button, updates dynamically -->
 
-    <!-- <section class="home" id="home">
-        <h2>Axis Cabs - Travel Made Easy</h2>
+<a class="whatsapp-icon-fixed whatsapp-link" href="#" id="whatsappLink">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
-    </section> -->
+<!-- Video background and booking form overlay -->
+<div class="container">
+    <!-- Hero background video (looping, muted, autoplay) -->
+    <video autoplay id="myVideo" loop muted>
+        <source src="videos/hero-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <!-- Booking form for users to reserve a cab -->
+    <div class="content">
+        <section class="booking-widget" id="booking">
+            <h2>Book Your Car</h2>
+            <!-- Dropdown for selecting the source city -->
+            <label for="source">Source City:</label>
+            <select class="city-dropdown" id="source" required>
+                <!-- List of supported cities -->
+                <option disabled selected value=""></option>
+                <option value="Mumbai">Mumbai, Maharashtra</option>
+                <option value="Pune">Pune, Maharashtra</option>
+                <option value="Nagpur">Nagpur, Maharashtra</option>
+                <option value="Thane">Thane, Maharashtra</option>
+                <option value="Nashik">Nashik, Maharashtra</option>
+                <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                <option value="Solapur">Solapur, Maharashtra</option>
+                <option value="Amravati">Amravati, Maharashtra</option>
+                <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                <option value="Akola">Akola, Maharashtra</option>
+                <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                <option value="Latur">Latur, Maharashtra</option>
+                <option value="Dhule">Dhule, Maharashtra</option>
+                <option value="Nanded">Nanded, Maharashtra</option>
+                <option value="Sangli">Sangli, Maharashtra</option>
+                <option value="Malegaon">Malegaon, Maharashtra</option>
+                <option value="Jalna">Jalna, Maharashtra</option>
+                <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                <option value="Parbhani">Parbhani, Maharashtra</option>
+                <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                <option value="Panvel">Panvel, Maharashtra</option>
+                <option value="Satara">Satara, Maharashtra</option>
+                <option value="Beed">Beed, Maharashtra</option>
+                <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                <option value="Wardha">Wardha, Maharashtra</option>
+                <option value="Gondia">Gondia, Maharashtra</option>
+                <option value="Hingoli">Hingoli, Maharashtra</option>
+                <option value="Khopoli">Khopoli, Maharashtra</option>
+                <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                <option value="Palghar">Palghar, Maharashtra</option>
+                <option value="Washim">Washim, Maharashtra</option>
+                <option value="Karad">Karad, Maharashtra</option>
+                <option value="Baramati">Baramati, Maharashtra</option>
+                <option value="Chimur">Chimur, Maharashtra</option>
+                <option value="Deolali">Deolali, Maharashtra</option>
+                <option value="Gangapur">Gangapur, Maharashtra</option>
+                <option value="Junnar">Junnar, Maharashtra</option>
+                <option value="Kamthi">Kamthi, Maharashtra</option>
 
-    <div class="search-bar">
-        <input class="search-input" type="text" placeholder="Explore cities">
-        <ul class="search-results" id="searchResults"></ul>
+            </select>
+            <!-- Dropdown for selecting the destination city -->
+            <label for="destination">Destination City:</label>
+            <select class="city-dropdown" id="destination" required>
+                <option disabled selected value=""></option>
+                <!-- List of supported cities (same as above) -->
+                <option value="Mumbai">Mumbai, Maharashtra</option>
+                <option value="Pune">Pune, Maharashtra</option>
+                <option value="Nagpur">Nagpur, Maharashtra</option>
+                <option value="Thane">Thane, Maharashtra</option>
+                <option value="Nashik">Nashik, Maharashtra</option>
+                <option value="Aurangabad">Aurangabad, Maharashtra</option>
+                <option value="Solapur">Solapur, Maharashtra</option>
+                <option value="Amravati">Amravati, Maharashtra</option>
+                <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
+                <option value="Kolhapur">Kolhapur, Maharashtra</option>
+                <option value="Akola">Akola, Maharashtra</option>
+                <option value="Jalgaon">Jalgaon, Maharashtra</option>
+                <option value="Latur">Latur, Maharashtra</option>
+                <option value="Dhule">Dhule, Maharashtra</option>
+                <option value="Nanded">Nanded, Maharashtra</option>
+                <option value="Sangli">Sangli, Maharashtra</option>
+                <option value="Malegaon">Malegaon, Maharashtra</option>
+                <option value="Jalna">Jalna, Maharashtra</option>
+                <option value="Chandrapur">Chandrapur, Maharashtra</option>
+                <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
+                <option value="Parbhani">Parbhani, Maharashtra</option>
+                <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
+                <option value="Panvel">Panvel, Maharashtra</option>
+                <option value="Satara">Satara, Maharashtra</option>
+                <option value="Beed">Beed, Maharashtra</option>
+                <option value="Yavatmal">Yavatmal, Maharashtra</option>
+                <option value="Osmanabad">Osmanabad, Maharashtra</option>
+                <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
+                <option value="Wardha">Wardha, Maharashtra</option>
+                <option value="Gondia">Gondia, Maharashtra</option>
+                <option value="Hingoli">Hingoli, Maharashtra</option>
+                <option value="Khopoli">Khopoli, Maharashtra</option>
+                <option value="Nandurbar">Nandurbar, Maharashtra</option>
+                <option value="Palghar">Palghar, Maharashtra</option>
+                <option value="Washim">Washim, Maharashtra</option>
+                <option value="Karad">Karad, Maharashtra</option>
+                <option value="Baramati">Baramati, Maharashtra</option>
+                <option value="Chimur">Chimur, Maharashtra</option>
+                <option value="Deolali">Deolali, Maharashtra</option>
+                <option value="Gangapur">Gangapur, Maharashtra</option>
+                <option value="Junnar">Junnar, Maharashtra</option>
+                <option value="Kamthi">Kamthi, Maharashtra</option>
+
+            </select>
+            <!-- User selects date for travel (can set a min value, for ex: tomorrow) -->
+            <label for="travelDate">Date:</label>
+            <input id="travelDate" min="2024-01-27" required type="date" value="">
+            <!-- User selects pickup time (default to 7am) -->
+            <!-- Set default value to current date + 1 -->
+            <label for="pickupTime">Pickup Time:</label>
+            <input id="pickupTime" required type="time" value="07:00">
+            <!-- Set default value to 7 am -->
+            <button onclick="submitBooking()">Book Now</button>
+
+        </section>
+    </div>
+</div>
+
+<!-- Destination Cards Section (grid of clickable destination/category cards) -->
+
+<section class="card-section">
+    <!-- Container for all cards -->
+    <div class="card-container">
+
+
+        <!-- Each card highlights a theme or region (links to deeper pages) -->
+        <!-- Example Card 1: Romantic Destinations -->
+        <div class="card">
+            <a class="card-link" href="explore/india/honeymoon-places/car-rental.html">
+                <img alt="A couple enjoying a scenic view, representing romantic destinations."
+                     src="images/cardImages/couple_1.jpg">
+
+
+                <div class="card-content">
+                    <h2 class="card-title">Romantic Destinations</h2>
+            </a>
+            <p class="card-description">Escape to less crowded destinations where love permeates the air. Your
+                private cab awaits—no questions, just pure romance. 🌍💑 #CoupleGetaway </p>
+        </div>
     </div>
 
-    <a href="#" class="whatsapp-icon-fixed whatsapp-link" id="whatsappLink">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Example Card 2: Family Fun Destinations -->
+    <div class="card">
+        <a class="card-link" href="explore/india/family-destinations/car-rental.html">
+            <img alt="A family having fun on a beach, representing family fun destinations."
+                 src="images/cardImages/family_12.jpg">
 
-    <!-- Overlay booking widget -->
-    <div class="container">
-
-        <video autoplay muted loop id="myVideo">
-            <source src="videos/hero-video.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-
-        <div class="content">
-            <section id="booking" class="booking-widget">
-                <h2>Book Your Car</h2>
-                <label for="source">Source City:</label>
-                <select id="source" required class="city-dropdown">
-                    <option value="" selected disabled></option>
-                    <option value="Mumbai">Mumbai, Maharashtra</option>
-                    <option value="Pune">Pune, Maharashtra</option>
-                    <option value="Nagpur">Nagpur, Maharashtra</option>
-                    <option value="Thane">Thane, Maharashtra</option>
-                    <option value="Nashik">Nashik, Maharashtra</option>
-                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
-                    <option value="Solapur">Solapur, Maharashtra</option>
-                    <option value="Amravati">Amravati, Maharashtra</option>
-                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
-                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
-                    <option value="Akola">Akola, Maharashtra</option>
-                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
-                    <option value="Latur">Latur, Maharashtra</option>
-                    <option value="Dhule">Dhule, Maharashtra</option>
-                    <option value="Nanded">Nanded, Maharashtra</option>
-                    <option value="Sangli">Sangli, Maharashtra</option>
-                    <option value="Malegaon">Malegaon, Maharashtra</option>
-                    <option value="Jalna">Jalna, Maharashtra</option>
-                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
-                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
-                    <option value="Parbhani">Parbhani, Maharashtra</option>
-                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
-                    <option value="Panvel">Panvel, Maharashtra</option>
-                    <option value="Satara">Satara, Maharashtra</option>
-                    <option value="Beed">Beed, Maharashtra</option>
-                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
-                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
-                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
-                    <option value="Wardha">Wardha, Maharashtra</option>
-                    <option value="Gondia">Gondia, Maharashtra</option>
-                    <option value="Hingoli">Hingoli, Maharashtra</option>
-                    <option value="Khopoli">Khopoli, Maharashtra</option>
-                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
-                    <option value="Palghar">Palghar, Maharashtra</option>
-                    <option value="Washim">Washim, Maharashtra</option>
-                    <option value="Karad">Karad, Maharashtra</option>
-                    <option value="Baramati">Baramati, Maharashtra</option>
-                    <option value="Chimur">Chimur, Maharashtra</option>
-                    <option value="Deolali">Deolali, Maharashtra</option>
-                    <option value="Gangapur">Gangapur, Maharashtra</option>
-                    <option value="Junnar">Junnar, Maharashtra</option>
-                    <option value="Kamthi">Kamthi, Maharashtra</option>
-
-                </select>
-                <label for="destination">Destination City:</label>
-                <select id="destination" required class="city-dropdown">
-                    <option value="" selected disabled></option>
-                    <option value="Mumbai">Mumbai, Maharashtra</option>
-                    <option value="Pune">Pune, Maharashtra</option>
-                    <option value="Nagpur">Nagpur, Maharashtra</option>
-                    <option value="Thane">Thane, Maharashtra</option>
-                    <option value="Nashik">Nashik, Maharashtra</option>
-                    <option value="Aurangabad">Aurangabad, Maharashtra</option>
-                    <option value="Solapur">Solapur, Maharashtra</option>
-                    <option value="Amravati">Amravati, Maharashtra</option>
-                    <option value="Navi Mumbai">Navi Mumbai, Maharashtra</option>
-                    <option value="Kolhapur">Kolhapur, Maharashtra</option>
-                    <option value="Akola">Akola, Maharashtra</option>
-                    <option value="Jalgaon">Jalgaon, Maharashtra</option>
-                    <option value="Latur">Latur, Maharashtra</option>
-                    <option value="Dhule">Dhule, Maharashtra</option>
-                    <option value="Nanded">Nanded, Maharashtra</option>
-                    <option value="Sangli">Sangli, Maharashtra</option>
-                    <option value="Malegaon">Malegaon, Maharashtra</option>
-                    <option value="Jalna">Jalna, Maharashtra</option>
-                    <option value="Chandrapur">Chandrapur, Maharashtra</option>
-                    <option value="Bhiwandi">Bhiwandi, Maharashtra</option>
-                    <option value="Parbhani">Parbhani, Maharashtra</option>
-                    <option value="Ichalkaranji">Ichalkaranji, Maharashtra</option>
-                    <option value="Panvel">Panvel, Maharashtra</option>
-                    <option value="Satara">Satara, Maharashtra</option>
-                    <option value="Beed">Beed, Maharashtra</option>
-                    <option value="Yavatmal">Yavatmal, Maharashtra</option>
-                    <option value="Osmanabad">Osmanabad, Maharashtra</option>
-                    <option value="Ratnagiri">Ratnagiri, Maharashtra</option>
-                    <option value="Wardha">Wardha, Maharashtra</option>
-                    <option value="Gondia">Gondia, Maharashtra</option>
-                    <option value="Hingoli">Hingoli, Maharashtra</option>
-                    <option value="Khopoli">Khopoli, Maharashtra</option>
-                    <option value="Nandurbar">Nandurbar, Maharashtra</option>
-                    <option value="Palghar">Palghar, Maharashtra</option>
-                    <option value="Washim">Washim, Maharashtra</option>
-                    <option value="Karad">Karad, Maharashtra</option>
-                    <option value="Baramati">Baramati, Maharashtra</option>
-                    <option value="Chimur">Chimur, Maharashtra</option>
-                    <option value="Deolali">Deolali, Maharashtra</option>
-                    <option value="Gangapur">Gangapur, Maharashtra</option>
-                    <option value="Junnar">Junnar, Maharashtra</option>
-                    <option value="Kamthi">Kamthi, Maharashtra</option>
-
-                </select>
-                <label for="travelDate">Date:</label>
-                <input type="date" id="travelDate" value="" min="2024-01-27" required>
-                <!-- Set default value to current date + 1 -->
-                <label for="pickupTime">Pickup Time:</label>
-                <input type="time" id="pickupTime" value="07:00" required>
-                <!-- Set default value to 7 am -->
-                <button onclick="submitBooking()">Book Now</button>
-
-            </section>
-        </div>
+            <div class="card-content">
+                <h2 class="card-title">Family Fun Destinations</h2>
+        </a>
+        <p class="card-description">Unwind in family-friendly havens. Cherish moments where laughter echoes,
+            and each experience becomes a cherished chapter in your family's adventure book. 🏖️👨‍👩‍👧‍👦
+        </p>
+    </div>
     </div>
 
+    <!-- Card 3: Regilious Destinations  -->
+    <div class="card">
+        <a class="card-link" href="explore/india/spiritual-destinations/car-rental.html">
+            <img alt="A serene temple surrounded by nature, representing spiritual destinations."
+                 src="images/cardImages/temple (2).jpg">
 
-
-    <section class="card-section">
-        <!-- Card Container -->
-        <div class="card-container">
-
-
-            <!-- Card 1: Romantic Destinations -->
-            <div class="card">
-                <a href="explore/india/honeymoon-places/car-rental.html" class="card-link">
-                    <img src="images/cardImages/couple_1.jpg"
-                        alt="A couple enjoying a scenic view, representing romantic destinations.">
-
-
-                    <div class="card-content">
-                        <h2 class="card-title">Romantic Destinations</h2>
-                </a>
-                <p class="card-description">Escape to less crowded destinations where love permeates the air. Your
-                    private cab awaits—no questions, just pure romance. 🌍💑 #CoupleGetaway </p>
-            </div>
-        </div>
-
-        <!-- Card 2: Family Fun Destinations -->
-        <div class="card">
-            <a href="explore/india/family-destinations/car-rental.html" class="card-link">
-                <img src="images/cardImages/family_12.jpg"
-                    alt="A family having fun on a beach, representing family fun destinations.">
-
-                <div class="card-content">
-                    <h2 class="card-title">Family Fun Destinations</h2>
-            </a>
-            <p class="card-description">Unwind in family-friendly havens. Cherish moments where laughter echoes,
-                and each experience becomes a cherished chapter in your family's adventure book. 🏖️👨‍👩‍👧‍👦
-            </p>
-        </div>
-        </div>
-
-        <!-- Card 3: Regilious Destinations  -->
-        <div class="card">
-            <a href="explore/india/spiritual-destinations/car-rental.html" class="card-link">
-                <img src="images/cardImages/temple (2).jpg"
-                    alt="A serene temple surrounded by nature, representing spiritual destinations.">
-
-                <div class="card-content">
-                    <h2 class="card-title">Spiritual Destinations</h2>
-            </a>
-            <p class="card-description">Explore India's serene spots, where ancient temples and peaceful
-                landscapes invite you to connect with spirituality. 🕊️🌼</p>
-        </div>
-        </div>
-
-        <!-- Card 4: Indian History -->
-        <div class="card">
-            <a href="explore/india/historic-places/car-rental.html" class="card-link">
-                <img src="images/cardImages/taj_mahal.jpg"
-                    alt="A majestic historical monument, representing Indian history destinations.">
-
-                <div class="card-content">
-                    <h2 class="card-title">Unearth Indian History</h2>
-            </a>
-            <p class="card-description">Embark on a historical journey through India's time-honored monuments,
-                ancient relics, and storied landmarks. 🏰⏳</p>
-        </div>
-        </div>
-
-        <!-- Card 5: Northern Wonders -->
-        <div class="card">
-            <a href="explore/india/north/car-rental.html" class="card-link">
-                <img src="images/cardImages/kashmir (1).jpg" alt="A beautiful mountain landscape, representing northern India's wonders.
-                ">
-
-                <div class="card-content">
-                    <h2 class="card-title">Discover Northern Wonders</h2>
-            </a>
-            <p class="card-description">Explore the enchanting landscapes and vibrant culture of Northern India.
-                🏔️🕌</p>
-        </div>
-        </div>
-
-        <!-- Card 6: Southern Serenity -->
-        <div class="card">
-            <a href="explore/india/south/car-rental.html" class="card-link">
-                <img src="images/cardImages/kodiakanal (1).jpg"
-                    alt="A tranquil beach scene, representing southern India's serenity.">
-
-                <div class="card-content">
-                    <h2 class="card-title">Experience Southern Serenity</h2>
-            </a>
-            <p class="card-description">Immerse yourself in the serene beauty and rich traditions of Southern
-                India. 🌴🌊</p>
-        </div>
-        </div>
-
-        <!-- Card 7: Eastern Charms -->
-        <div class="card">
-            <a href="explore/india/east/car-rental.html" class="card-link">
-                <img src="images/cardImages/darjelling (1).jpg" alt="A traditional eastern Indian architecture, representing eastern India's charms.
-                ">
-
-                <div class="card-content">
-                    <h2 class="card-title">Explore Eastern Charms</h2>
-            </a>
-            <p class="card-description">Discover the cultural diversity and historic allure of Eastern India.
-                🏯🌄</p>
-        </div>
-        </div>
-
-        <!-- Card 8: Western Marvels -->
-        <div class="card">
-            <a href="explore/india/west/car-rental.html" class="card-link">
-                <img src="images/cardImages/palace (1).jpg" alt="A grand palace, representing western India's marvels.">
-
-                <div class="card-content">
-                    <h2 class="card-title">Marvel at Western Delights</h2>
-            </a>
-            <p class="card-description">Witness the architectural marvels and culinary delights of Western
-                India. 🏰🍲</p>
-        </div>
-        </div>
-
-        <!-- Card 9: Taxi Services -->
-        <div class="card">
-            <a href="axis-cabs/why-axis-cabs.html" class="card-link">
-                <img src="images/cardImages/stearing (1).jpg"
-                    alt="A modern taxi cab, representing reliable taxi services.">
-
-                <div class="card-content">
-                    <h2 class="card-title">Why Our Taxi Services?</h2>
-            </a>
-            <p class="card-description">Discover seamless travel experiences with our reliable taxi services.
-                🚕✨. Offering services such as 24/7 Availability, Professional and Friendly Drivers, Comfortable
-                and Clean Vehicles, Competitive Pricing and Safe and Secure Travel </p>
-        </div>
-        </div>
-
-        <!-- Add more cards as needed -->
-        </div>
-    </section>
-    <section>
-        <div class="who-are-we">
-            <h2>Why <strong>Axis Cabs</strong>?</h2>
-            <p><strong>Axis Cabs</strong> is your premier choice for cab services, ensuring every ride is exceptional.
-                With over a decade of experience, we proudly stand as India's largest chauffeur-driven cab rental
-                company. Travel confidently with us as we reach every corner, ensuring your journey is comfortable and
-                enjoyable.</p>
-
-            <h3>Explore with Ease: Axis Cabs - Your Go-To Cab Service</h3>
-            <p>Ready to make travel hassle-free? Meet <strong>Axis Cabs</strong>, your trusted choice for easy intercity
-                and local cab services across India. We're more than just a service; we're here to make your journeys
-                memorable and stress-free.</p>
-
-            <h3>Enjoy Easy Road Trips</h3>
-            <p>Picture the excitement of a road trip across India, where each turn brings a new adventure. At
-                <strong>Axis Cabs</strong>, we understand the magic of road travel. Swap driving stress for a relaxing
-                back-seat experience and let our skilled drivers guide you through an unforgettable journey.
-            </p>
-
-            <h3>Covering Everywhere - 2000+ Cities and More</h3>
-            <p><strong>Axis Cabs</strong> isn't just a service; we're your travel buddy, covering 2000+ cities in India.
-                Whether it's the historical charm of Khajuraho, the tranquil scenes of Aleppey, or the coastal vibes of
-                Alibag and Tranquebar, we're here to bring your travel dreams to life.</p>
-
-            <h3>Easy Escapes with Axis Cabs</h3>
-            <p>Planning your next getaway is easy with <strong>Axis Cabs</strong>. Book effortlessly on our
-                user-friendly website or call our team at <strong>9922333305</strong> for a personalized plan. Once
-                booked, receive a travel kit and expert help. Simplify your journey with our simple cab booking app,
-                designed to make your travel smoother.</p>
-
-            <h3>Discover Every Place - No Destination Too Small</h3>
-            <p>For <strong>Axis Cabs</strong>, every city is an adventure waiting to be explored. From weekend getaways
-                to family reunions, our local taxi packages ensure you experience the best eateries, explore majestic
-                monuments, relax in green parks, and visit ancient temples. No more worrying about empty plans.</p>
-
-            <h3>Travel for Every Occasion</h3>
-            <ul>
-                <li>Planning a weekend escape? Count on our outstation cab services for a smooth journey.</li>
-                <li>Just landed? Choose our airport taxi service for an easy last-mile experience.</li>
-                <li>Heading home? Pick our one-way cab services, paying only for the journey.</li>
-                <li>Exploring your city? Let our local taxi packages show you its hidden gems.</li>
-                <li>Offbeat traveler? Try our one-way drops on selected routes for an adventurous journey.</li>
-            </ul>
-
-            <h3>Your Adventure Starts Here - Axis Cabs</h3>
-            <p>Your travel adventure begins with <strong>Axis Cabs</strong>. Book now and enjoy the ease of exploration
-                without the hassle. Your next adventure is just a ride away!</p>
-
-            <a href="#" class="cta-button">Book Now</a>
-        </div>
-    </section>
-    <div id="errorModal" class="modal" role="dialog" aria-labelledby="errorModalLabel"
-        aria-describedby="errorModalDesc">
-        <div class="modal-content">
-            <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
-            <p id="errorModalDesc">Select source and destination city 📍</p>
-            <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
-        </div>
+            <div class="card-content">
+                <h2 class="card-title">Spiritual Destinations</h2>
+        </a>
+        <p class="card-description">Explore India's serene spots, where ancient temples and peaceful
+            landscapes invite you to connect with spirituality. 🕊️🌼</p>
     </div>
-    <div id="footerContainer"></div>
-    <script src="script.js"></script>
+    </div>
+
+    <!-- Card 4: Indian History -->
+    <div class="card">
+        <a class="card-link" href="explore/india/historic-places/car-rental.html">
+            <img alt="A majestic historical monument, representing Indian history destinations."
+                 src="images/cardImages/taj_mahal.jpg">
+
+            <div class="card-content">
+                <h2 class="card-title">Unearth Indian History</h2>
+        </a>
+        <p class="card-description">Embark on a historical journey through India's time-honored monuments,
+            ancient relics, and storied landmarks. 🏰⏳</p>
+    </div>
+    </div>
+
+    <!-- Card 5: Northern Wonders -->
+    <div class="card">
+        <a class="card-link" href="explore/india/north/car-rental.html">
+            <img alt="A beautiful mountain landscape, representing northern India's wonders.
+                " src="images/cardImages/kashmir (1).jpg">
+
+            <div class="card-content">
+                <h2 class="card-title">Discover Northern Wonders</h2>
+        </a>
+        <p class="card-description">Explore the enchanting landscapes and vibrant culture of Northern India.
+            🏔️🕌</p>
+    </div>
+    </div>
+
+    <!-- Card 6: Southern Serenity -->
+    <div class="card">
+        <a class="card-link" href="explore/india/south/car-rental.html">
+            <img alt="A tranquil beach scene, representing southern India's serenity."
+                 src="images/cardImages/kodiakanal (1).jpg">
+
+            <div class="card-content">
+                <h2 class="card-title">Experience Southern Serenity</h2>
+        </a>
+        <p class="card-description">Immerse yourself in the serene beauty and rich traditions of Southern
+            India. 🌴🌊</p>
+    </div>
+    </div>
+
+    <!-- Card 7: Eastern Charms -->
+    <div class="card">
+        <a class="card-link" href="explore/india/east/car-rental.html">
+            <img alt="A traditional eastern Indian architecture, representing eastern India's charms.
+                " src="images/cardImages/darjelling (1).jpg">
+
+            <div class="card-content">
+                <h2 class="card-title">Explore Eastern Charms</h2>
+        </a>
+        <p class="card-description">Discover the cultural diversity and historic allure of Eastern India.
+            🏯🌄</p>
+    </div>
+    </div>
+
+    <!-- Card 8: Western Marvels -->
+    <div class="card">
+        <a class="card-link" href="explore/india/west/car-rental.html">
+            <img alt="A grand palace, representing western India's marvels." src="images/cardImages/palace (1).jpg">
+
+            <div class="card-content">
+                <h2 class="card-title">Marvel at Western Delights</h2>
+        </a>
+        <p class="card-description">Witness the architectural marvels and culinary delights of Western
+            India. 🏰🍲</p>
+    </div>
+    </div>
+
+    <!-- Card 9: Taxi Services -->
+    <div class="card">
+        <a class="card-link" href="axis-cabs/why-axis-cabs.html">
+            <img alt="A modern taxi cab, representing reliable taxi services."
+                 src="images/cardImages/stearing (1).jpg">
+
+            <div class="card-content">
+                <h2 class="card-title">Why Our Taxi Services?</h2>
+        </a>
+        <p class="card-description">Discover seamless travel experiences with our reliable taxi services.
+            🚕✨. Offering services such as 24/7 Availability, Professional and Friendly Drivers, Comfortable
+            and Clean Vehicles, Competitive Pricing and Safe and Secure Travel </p>
+    </div>
+    </div>
+
+    <!-- Add more cards as needed -->
+    </div>
+</section>
+
+<!-- Who Are We / Brand Messaging Section -->
+<section>
+    <div class="who-are-we">
+        <h2>Why <strong>Axis Cabs</strong>?</h2>
+        <p><strong>Axis Cabs</strong> is your premier choice for cab services, ensuring every ride is exceptional.
+            With over a decade of experience, we proudly stand as India's largest chauffeur-driven cab rental
+            company. Travel confidently with us as we reach every corner, ensuring your journey is comfortable and
+            enjoyable.</p>
+        <!-- The rest of the marketing messaging is here; edit as needed for your brand voice -->
+
+        <h3>Explore with Ease: Axis Cabs - Your Go-To Cab Service</h3>
+        <p>Ready to make travel hassle-free? Meet <strong>Axis Cabs</strong>, your trusted choice for easy intercity
+            and local cab services across India. We're more than just a service; we're here to make your journeys
+            memorable and stress-free.</p>
+
+        <h3>Enjoy Easy Road Trips</h3>
+        <p>Picture the excitement of a road trip across India, where each turn brings a new adventure. At
+            <strong>Axis Cabs</strong>, we understand the magic of road travel. Swap driving stress for a relaxing
+            back-seat experience and let our skilled drivers guide you through an unforgettable journey.
+        </p>
+
+        <h3>Covering Everywhere - 2000+ Cities and More</h3>
+        <p><strong>Axis Cabs</strong> isn't just a service; we're your travel buddy, covering 2000+ cities in India.
+            Whether it's the historical charm of Khajuraho, the tranquil scenes of Aleppey, or the coastal vibes of
+            Alibag and Tranquebar, we're here to bring your travel dreams to life.</p>
+
+        <h3>Easy Escapes with Axis Cabs</h3>
+        <p>Planning your next getaway is easy with <strong>Axis Cabs</strong>. Book effortlessly on our
+            user-friendly website or call our team at <strong>9922333305</strong> for a personalized plan. Once
+            booked, receive a travel kit and expert help. Simplify your journey with our simple cab booking app,
+            designed to make your travel smoother.</p>
+
+        <h3>Discover Every Place - No Destination Too Small</h3>
+        <p>For <strong>Axis Cabs</strong>, every city is an adventure waiting to be explored. From weekend getaways
+            to family reunions, our local taxi packages ensure you experience the best eateries, explore majestic
+            monuments, relax in green parks, and visit ancient temples. No more worrying about empty plans.</p>
+
+        <h3>Travel for Every Occasion</h3>
+        <ul>
+            <li>Planning a weekend escape? Count on our outstation cab services for a smooth journey.</li>
+            <li>Just landed? Choose our airport taxi service for an easy last-mile experience.</li>
+            <li>Heading home? Pick our one-way cab services, paying only for the journey.</li>
+            <li>Exploring your city? Let our local taxi packages show you its hidden gems.</li>
+            <li>Offbeat traveler? Try our one-way drops on selected routes for an adventurous journey.</li>
+        </ul>
+
+        <h3>Your Adventure Starts Here - Axis Cabs</h3>
+        <p>Your travel adventure begins with <strong>Axis Cabs</strong>. Book now and enjoy the ease of exploration
+            without the hassle. Your next adventure is just a ride away!</p>
+
+        <a class="cta-button" href="#">Book Now</a>
+    </div>
+</section>
+
+<!-- Modal shown when form validation fails -->
+<div aria-describedby="errorModalDesc" aria-labelledby="errorModalLabel" class="modal" id="errorModal"
+     role="dialog">
+    <div class="modal-content">
+        <!-- Error message for incomplete booking -->
+        <!-- <span class="close" onclick="closeErrorModal()">&times;</span> -->
+        <p id="errorModalDesc">Select source and destination city 📍</p>
+        <button class="errorPopupButtons" onclick="closeErrorModal()">OK</button>
+    </div>
+</div>
+<!-- Placeholder for the footer; loaded dynamically -->
+<div id="footerContainer"></div>
+<!-- Main script for interactive features and loading header/footer -->
+
+<script src="script.js"></script>
 </body>
 
 </html>
