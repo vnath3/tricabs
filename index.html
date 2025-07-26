@@ -491,6 +491,20 @@
     </div>
 </section>
 
+<!-- Email Collection Popup for WhatsApp -->
+<div id="emailPopup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:2000; align-items:center; justify-content:center;">
+    <div style="background:#fff; padding:2rem 1.5rem; border-radius:10px; max-width:320px; width:90%; margin:auto; text-align:center; position:relative;">
+        <h3>Get Updates on WhatsApp!</h3>
+        <p style="font-size:1rem;">Enter your email to connect directly on WhatsApp.</p>
+        <input id="userEmail" type="email" placeholder="Your email" style="width:90%; padding:0.5rem; margin:1rem 0; border:1px solid #ccc; border-radius:6px;" required />
+        <br>
+        <button onclick="submitEmailToWhatsApp()" style="padding:0.5rem 1.5rem; border-radius:6px; background:#25D366; color:#fff; border:none; font-weight:bold; font-size:1rem;">Send to WhatsApp</button>
+        <br><br>
+        <button onclick="closeEmailPopup()" style="background:none; border:none; color:#888; cursor:pointer;">Close</button>
+    </div>
+</div>
+
+
 <!-- Modal shown when form validation fails -->
 <div aria-describedby="errorModalDesc" aria-labelledby="errorModalLabel" class="modal" id="errorModal"
      role="dialog">

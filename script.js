@@ -2409,3 +2409,43 @@ fetch('../../../footer.html')
         document.getElementById('footerContainer').innerHTML = data;
     })
     .catch(error => console.error('Error loading footer:', error));
+
+// ===========================
+// EMAIL TO WHATSAPP POPUP LOGIC
+// ===========================
+
+// Show the popup after a few seconds (adjust timing as needed)
+window.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        document.getElementById('emailPopup').style.display = 'flex';
+    }, 3500); // Show after 3.5 seconds
+});
+
+// Close the popup
+function closeEmailPopup() {
+    document.getElementById('emailPopup').style.display = 'none';
+}
+
+// Validate email and redirect to WhatsApp with prefilled message
+function submitEmailToWhatsApp() {
+    var email = document.getElementById('userEmail').value.trim();
+    if (email === "" || !validateEmailFormat(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // Use WhatsApp number from config.js or fallback if not available
+    var whatsappNumber = (typeof mobileNumber !== "undefined" && mobileNumber) ? mobileNumber : "919922333305";
+    var prefilledMessage = `Hi, I am interested in cab services. My email is: ${email}`;
+
+    var whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(prefilledMessage)}`;
+    window.open(whatsappLink, "_blank"); // Open in new tab
+
+    closeEmailPopup();
+}
+
+// Simple email format validator
+function validateEmailFormat(email) {
+    // Basic regex for demonstration
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
